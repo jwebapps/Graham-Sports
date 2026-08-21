@@ -1,0 +1,11 @@
+{
+  "name": "graham-bears-athletics",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "sync-results": "node scripts/sync-results.js"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0"
+  }
+}
