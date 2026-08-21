@@ -1,8 +1,108 @@
 {
   "id": "bv8",
   "label": "8th Boys Volleyball",
-  "fetchedAt": null,
+  "fetchedAt": "2026-08-21T05:07:01.361Z",
   "sourceUrl": "https://valleyal.org/schedule/731404/8th-grade",
   "results": [],
-  "standings": []
+  "standings": [
+    {
+      "place": "",
+      "team": "Blach Falcons",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Columbia Bulldogs",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Crittenden Panthers",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Cupertino Bears",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Egan Vikings",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Graham Bears",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Hyde Lions",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Kennedy Cougars",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Lawson Lightning",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Miller Mustangs",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Sunnyvale Spartans",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    }
+  ]
 }
