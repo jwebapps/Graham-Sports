@@ -71,3 +71,6 @@ Calendar subscriptions
 - Apple uses a webcal:// subscription link.
 - Google uses Google Calendar's subscription-by-URL flow.
 - Calendar feeds are hosted under /calendars/<team>.ics.
+
+
+Fix: Add Team Calendar buttons now open the Apple/Google subscription menu instead of calling the old download function.
