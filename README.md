@@ -64,3 +64,10 @@ The app and preloaded schedules work locally. The bundled `results/*.json` files
 
 ## Practice schedules and calendar export
 For 2026–27 Season 1, Boys Basketball, Girls Softball, and Cross Country include practices from 3:30–5:00 PM Monday–Thursday on non-game/non-meet days, with no Friday practices. Boys Basketball is sourced from the Graham Athletics Boys Basketball page; Cross Country and Softball use the provided Graham practice rule. The single team calendar export now contains both games/meets and practices.
+
+
+Calendar subscriptions
+- The app now shows only Apple Calendar and Google Calendar options.
+- Apple uses a webcal:// subscription link.
+- Google uses Google Calendar's subscription-by-URL flow.
+- Calendar feeds are hosted under /calendars/<team>.ics.

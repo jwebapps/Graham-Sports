@@ -172,6 +172,30 @@
     .practice-detail{font-size:13px;color:var(--muted);line-height:1.5}.practice-next{margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-size:13px;font-weight:850}.practice-next strong{color:var(--red)}
     .calendar-team-btn{width:100%;margin:12px 0 4px;border:0;border-radius:12px;padding:13px 14px;background:var(--red);color:#fff;font-weight:950;text-transform:uppercase;letter-spacing:.02em;font-size:12px;box-shadow:0 4px 12px rgba(230,61,50,.18)}
     .calendar-team-btn:active{transform:translateY(1px)}
+  
+    .calendar-menu-backdrop{
+      position:fixed;inset:0;background:rgba(0,0,0,.48);display:none;
+      align-items:flex-end;justify-content:center;z-index:9999;padding:16px;
+    }
+    .calendar-menu-backdrop.open{display:flex}
+    .calendar-menu{
+      width:min(520px,100%);background:#fff;border-radius:20px;padding:18px;
+      box-shadow:0 20px 60px rgba(0,0,0,.28);
+    }
+    .calendar-menu h3{margin:0 0 6px;font-size:18px}
+    .calendar-menu p{margin:0 0 14px;color:var(--muted);font-size:13px;line-height:1.4}
+    .calendar-choice{
+      display:block;width:100%;border:0;border-radius:14px;padding:14px 16px;
+      margin:9px 0;text-align:center;font-weight:900;text-decoration:none;
+      font-size:14px;
+    }
+    .calendar-choice.apple{background:#000;color:#fff}
+    .calendar-choice.google{background:var(--red);color:#fff}
+    .calendar-close{
+      width:100%;border:1px solid var(--line);background:#fff;color:var(--ink);
+      border-radius:14px;padding:12px 14px;font-weight:800;margin-top:4px;
+    }
+
   </style>
 </head>
 <body>
@@ -356,7 +380,7 @@ function renderSchedule(){
   const games=p.games.filter(g=>state.scheduleFilter==='all'||(state.scheduleFilter==='upcoming'?g.status!=='final':g.status==='final'));
   const groups={};games.forEach(g=>(groups[monthKey(g.date)] ||= []).push(g));
   $('#schedule').innerHTML=`<div class="sub-header"><img src="assets/graham-bears-logo.png" class="sub-logo" alt=""><div class="sub-title">Schedule</div></div>
-    <button class="calendar-team-btn" onclick="addTeamScheduleToCalendar()">＋ Add games + practices to calendar</button>
+    <button class="calendar-team-btn" onclick="addTeamScheduleToCalendar()">＋ Add Team Calendar</button>
     <div class="filter-tabs">${[['all','All Games'],['upcoming','Upcoming'],['completed','Completed']].map(([id,label])=>`<button class="filter-tab ${state.scheduleFilter===id?'active':''}" onclick="setFilter('${id}')">${label}</button>`).join('')}</div>
     ${Object.entries(groups).map(([m,gs])=>`<div class="month-title">${esc(m)}</div><div class="game-list">${gs.map(gameRow).join('')}</div>`).join('') || '<div class="empty">No preloaded games are available for this team yet.</div>'}
     <div class="sync-note"><button class="linkish" onclick="syncResults(true)">Refresh scores & standings</button></div>`;
@@ -370,7 +394,7 @@ function renderTeams(){
     <div class="section-title" style="margin-bottom:8px">Choose a team</div>
     <label>VAL division</label><select onchange="selectTeam(this.value)">${teamOptions.map(([id,label])=>`<option value="${id}" ${id===state.selected?'selected':''}>${esc(label)}</option>`).join('')}</select>
     <label>School</label><input value="Graham Middle School" disabled>
-    <button class="calendar-team-btn" onclick="addTeamScheduleToCalendar()">＋ Add games + practices to calendar</button>
+    <button class="calendar-team-btn" onclick="addTeamScheduleToCalendar()">＋ Add Team Calendar</button>
     <button class="btn primary wide-btn" onclick="syncResults(true)">Refresh scores & standings</button>
     <button class="btn wide-btn" style="background:#fff;color:#111;border-color:#ccc" onclick="copyTeamLink()">Copy link to this team</button>
     <div class="footer-note">Your selected team is saved on this device. The URL also includes <strong>?team=${esc(state.selected)}</strong>, so you can bookmark or share a direct link to this team.</div>
@@ -380,6 +404,35 @@ function renderLoading(){
   $('#teamQuick').textContent=shortTeam();
   renderTeams();
 }
+
+function teamCalendarRelativePath(){
+  const t = team();
+  return `calendars/${encodeURIComponent(t.id)}.ics`;
+}
+function teamCalendarHttpsUrl(){
+  return new URL(teamCalendarRelativePath(), window.location.href).href;
+}
+function appleCalendarUrl(){
+  return teamCalendarHttpsUrl().replace(/^https:/i,"webcal:");
+}
+function googleCalendarSubscribeUrl(){
+  const ics = teamCalendarHttpsUrl();
+  return "https://calendar.google.com/calendar/u/0/r?cid=" + encodeURIComponent(ics);
+}
+function openCalendarMenu(){
+  const t = team();
+  const title = document.getElementById("calendarMenuTitle");
+  const apple = document.getElementById("appleCalendarLink");
+  const google = document.getElementById("googleCalendarLink");
+  if(title) title.textContent = `Add ${t.label || "Team"} Calendar`;
+  if(apple) apple.href = appleCalendarUrl();
+  if(google) google.href = googleCalendarSubscribeUrl();
+  document.getElementById("calendarMenuBackdrop")?.classList.add("open");
+}
+function closeCalendarMenu(){
+  document.getElementById("calendarMenuBackdrop")?.classList.remove("open");
+}
+
 function render(){
   $('#teamQuick').textContent=shortTeam();
   if(!state.payload){state.payload=staticPayload(state.selected)}
@@ -450,5 +503,16 @@ async function shareGame(){const g=state.payload?.games.find(x=>x.status!=='fina
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{})}
 loadTeam();
 </script>
+
+<div class="calendar-menu-backdrop" id="calendarMenuBackdrop" onclick="if(event.target===this)closeCalendarMenu()">
+  <div class="calendar-menu" role="dialog" aria-modal="true" aria-labelledby="calendarMenuTitle">
+    <h3 id="calendarMenuTitle">Add Team Calendar</h3>
+    <p>Subscribe to this team’s games and practices.</p>
+    <a id="appleCalendarLink" class="calendar-choice apple" href="#">Apple Calendar</a>
+    <a id="googleCalendarLink" class="calendar-choice google" href="#" target="_blank" rel="noopener">Google Calendar</a>
+    <button class="calendar-close" onclick="closeCalendarMenu()">Cancel</button>
+  </div>
+</div>
+
 </body>
 </html>

@@ -1,0 +1,269 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Graham Bears Athletics//Team Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Graham Bears - Cross Country
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+X-LIC-LOCATION:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:xc-game-0-20260909T1600@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260909T160000
+DTEND;TZID=America/Los_Angeles:20260909T173000
+SUMMARY:Cross Country - VAL Meet
+LOCATION:19325 Bollinger Road\, Cupertino\, CA 95014
+DESCRIPTION:Meet · Hyde Field
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-game-1-20260916T1600@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260916T160000
+DTEND;TZID=America/Los_Angeles:20260916T173000
+SUMMARY:Cross Country - VAL Meet
+LOCATION:1080 Mango Avenue\, Sunnyvale\, CA 94087
+DESCRIPTION:Meet · Sunnyvale Field
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-game-2-20260923T1600@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260923T160000
+DTEND;TZID=America/Los_Angeles:20260923T173000
+SUMMARY:Cross Country - VAL Meet
+LOCATION:1650 S Bernardo\, Sunnyvale\, CA 94087
+DESCRIPTION:Meet · Cupertino Field
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-game-3-20260930T1600@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260930T160000
+DTEND;TZID=America/Los_Angeles:20260930T173000
+SUMMARY:Cross Country - VAL Meet
+LOCATION:821 Bubb Road\, Cupertino\, CA 95014
+DESCRIPTION:Meet · Kennedy Field
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-game-4-20261007T1600@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20261007T160000
+DTEND;TZID=America/Los_Angeles:20261007T173000
+SUMMARY:Cross Country - League Finals
+LOCATION:6151 Rainbow Drive\, San Jose\, CA 95129
+DESCRIPTION:Meet · Miller Field
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-0-20260824@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260824T153000
+DTEND;TZID=America/Los_Angeles:20260824T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-1-20260825@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260825T153000
+DTEND;TZID=America/Los_Angeles:20260825T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-2-20260826@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260826T153000
+DTEND;TZID=America/Los_Angeles:20260826T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-3-20260827@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260827T153000
+DTEND;TZID=America/Los_Angeles:20260827T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-4-20260831@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260831T153000
+DTEND;TZID=America/Los_Angeles:20260831T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-5-20260901@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260901T153000
+DTEND;TZID=America/Los_Angeles:20260901T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-6-20260902@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260902T153000
+DTEND;TZID=America/Los_Angeles:20260902T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-7-20260903@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260903T153000
+DTEND;TZID=America/Los_Angeles:20260903T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-8-20260907@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260907T153000
+DTEND;TZID=America/Los_Angeles:20260907T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-9-20260908@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260908T153000
+DTEND;TZID=America/Los_Angeles:20260908T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-10-20260910@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260910T153000
+DTEND;TZID=America/Los_Angeles:20260910T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-11-20260914@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260914T153000
+DTEND;TZID=America/Los_Angeles:20260914T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-12-20260915@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260915T153000
+DTEND;TZID=America/Los_Angeles:20260915T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-13-20260917@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260917T153000
+DTEND;TZID=America/Los_Angeles:20260917T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-14-20260921@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260921T153000
+DTEND;TZID=America/Los_Angeles:20260921T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-15-20260922@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260922T153000
+DTEND;TZID=America/Los_Angeles:20260922T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-16-20260924@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260924T153000
+DTEND;TZID=America/Los_Angeles:20260924T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-17-20260928@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260928T153000
+DTEND;TZID=America/Los_Angeles:20260928T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-18-20260929@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20260929T153000
+DTEND;TZID=America/Los_Angeles:20260929T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-19-20261001@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20261001T153000
+DTEND;TZID=America/Los_Angeles:20261001T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-20-20261005@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20261005T153000
+DTEND;TZID=America/Los_Angeles:20261005T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+BEGIN:VEVENT
+UID:xc-practice-21-20261006@grahambears
+DTSTAMP:20260821T000000Z
+DTSTART;TZID=America/Los_Angeles:20261006T153000
+DTEND;TZID=America/Los_Angeles:20261006T170000
+SUMMARY:Cross Country Practice
+LOCATION:1175 Castro Street\, Mountain View\, CA 94040
+DESCRIPTION:Graham Bears practice · Graham Middle School
+END:VEVENT
+END:VCALENDAR
