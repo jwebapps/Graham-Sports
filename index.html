@@ -224,13 +224,11 @@
 <script src="static-schedules.js"></script>
 <script>
 const teamOptions = [
-  ['bb8','8th Boys Basketball'],['bb7','7th Boys Basketball'],['bb6','6th Boys Basketball'],
-  ['softball','Girls Softball'],['xc','Cross Country'],
-  ['gv8','8th Girls Volleyball'],['gv7','7th Girls Volleyball'],['gv6','6th Girls Volleyball'],['wrestling','Wrestling'],
-  ['bv8','8th Boys Volleyball'],['bv7','7th Boys Volleyball'],['bv6','6th Boys Volleyball'],
-  ['gs78','7th/8th Girls Soccer'],['gs67','6th/7th Girls Soccer'],
-  ['gb8','8th Girls Basketball'],['gb7','7th Girls Basketball'],['gb6','6th Girls Basketball'],
-  ['bs78','7th/8th Boys Soccer'],['bs67','6th/7th Boys Soccer'],['track','Track & Field']
+  ['bb8','8th Boys Basketball'],
+  ['bb7','7th Boys Basketball'],
+  ['bb6','6th Boys Basketball'],
+  ['softball','Girls Softball'],
+  ['xc','Cross Country']
 ];
 const validTeamIds = new Set(teamOptions.map(([id]) => id));
 const urlTeam = new URLSearchParams(window.location.search).get('team');
@@ -319,29 +317,7 @@ function icsStamp(){
   const d=new Date();
   return `${d.getUTCFullYear()}${pad2(d.getUTCMonth()+1)}${pad2(d.getUTCDate())}T${pad2(d.getUTCHours())}${pad2(d.getUTCMinutes())}${pad2(d.getUTCSeconds())}Z`;
 }
-function addTeamScheduleToCalendar(){
-  const p=state.payload||staticPayload(state.selected);
-  const games=(p.games||[]).filter(g=>g.date).map(g=>({...g,eventType:g.eventType||'game'}));
-  const practices=practiceEvents(p);
-  const events=[...games,...practices].sort((a,b)=>new Date(a.date)-new Date(b.date));
-  if(!events.length){alert('No games or practices are currently loaded for this team.');return;}
-  const stamp=icsStamp();
-  const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Graham Bears Athletics//Team Calendar//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH',`X-WR-CALNAME:${escapeICS('Graham Bears - '+(p.label||selectedLabel()))}`];
-  events.forEach((g,i)=>{
-    const start=new Date(g.date);
-    const isPractice=g.eventType==='practice';
-    const end=g.endDate?new Date(g.endDate):new Date(start.getTime()+90*60*1000);
-    const title=isPractice?`Graham Bears ${p.label||selectedLabel()} Practice`:`Graham Bears ${g.home?'vs':'@'} ${g.opp||'Opponent'}`;
-    const location=(g.venueAddress||g.address||g.venue||'').trim();
-    const desc=isPractice?[p.label||selectedLabel(),'Practice',p.practice?.note||''].filter(Boolean).join('\\n'):[p.label||selectedLabel(),g.home?'Home game':'Away game',g.venue?`Venue: ${g.venue}`:''].filter(Boolean).join('\\n');
-    lines.push('BEGIN:VEVENT',`UID:${escapeICS(state.selected+'-'+(isPractice?'practice':'game')+'-'+i+'-'+String(g.date).replace(/[^0-9]/g,''))}@grahambears`,`DTSTAMP:${stamp}`,`DTSTART;TZID=America/Los_Angeles:${icsLocal(start)}`,`DTEND;TZID=America/Los_Angeles:${icsLocal(end)}`,`SUMMARY:${escapeICS(title)}`,`LOCATION:${escapeICS(location)}`,`DESCRIPTION:${escapeICS(desc)}`,'END:VEVENT');
-  });
-  lines.push('END:VCALENDAR');
-  const blob=new Blob([lines.join('\\r\\n')],{type:'text/calendar;charset=utf-8'});
-  const url=URL.createObjectURL(blob), a=document.createElement('a');
-  a.href=url; a.download=`graham-${state.selected}-calendar.ics`; document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(()=>URL.revokeObjectURL(url),1500);
-}
+
 
 function renderHero(p,next,r){
   if(!next)return `<div class="section-kicker"><span class="icon">▣</span>Season status</div><div class="hero"><div class="sport-ribbon">${esc(p.label)}</div><div class="school-name">Graham Bears</div><div class="matchup">Season complete</div><div class="record"><div class="record-label">Final record</div><div class="record-value">${r.w}-${r.l}</div></div></div>`;
@@ -406,8 +382,7 @@ function renderLoading(){
 }
 
 function teamCalendarRelativePath(){
-  const t = team();
-  return `calendars/${encodeURIComponent(t.id)}.ics`;
+  return `calendars/${encodeURIComponent(state.selected)}.ics`;
 }
 function teamCalendarHttpsUrl(){
   return new URL(teamCalendarRelativePath(), window.location.href).href;
@@ -416,21 +391,21 @@ function appleCalendarUrl(){
   return teamCalendarHttpsUrl().replace(/^https:/i,"webcal:");
 }
 function googleCalendarSubscribeUrl(){
-  const ics = teamCalendarHttpsUrl();
-  return "https://calendar.google.com/calendar/u/0/r?cid=" + encodeURIComponent(ics);
+  return "https://calendar.google.com/calendar/u/0/r?cid=" + encodeURIComponent(teamCalendarHttpsUrl());
 }
 function openCalendarMenu(){
-  const t = team();
   const title = document.getElementById("calendarMenuTitle");
   const apple = document.getElementById("appleCalendarLink");
   const google = document.getElementById("googleCalendarLink");
-  if(title) title.textContent = `Add ${t.label || "Team"} Calendar`;
+  if(title) title.textContent = `Add ${selectedLabel()} Calendar`;
   if(apple) apple.href = appleCalendarUrl();
   if(google) google.href = googleCalendarSubscribeUrl();
-  document.getElementById("calendarMenuBackdrop")?.classList.add("open");
+  const backdrop = document.getElementById("calendarMenuBackdrop");
+  if(backdrop) backdrop.classList.add("open");
 }
 function closeCalendarMenu(){
-  document.getElementById("calendarMenuBackdrop")?.classList.remove("open");
+  const backdrop = document.getElementById("calendarMenuBackdrop");
+  if(backdrop) backdrop.classList.remove("open");
 }
 
 function render(){

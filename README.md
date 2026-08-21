@@ -74,3 +74,21 @@ Calendar subscriptions
 
 
 Fix: Add Team Calendar buttons now open the Apple/Google subscription menu instead of calling the old download function.
+
+
+## Fall 2026 active sports
+This build intentionally includes only the sports currently in season:
+- 8th Boys Basketball
+- 7th Boys Basketball
+- 6th Boys Basketball
+- Girls Softball
+- Cross Country
+
+Future-season sports are hidden until their schedules are ready.
+
+## Calendar
+Each active team has one hosted calendar containing games/meets and practices.
+The Add Team Calendar button offers Apple Calendar and Google Calendar subscriptions.
+
+## Results sync
+The GitHub Actions results sync is limited to the five active fall team IDs.

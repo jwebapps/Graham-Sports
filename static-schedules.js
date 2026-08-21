@@ -51,11 +51,7 @@ window.GRAHAM_SCHEDULES = {
     ['2026-09-23T16:00:00',false,'VAL Meet','Cupertino Field'],
     ['2026-09-30T16:00:00',false,'VAL Meet','Kennedy Field'],
     ['2026-10-07T16:00:00',false,'League Finals','Miller Field']
-  ]},
-  gv8:{label:'8th Girls Volleyball',games:[]}, gv7:{label:'7th Girls Volleyball',games:[]}, gv6:{label:'6th Girls Volleyball',games:[]},
-  wrestling:{label:'Wrestling',games:[]}, bv8:{label:'8th Boys Volleyball',games:[]}, bv7:{label:'7th Boys Volleyball',games:[]}, bv6:{label:'6th Boys Volleyball',games:[]},
-  gs78:{label:'7th/8th Girls Soccer',games:[]}, gs67:{label:'6th/7th Girls Soccer',games:[]}, gb8:{label:'8th Girls Basketball',games:[]}, gb7:{label:'7th Girls Basketball',games:[]}, gb6:{label:'6th Girls Basketball',games:[]},
-  bs78:{label:'7th/8th Boys Soccer',games:[]}, bs67:{label:'6th/7th Boys Soccer',games:[]}, track:{label:'Track & Field',games:[]}
+  ]}
 };
 
 // Canonical game-location addresses from the Valley Athletic League Locations directory.
