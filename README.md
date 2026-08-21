@@ -61,3 +61,6 @@ python -m http.server 8000
 Then open `http://localhost:8000`.
 
 The app and preloaded schedules work locally. The bundled `results/*.json` files will display whatever results were most recently committed to the repository.
+
+## Practice schedules and calendar export
+For 2026–27 Season 1, Boys Basketball, Girls Softball, and Cross Country include practices from 3:30–5:00 PM Monday–Thursday on non-game/non-meet days, with no Friday practices. Boys Basketball is sourced from the Graham Athletics Boys Basketball page; Cross Country and Softball use the provided Graham practice rule. The single team calendar export now contains both games/meets and practices.

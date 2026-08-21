@@ -167,6 +167,9 @@
     }
 
   
+    .practice-card{border:1px solid var(--line);border-radius:15px;padding:15px 16px;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,.04)}
+    .practice-main{font-size:18px;font-weight:950;margin-bottom:6px}.practice-main .time{color:var(--red)}
+    .practice-detail{font-size:13px;color:var(--muted);line-height:1.5}.practice-next{margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-size:13px;font-weight:850}.practice-next strong{color:var(--red)}
     .calendar-team-btn{width:100%;margin:12px 0 4px;border:0;border-radius:12px;padding:13px 14px;background:var(--red);color:#fff;font-weight:950;text-transform:uppercase;letter-spacing:.02em;font-size:12px;box-shadow:0 4px 12px rgba(230,61,50,.18)}
     .calendar-team-btn:active{transform:translateY(1px)}
   </style>
@@ -244,6 +247,42 @@ function standingsMarkup(rows){
   return `<div class="stand-card"><div class="stand-row head"><div>#</div><div>Team</div><div>W</div><div>L</div><div>PCT</div></div>${rows.map((x,i)=>`<div class="stand-row ${/Graham/i.test(x.team)?'ours':''}"><div>${esc(x.place||i+1)}</div><div class="teamname">${esc(x.team)}</div><div>${esc(x.w)}</div><div>${esc(x.l)}</div><div>${esc(x.pct||'--')}</div></div>`).join('')}</div>`;
 }
 
+function parseLocalDate(dateStr,timeStr){
+  const [y,m,d]=dateStr.split('-').map(Number), [hh,mm]=timeStr.split(':').map(Number);
+  return new Date(y,m-1,d,hh,mm,0,0);
+}
+function localDateKey(value){
+  const d=value instanceof Date?value:new Date(value);
+  return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())}`;
+}
+function practiceEvents(p){
+  const rule=p?.practice;
+  if(!rule?.start||!rule?.end)return [];
+  const gameDays=new Set((p.games||[]).map(g=>localDateKey(g.date)));
+  const start=parseLocalDate(rule.start,rule.startTime||'15:30');
+  const end=parseLocalDate(rule.end,rule.startTime||'15:30');
+  const events=[];
+  for(let d=new Date(start);d<=end;d.setDate(d.getDate()+1)){
+    const day=d.getDay();
+    if(!(rule.days||[1,2,3,4]).includes(day))continue;
+    const key=localDateKey(d);
+    if(gameDays.has(key))continue;
+    const startAt=parseLocalDate(key,rule.startTime||'15:30');
+    const endAt=parseLocalDate(key,rule.endTime||'17:00');
+    events.push({date:startAt.toISOString(),endDate:endAt.toISOString(),eventType:'practice',home:true,opp:'Practice',venue:rule.venue||'Graham Middle School',venueAddress:'1175 Castro Street, Mountain View, CA 94040'});
+  }
+  return events;
+}
+function nextPractice(p){
+  const now=new Date();
+  return practiceEvents(p).find(x=>new Date(x.date)>=now)||null;
+}
+function practiceMarkup(p){
+  const rule=p.practice;
+  if(!rule)return '<div class="empty">Practice information is not currently available for this sport.</div>';
+  const next=nextPractice(p);
+  return `<div class="practice-card"><div class="practice-main"><span class="time">${esc(rule.startTime==='15:30'?'3:30–5:00 PM':(rule.startTime||''))}</span> · Mon–Thu</div><div class="practice-detail">${esc(rule.note||'Practice on non-game days.')}<br>${esc(rule.venue||'Graham Middle School')}</div>${next?`<div class="practice-next">Next practice: <strong>${fmtLong(next.date)} · ${fmtTime(next.date)}</strong></div>`:''}</div>`;
+}
 function escapeICS(v){
   return String(v ?? '').replace(/\\/g,'\\\\').replace(/\n/g,'\\n').replace(/,/g,'\\,').replace(/;/g,'\\;');
 }
@@ -258,21 +297,25 @@ function icsStamp(){
 }
 function addTeamScheduleToCalendar(){
   const p=state.payload||staticPayload(state.selected);
-  const games=(p.games||[]).filter(g=>g.date).slice().sort((a,b)=>new Date(a.date)-new Date(b.date));
-  if(!games.length){alert('No games are currently loaded for this team.');return;}
+  const games=(p.games||[]).filter(g=>g.date).map(g=>({...g,eventType:g.eventType||'game'}));
+  const practices=practiceEvents(p);
+  const events=[...games,...practices].sort((a,b)=>new Date(a.date)-new Date(b.date));
+  if(!events.length){alert('No games or practices are currently loaded for this team.');return;}
   const stamp=icsStamp();
-  const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Graham Bears Athletics//Schedule//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH',`X-WR-CALNAME:${escapeICS('Graham Bears - '+(p.label||selectedLabel()))}`];
-  games.forEach((g,i)=>{
-    const start=new Date(g.date), end=new Date(start.getTime()+90*60*1000);
-    const title=`Graham Bears ${g.home?'vs':'@'} ${g.opp||'Opponent'}`;
+  const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Graham Bears Athletics//Team Calendar//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH',`X-WR-CALNAME:${escapeICS('Graham Bears - '+(p.label||selectedLabel()))}`];
+  events.forEach((g,i)=>{
+    const start=new Date(g.date);
+    const isPractice=g.eventType==='practice';
+    const end=g.endDate?new Date(g.endDate):new Date(start.getTime()+90*60*1000);
+    const title=isPractice?`Graham Bears ${p.label||selectedLabel()} Practice`:`Graham Bears ${g.home?'vs':'@'} ${g.opp||'Opponent'}`;
     const location=(g.venueAddress||g.address||g.venue||'').trim();
-    const desc=[p.label||selectedLabel(),g.home?'Home game':'Away game',g.venue?`Venue: ${g.venue}`:''].filter(Boolean).join('\\n');
-    lines.push('BEGIN:VEVENT',`UID:${escapeICS(state.selected+'-'+i+'-'+String(g.date).replace(/[^0-9]/g,''))}@grahambears`,`DTSTAMP:${stamp}`,`DTSTART;TZID=America/Los_Angeles:${icsLocal(start)}`,`DTEND;TZID=America/Los_Angeles:${icsLocal(end)}`,`SUMMARY:${escapeICS(title)}`,`LOCATION:${escapeICS(location)}`,`DESCRIPTION:${escapeICS(desc)}`,'END:VEVENT');
+    const desc=isPractice?[p.label||selectedLabel(),'Practice',p.practice?.note||''].filter(Boolean).join('\\n'):[p.label||selectedLabel(),g.home?'Home game':'Away game',g.venue?`Venue: ${g.venue}`:''].filter(Boolean).join('\\n');
+    lines.push('BEGIN:VEVENT',`UID:${escapeICS(state.selected+'-'+(isPractice?'practice':'game')+'-'+i+'-'+String(g.date).replace(/[^0-9]/g,''))}@grahambears`,`DTSTAMP:${stamp}`,`DTSTART;TZID=America/Los_Angeles:${icsLocal(start)}`,`DTEND;TZID=America/Los_Angeles:${icsLocal(end)}`,`SUMMARY:${escapeICS(title)}`,`LOCATION:${escapeICS(location)}`,`DESCRIPTION:${escapeICS(desc)}`,'END:VEVENT');
   });
   lines.push('END:VCALENDAR');
   const blob=new Blob([lines.join('\\r\\n')],{type:'text/calendar;charset=utf-8'});
   const url=URL.createObjectURL(blob), a=document.createElement('a');
-  a.href=url; a.download=`graham-${state.selected}-schedule.ics`; document.body.appendChild(a); a.click(); a.remove();
+  a.href=url; a.download=`graham-${state.selected}-calendar.ics`; document.body.appendChild(a); a.click(); a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),1500);
 }
 
@@ -303,6 +346,7 @@ function renderHome(){
   const next=upcoming[0],r=record(p.games);
   $('#home').innerHTML=`${state.error?`<div class="error-note">Using saved data because the latest results file could not be loaded: ${esc(state.error)}</div>`:''}
     ${renderHero(p,next,r)}
+    <div class="section"><div class="section-head"><h2 class="section-title">Practice</h2></div>${practiceMarkup(p)}</div>
     <div class="section"><div class="section-head"><h2 class="section-title">Upcoming Games</h2><button class="linkish" onclick="go('schedule')">View full schedule ›</button></div>${upcoming.length?`<div class="game-list">${upcoming.slice(0,4).map(gameRow).join('')}</div>`:'<div class="empty">No upcoming games are currently listed.</div>'}</div>
     <div class="section"><div class="section-head"><h2 class="section-title">League Standings</h2><button class="linkish" onclick="go('standings')">Full standings ›</button></div>${standingsMarkup((p.standings||[]).slice(0,5))}</div>
     <div class="sync-note">Schedule is preloaded in the app${p.resultsSyncedAt?` · results updated ${new Date(p.resultsSyncedAt).toLocaleString()}`:''}${p.sourceUrl?` · <a href="${esc(p.sourceUrl)}" target="_blank" rel="noopener">VAL results source</a>`:''}${p.detailsUrl?` · <a href="${esc(p.detailsUrl)}" target="_blank" rel="noopener">XC schedule doc</a>`:''}</div>`;
@@ -312,7 +356,7 @@ function renderSchedule(){
   const games=p.games.filter(g=>state.scheduleFilter==='all'||(state.scheduleFilter==='upcoming'?g.status!=='final':g.status==='final'));
   const groups={};games.forEach(g=>(groups[monthKey(g.date)] ||= []).push(g));
   $('#schedule').innerHTML=`<div class="sub-header"><img src="assets/graham-bears-logo.png" class="sub-logo" alt=""><div class="sub-title">Schedule</div></div>
-    <button class="calendar-team-btn" onclick="addTeamScheduleToCalendar()">＋ Add full schedule to calendar</button>
+    <button class="calendar-team-btn" onclick="addTeamScheduleToCalendar()">＋ Add games + practices to calendar</button>
     <div class="filter-tabs">${[['all','All Games'],['upcoming','Upcoming'],['completed','Completed']].map(([id,label])=>`<button class="filter-tab ${state.scheduleFilter===id?'active':''}" onclick="setFilter('${id}')">${label}</button>`).join('')}</div>
     ${Object.entries(groups).map(([m,gs])=>`<div class="month-title">${esc(m)}</div><div class="game-list">${gs.map(gameRow).join('')}</div>`).join('') || '<div class="empty">No preloaded games are available for this team yet.</div>'}
     <div class="sync-note"><button class="linkish" onclick="syncResults(true)">Refresh scores & standings</button></div>`;
@@ -326,7 +370,7 @@ function renderTeams(){
     <div class="section-title" style="margin-bottom:8px">Choose a team</div>
     <label>VAL division</label><select onchange="selectTeam(this.value)">${teamOptions.map(([id,label])=>`<option value="${id}" ${id===state.selected?'selected':''}>${esc(label)}</option>`).join('')}</select>
     <label>School</label><input value="Graham Middle School" disabled>
-    <button class="calendar-team-btn" onclick="addTeamScheduleToCalendar()">＋ Add full schedule to calendar</button>
+    <button class="calendar-team-btn" onclick="addTeamScheduleToCalendar()">＋ Add games + practices to calendar</button>
     <button class="btn primary wide-btn" onclick="syncResults(true)">Refresh scores & standings</button>
     <button class="btn wide-btn" style="background:#fff;color:#111;border-color:#ccc" onclick="copyTeamLink()">Copy link to this team</button>
     <div class="footer-note">Your selected team is saved on this device. The URL also includes <strong>?team=${esc(state.selected)}</strong>, so you can bookmark or share a direct link to this team.</div>
@@ -344,7 +388,7 @@ function render(){
 function staticPayload(id){
   const src=window.GRAHAM_SCHEDULES?.[id] || {id,label:selectedLabel(),games:[]};
   return {
-    id, label:src.label||selectedLabel(), team:'Graham Bears', sourceUrl:src.sourceUrl||'', detailsUrl:src.detailsUrl||'',
+    id, label:src.label||selectedLabel(), team:'Graham Bears', sourceUrl:src.sourceUrl||'', detailsUrl:src.detailsUrl||'', practice:src.practice?{...src.practice}:null,
     games:(src.games||[]).map(g=>({...g})), standings:[], resultsSyncedAt:null
   };
 }

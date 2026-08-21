@@ -1,5 +1,5 @@
 window.GRAHAM_SCHEDULES = {
-  bb8: {label:'8th Boys Basketball', sourceUrl:'https://valleyal.org/schedule/731081/8th-grade', games:[
+  bb8: {label:'8th Boys Basketball', sourceUrl:'https://valleyal.org/schedule/731081/8th-grade', practice:{start:'2026-08-24',end:'2026-10-01',days:[1,2,3,4],startTime:'15:30',endTime:'17:00',venue:'Graham Gym',note:'3:30–5:00 PM on non-game days. No Friday practices.',sourceUrl:'https://sites.google.com/a/mvwsd.org/gmspeandsport/after-school-sports/basketball/boys-basketball'}, games:[
     ['2026-09-01T16:00:00',true,'Cupertino Bears','Graham Gym'],
     ['2026-09-03T16:00:00',true,'Hyde Lions','Graham Gym'],
     ['2026-09-09T16:00:00',false,'Miller Mustangs','Miller Gym'],
@@ -11,7 +11,7 @@ window.GRAHAM_SCHEDULES = {
     ['2026-09-29T16:00:00',true,'Blach Falcons','Graham Gym'],
     ['2026-10-01T16:00:00',false,'Crittenden Panthers','Crittenden Gym']
   ]},
-  bb7: {label:'7th Boys Basketball', sourceUrl:'https://valleyal.org/schedule/731082/7th-grade', games:[
+  bb7: {label:'7th Boys Basketball', sourceUrl:'https://valleyal.org/schedule/731082/7th-grade', practice:{start:'2026-08-24',end:'2026-10-01',days:[1,2,3,4],startTime:'15:30',endTime:'17:00',venue:'Graham Gym',note:'3:30–5:00 PM on non-game days. No Friday practices.',sourceUrl:'https://sites.google.com/a/mvwsd.org/gmspeandsport/after-school-sports/basketball/boys-basketball'}, games:[
     ['2026-09-01T17:00:00',false,'Cupertino Bears','CMS Event Cent.'],
     ['2026-09-03T16:00:00',false,'Hyde Lions','Hyde Gym'],
     ['2026-09-09T17:00:00',true,'Miller Mustangs','Graham Gym'],
@@ -23,7 +23,7 @@ window.GRAHAM_SCHEDULES = {
     ['2026-09-29T16:00:00',false,'Blach Falcons','Blach Gym'],
     ['2026-10-01T16:00:00',true,'Crittenden Panthers','Graham Gym']
   ]},
-  bb6: {label:'6th Boys Basketball', sourceUrl:'https://valleyal.org/schedule/731083/6th-grade', games:[
+  bb6: {label:'6th Boys Basketball', sourceUrl:'https://valleyal.org/schedule/731083/6th-grade', practice:{start:'2026-08-24',end:'2026-10-01',days:[1,2,3,4],startTime:'15:30',endTime:'17:00',venue:'Graham Gym',note:'3:30–5:00 PM on non-game days. No Friday practices.',sourceUrl:'https://sites.google.com/a/mvwsd.org/gmspeandsport/after-school-sports/basketball/boys-basketball'}, games:[
     ['2026-09-01T16:00:00',false,'Cupertino Bears','CMS Event Cent.'],
     ['2026-09-03T17:00:00',true,'Hyde Lions','Graham Gym'],
     ['2026-09-09T16:00:00',true,'Miller Mustangs','Graham Gym'],
@@ -33,7 +33,7 @@ window.GRAHAM_SCHEDULES = {
     ['2026-09-24T16:00:00',true,'Sunnyvale Spartans','Graham Gym'],
     ['2026-10-01T17:00:00',false,'Crittenden Panthers','Crittenden Gym']
   ]},
-  softball: {label:'Girls Softball', sourceUrl:'https://valleyal.org/schedule/722499/6th7th8th-grade', games:[
+  softball: {label:'Girls Softball', sourceUrl:'https://valleyal.org/schedule/722499/6th7th8th-grade', practice:{start:'2026-08-24',end:'2026-10-01',days:[1,2,3,4],startTime:'15:30',endTime:'17:00',venue:'Graham Field',note:'3:30–5:00 PM on non-game days. No Friday practices.'}, games:[
     ['2026-09-01T16:00:00',true,'Cupertino Bears','Graham Field'],
     ['2026-09-03T16:00:00',true,'Hyde Lions','Graham Field'],
     ['2026-09-09T16:00:00',false,'Miller Mustangs','Miller Field'],
@@ -45,7 +45,7 @@ window.GRAHAM_SCHEDULES = {
     ['2026-09-29T16:00:00',true,'Blach Falcons','Graham Field'],
     ['2026-10-01T16:00:00',false,'Crittenden Panthers','Critt.. Field']
   ]},
-  xc: {label:'Cross Country', sourceUrl:'https://valleyal.org/schedule/722106/6th-7th-8th', detailsUrl:'https://docs.google.com/document/d/1yy3pz2CSLJ7uFr58YyOsiyQZhwhbEnFc-or73bLtZkI/edit?tab=t.0', games:[
+  xc: {label:'Cross Country', sourceUrl:'https://valleyal.org/schedule/722106/6th-7th-8th', detailsUrl:'https://docs.google.com/document/d/1yy3pz2CSLJ7uFr58YyOsiyQZhwhbEnFc-or73bLtZkI/edit?tab=t.0', practice:{start:'2026-08-24',end:'2026-10-07',days:[1,2,3,4],startTime:'15:30',endTime:'17:00',venue:'Graham Middle School',note:'3:30–5:00 PM on non-meet days. No Friday practices.'}, games:[
     ['2026-09-09T16:00:00',false,'VAL Meet','Hyde Field'],
     ['2026-09-16T16:00:00',false,'VAL Meet','Sunnyvale Field'],
     ['2026-09-23T16:00:00',false,'VAL Meet','Cupertino Field'],
