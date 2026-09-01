@@ -1,4 +1,4 @@
-const CACHE='graham-fall-v2';
+const CACHE='graham-fall-v3';
 const ASSETS=['./','./index.html','./static-schedules.js','./manifest.webmanifest','./assets/graham-bears-logo.png','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)))});
 self.addEventListener('activate',e=>e.waitUntil(Promise.all([self.clients.claim(),caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))])));

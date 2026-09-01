@@ -196,6 +196,11 @@
       border-radius:14px;padding:12px 14px;font-weight:800;margin-top:4px;
     }
 
+  
+    .google-calendar-help{display:none;margin-top:12px;padding:14px;border:1px solid var(--line);border-radius:14px;background:#fafafa}
+    .google-calendar-help.open{display:block}
+    .google-calendar-help ol{margin:8px 0 12px;padding-left:20px;color:var(--ink);font-size:13px;line-height:1.45}
+    .calendar-copy-status{min-height:18px;margin-top:8px;color:var(--muted);font-size:12px;text-align:center}
   </style>
 </head>
 <body>
@@ -381,6 +386,7 @@ function renderLoading(){
   renderTeams();
 }
 
+
 function teamCalendarRelativePath(){
   return `calendars/${encodeURIComponent(state.selected)}.ics`;
 }
@@ -390,22 +396,43 @@ function teamCalendarHttpsUrl(){
 function appleCalendarUrl(){
   return teamCalendarHttpsUrl().replace(/^https:/i,"webcal:");
 }
-function googleCalendarSubscribeUrl(){
-  return "https://calendar.google.com/calendar/u/0/r?cid=" + encodeURIComponent(teamCalendarHttpsUrl());
-}
 function openCalendarMenu(){
-  const title = document.getElementById("calendarMenuTitle");
-  const apple = document.getElementById("appleCalendarLink");
-  const google = document.getElementById("googleCalendarLink");
-  if(title) title.textContent = `Add ${selectedLabel()} Calendar`;
-  if(apple) apple.href = appleCalendarUrl();
-  if(google) google.href = googleCalendarSubscribeUrl();
-  const backdrop = document.getElementById("calendarMenuBackdrop");
-  if(backdrop) backdrop.classList.add("open");
+  const title=document.getElementById("calendarMenuTitle");
+  const apple=document.getElementById("appleCalendarLink");
+  const help=document.getElementById("googleCalendarHelp");
+  const status=document.getElementById("calendarCopyStatus");
+  const fallback=document.getElementById("calendarUrlFallback");
+  if(title) title.textContent=`Add ${selectedLabel()} Calendar`;
+  if(apple) apple.href=appleCalendarUrl();
+  if(help) help.classList.remove("open");
+  if(status) status.textContent="";
+  if(fallback){fallback.textContent="";fallback.style.display="none";}
+  document.getElementById("calendarMenuBackdrop")?.classList.add("open");
 }
 function closeCalendarMenu(){
-  const backdrop = document.getElementById("calendarMenuBackdrop");
-  if(backdrop) backdrop.classList.remove("open");
+  document.getElementById("calendarMenuBackdrop")?.classList.remove("open");
+}
+function showGoogleCalendarHelp(){
+  document.getElementById("googleCalendarHelp")?.classList.toggle("open");
+}
+async function copyGoogleCalendarUrl(){
+  const url=teamCalendarHttpsUrl();
+  const status=document.getElementById("calendarCopyStatus");
+  try{
+    if(navigator.clipboard && window.isSecureContext){
+      await navigator.clipboard.writeText(url);
+    }else{
+      const ta=document.createElement("textarea");
+      ta.value=url; ta.style.position="fixed"; ta.style.opacity="0";
+      document.body.appendChild(ta); ta.focus(); ta.select();
+      document.execCommand("copy"); ta.remove();
+    }
+    if(status) status.textContent="Calendar URL copied.";
+  }catch(e){
+    if(status) status.textContent="Copy failed. Press and hold the URL below to copy it.";
+    const fallback=document.getElementById("calendarUrlFallback");
+    if(fallback){fallback.textContent=url;fallback.style.display="block";}
+  }
 }
 
 function render(){
@@ -484,7 +511,19 @@ loadTeam();
     <h3 id="calendarMenuTitle">Add Team Calendar</h3>
     <p>Subscribe to this team’s games and practices.</p>
     <a id="appleCalendarLink" class="calendar-choice apple" href="#">Apple Calendar</a>
-    <a id="googleCalendarLink" class="calendar-choice google" href="#" target="_blank" rel="noopener">Google Calendar</a>
+    <button class="calendar-choice google" type="button" onclick="showGoogleCalendarHelp()">Google Calendar</button>
+    <div class="google-calendar-help" id="googleCalendarHelp">
+      <strong>Google Calendar subscription</strong>
+      <ol>
+        <li>On a computer, open Google Calendar.</li>
+        <li>Next to <strong>Other calendars</strong>, click <strong>+</strong>.</li>
+        <li>Choose <strong>From URL</strong>.</li>
+        <li>Paste the calendar URL and click <strong>Add calendar</strong>.</li>
+      </ol>
+      <button class="calendar-choice google" type="button" onclick="copyGoogleCalendarUrl()">Copy Calendar URL</button>
+      <div id="calendarCopyStatus" class="calendar-copy-status"></div>
+      <div id="calendarUrlFallback" class="calendar-copy-status" style="display:none;word-break:break-all"></div>
+    </div>
     <button class="calendar-close" onclick="closeCalendarMenu()">Cancel</button>
   </div>
 </div>

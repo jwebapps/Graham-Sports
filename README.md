@@ -92,3 +92,6 @@ The Add Team Calendar button offers Apple Calendar and Google Calendar subscript
 
 ## Results sync
 The GitHub Actions results sync is limited to the five active fall team IDs.
+
+
+Google Calendar: the mobile button now shows desktop subscription instructions and copies the hosted ICS URL. Once added on Google Calendar web, it syncs to Android.
