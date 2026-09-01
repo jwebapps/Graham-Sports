@@ -1,8 +1,108 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": null,
+  "fetchedAt": "2026-09-01T02:26:05.412Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [],
-  "standings": []
+  "standings": [
+    {
+      "place": "",
+      "team": "Blach Falcons",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Columbia Bulldogs",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Crittenden Panthers",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Cupertino Bears",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Egan Vikings",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Graham Bears",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Hyde Lions",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Kennedy Cougars",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Lawson Lightning",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Miller Mustangs",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "",
+      "team": "Sunnyvale Spartans",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    }
+  ]
 }
