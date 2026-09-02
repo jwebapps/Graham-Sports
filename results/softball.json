@@ -1,13 +1,13 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-02T02:39:14.474Z",
+  "fetchedAt": "2026-09-02T08:28:24.419Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [],
   "standings": [
     {
       "place": "1",
-      "team": "Crittenden Panthers",
+      "team": "Miller Mustangs",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -16,6 +16,15 @@
     },
     {
       "place": "2",
+      "team": "Crittenden Panthers",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": "1.000",
+      "streak": "Won 1"
+    },
+    {
+      "place": "3",
       "team": "Kennedy Cougars",
       "w": 0,
       "l": 0,
@@ -24,25 +33,7 @@
       "streak": "--"
     },
     {
-      "place": "3",
-      "team": "Miller Mustangs",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
       "place": "4",
-      "team": "Egan Vikings",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "5",
       "team": "Columbia Bulldogs",
       "w": 0,
       "l": 0,
@@ -51,7 +42,7 @@
       "streak": "--"
     },
     {
-      "place": "6",
+      "place": "5",
       "team": "Hyde Lions",
       "w": 0,
       "l": 0,
@@ -60,7 +51,7 @@
       "streak": "--"
     },
     {
-      "place": "7",
+      "place": "6",
       "team": "Cupertino Bears",
       "w": 0,
       "l": 0,
@@ -69,7 +60,7 @@
       "streak": "--"
     },
     {
-      "place": "8",
+      "place": "7",
       "team": "Graham Bears",
       "w": 0,
       "l": 0,
@@ -78,7 +69,7 @@
       "streak": "--"
     },
     {
-      "place": "9",
+      "place": "8",
       "team": "Blach Falcons",
       "w": 0,
       "l": 0,
@@ -87,13 +78,22 @@
       "streak": "--"
     },
     {
-      "place": "10",
+      "place": "9",
       "team": "Redwood Griffins",
       "w": 0,
       "l": 0,
       "t": 0,
       "pct": "--",
       "streak": "--"
+    },
+    {
+      "place": "10",
+      "team": "Egan Vikings",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": "0.000",
+      "streak": "Lost 1"
     },
     {
       "place": "11",

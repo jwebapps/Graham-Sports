@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-02T00:34:46.967Z",
+  "fetchedAt": "2026-09-02T08:28:23.151Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [],
   "standings": [
@@ -16,6 +16,15 @@
     },
     {
       "place": "2",
+      "team": "Egan Vikings",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": "1.000",
+      "streak": "Won 1"
+    },
+    {
+      "place": "3",
       "team": "Columbia Bulldogs",
       "w": 0,
       "l": 0,
@@ -24,7 +33,7 @@
       "streak": "--"
     },
     {
-      "place": "3",
+      "place": "4",
       "team": "Hyde Lions",
       "w": 0,
       "l": 0,
@@ -33,25 +42,7 @@
       "streak": "--"
     },
     {
-      "place": "4",
-      "team": "Egan Vikings",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
       "place": "5",
-      "team": "Miller Mustangs",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "6",
       "team": "Kennedy Cougars",
       "w": 0,
       "l": 0,
@@ -60,7 +51,7 @@
       "streak": "--"
     },
     {
-      "place": "7",
+      "place": "6",
       "team": "Blach Falcons",
       "w": 0,
       "l": 0,
@@ -69,7 +60,7 @@
       "streak": "--"
     },
     {
-      "place": "8",
+      "place": "7",
       "team": "Lawson Lightning",
       "w": 0,
       "l": 0,
@@ -78,7 +69,7 @@
       "streak": "--"
     },
     {
-      "place": "9",
+      "place": "8",
       "team": "Cupertino Bears",
       "w": 0,
       "l": 0,
@@ -87,7 +78,7 @@
       "streak": "--"
     },
     {
-      "place": "10",
+      "place": "9",
       "team": "Graham Bears",
       "w": 0,
       "l": 0,
@@ -96,8 +87,17 @@
       "streak": "--"
     },
     {
-      "place": "11",
+      "place": "10",
       "team": "Crittenden Panthers",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": "0.000",
+      "streak": "Lost 1"
+    },
+    {
+      "place": "11",
+      "team": "Miller Mustangs",
       "w": 0,
       "l": 1,
       "t": 0,
