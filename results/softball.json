@@ -1,75 +1,21 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-01T02:26:05.880Z",
+  "fetchedAt": "2026-09-02T02:39:14.474Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [],
   "standings": [
     {
-      "place": "",
-      "team": "Blach Falcons",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
-      "team": "Columbia Bulldogs",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
+      "place": "1",
       "team": "Crittenden Panthers",
-      "w": 0,
+      "w": 1,
       "l": 0,
       "t": 0,
-      "pct": "--",
-      "streak": "--"
+      "pct": "1.000",
+      "streak": "Won 1"
     },
     {
-      "place": "",
-      "team": "Cupertino Bears",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
-      "team": "Egan Vikings",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
-      "team": "Graham Bears",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
-      "team": "Hyde Lions",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
+      "place": "2",
       "team": "Kennedy Cougars",
       "w": 0,
       "l": 0,
@@ -78,7 +24,7 @@
       "streak": "--"
     },
     {
-      "place": "",
+      "place": "3",
       "team": "Miller Mustangs",
       "w": 0,
       "l": 0,
@@ -87,7 +33,61 @@
       "streak": "--"
     },
     {
-      "place": "",
+      "place": "4",
+      "team": "Egan Vikings",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "5",
+      "team": "Columbia Bulldogs",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "6",
+      "team": "Hyde Lions",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "7",
+      "team": "Cupertino Bears",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "8",
+      "team": "Graham Bears",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "9",
+      "team": "Blach Falcons",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "10",
       "team": "Redwood Griffins",
       "w": 0,
       "l": 0,
@@ -96,13 +96,13 @@
       "streak": "--"
     },
     {
-      "place": "",
+      "place": "11",
       "team": "Sunnyvale Spartans",
       "w": 0,
-      "l": 0,
+      "l": 1,
       "t": 0,
-      "pct": "--",
-      "streak": "--"
+      "pct": "0.000",
+      "streak": "Lost 1"
     }
   ]
 }
