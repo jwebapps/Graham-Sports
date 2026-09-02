@@ -1,75 +1,21 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-01T02:26:05.412Z",
+  "fetchedAt": "2026-09-02T01:23:48.801Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [],
   "standings": [
     {
-      "place": "",
-      "team": "Blach Falcons",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
-      "team": "Columbia Bulldogs",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
-      "team": "Crittenden Panthers",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
-      "team": "Cupertino Bears",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
+      "place": "1",
       "team": "Egan Vikings",
-      "w": 0,
+      "w": 1,
       "l": 0,
       "t": 0,
-      "pct": "--",
-      "streak": "--"
+      "pct": "1.000",
+      "streak": "Won 1"
     },
     {
-      "place": "",
-      "team": "Graham Bears",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
-      "team": "Hyde Lions",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
+      "place": "2",
       "team": "Kennedy Cougars",
       "w": 0,
       "l": 0,
@@ -78,7 +24,16 @@
       "streak": "--"
     },
     {
-      "place": "",
+      "place": "3",
+      "team": "Blach Falcons",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "4",
       "team": "Lawson Lightning",
       "w": 0,
       "l": 0,
@@ -87,8 +42,8 @@
       "streak": "--"
     },
     {
-      "place": "",
-      "team": "Miller Mustangs",
+      "place": "5",
+      "team": "Cupertino Bears",
       "w": 0,
       "l": 0,
       "t": 0,
@@ -96,13 +51,58 @@
       "streak": "--"
     },
     {
-      "place": "",
+      "place": "6",
+      "team": "Graham Bears",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "7",
+      "team": "Columbia Bulldogs",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "8",
+      "team": "Hyde Lions",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "9",
+      "team": "Crittenden Panthers",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "10",
       "team": "Sunnyvale Spartans",
       "w": 0,
       "l": 0,
       "t": 0,
       "pct": "--",
       "streak": "--"
+    },
+    {
+      "place": "11",
+      "team": "Miller Mustangs",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": "0.000",
+      "streak": "Lost 1"
     }
   ]
 }
