@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-02T15:31:11.303Z",
+  "fetchedAt": "2026-09-02T16:28:21.902Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [],
   "standings": [
@@ -16,6 +16,15 @@
     },
     {
       "place": "2",
+      "team": "Hyde Lions",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": "1.000",
+      "streak": "Won 1"
+    },
+    {
+      "place": "3",
       "team": "Miller Mustangs",
       "w": 0,
       "l": 0,
@@ -24,7 +33,7 @@
       "streak": "--"
     },
     {
-      "place": "3",
+      "place": "4",
       "team": "Kennedy Cougars",
       "w": 0,
       "l": 0,
@@ -33,7 +42,7 @@
       "streak": "--"
     },
     {
-      "place": "4",
+      "place": "5",
       "team": "Lawson Lightning",
       "w": 0,
       "l": 0,
@@ -42,7 +51,7 @@
       "streak": "--"
     },
     {
-      "place": "5",
+      "place": "6",
       "team": "Cupertino Bears",
       "w": 0,
       "l": 0,
@@ -51,7 +60,7 @@
       "streak": "--"
     },
     {
-      "place": "6",
+      "place": "7",
       "team": "Graham Bears",
       "w": 0,
       "l": 0,
@@ -60,26 +69,17 @@
       "streak": "--"
     },
     {
-      "place": "7",
-      "team": "Columbia Bulldogs",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
       "place": "8",
-      "team": "Hyde Lions",
+      "team": "Crittenden Panthers",
       "w": 0,
-      "l": 0,
+      "l": 1,
       "t": 0,
-      "pct": "--",
-      "streak": "--"
+      "pct": "0.000",
+      "streak": "Lost 1"
     },
     {
       "place": "9",
-      "team": "Crittenden Panthers",
+      "team": "Columbia Bulldogs",
       "w": 0,
       "l": 1,
       "t": 0,
