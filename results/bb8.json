@@ -1,13 +1,13 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-02T14:27:25.435Z",
+  "fetchedAt": "2026-09-02T15:31:10.741Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [],
   "standings": [
     {
       "place": "1",
-      "team": "Sunnyvale Spartans",
+      "team": "Hyde Lions",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -16,7 +16,7 @@
     },
     {
       "place": "2",
-      "team": "Egan Vikings",
+      "team": "Sunnyvale Spartans",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -25,7 +25,7 @@
     },
     {
       "place": "3",
-      "team": "Blach Falcons",
+      "team": "Egan Vikings",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -34,24 +34,15 @@
     },
     {
       "place": "4",
-      "team": "Columbia Bulldogs",
-      "w": 0,
+      "team": "Blach Falcons",
+      "w": 1,
       "l": 0,
       "t": 0,
-      "pct": "--",
-      "streak": "--"
+      "pct": "1.000",
+      "streak": "Won 1"
     },
     {
       "place": "5",
-      "team": "Hyde Lions",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "6",
       "team": "Kennedy Cougars",
       "w": 0,
       "l": 0,
@@ -60,7 +51,7 @@
       "streak": "--"
     },
     {
-      "place": "7",
+      "place": "6",
       "team": "Cupertino Bears",
       "w": 0,
       "l": 0,
@@ -69,13 +60,22 @@
       "streak": "--"
     },
     {
-      "place": "8",
+      "place": "7",
       "team": "Graham Bears",
       "w": 0,
       "l": 0,
       "t": 0,
       "pct": "--",
       "streak": "--"
+    },
+    {
+      "place": "8",
+      "team": "Columbia Bulldogs",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": "0.000",
+      "streak": "Lost 1"
     },
     {
       "place": "9",

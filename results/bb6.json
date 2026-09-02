@@ -1,75 +1,21 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-01T02:26:05.600Z",
+  "fetchedAt": "2026-09-02T15:31:11.303Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [],
   "standings": [
     {
-      "place": "",
-      "team": "Columbia Bulldogs",
-      "w": 0,
+      "place": "1",
+      "team": "Sunnyvale Spartans",
+      "w": 1,
       "l": 0,
       "t": 0,
-      "pct": "--",
-      "streak": "--"
+      "pct": "1.000",
+      "streak": "Won 1"
     },
     {
-      "place": "",
-      "team": "Crittenden Panthers",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
-      "team": "Cupertino Bears",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
-      "team": "Graham Bears",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
-      "team": "Hyde Lions",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
-      "team": "Kennedy Cougars",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
-      "team": "Lawson Lightning",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "",
+      "place": "2",
       "team": "Miller Mustangs",
       "w": 0,
       "l": 0,
@@ -78,13 +24,67 @@
       "streak": "--"
     },
     {
-      "place": "",
-      "team": "Sunnyvale Spartans",
+      "place": "3",
+      "team": "Kennedy Cougars",
       "w": 0,
       "l": 0,
       "t": 0,
       "pct": "--",
       "streak": "--"
+    },
+    {
+      "place": "4",
+      "team": "Lawson Lightning",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "5",
+      "team": "Cupertino Bears",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "6",
+      "team": "Graham Bears",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "7",
+      "team": "Columbia Bulldogs",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "8",
+      "team": "Hyde Lions",
+      "w": 0,
+      "l": 0,
+      "t": 0,
+      "pct": "--",
+      "streak": "--"
+    },
+    {
+      "place": "9",
+      "team": "Crittenden Panthers",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": "0.000",
+      "streak": "Lost 1"
     }
   ]
 }
