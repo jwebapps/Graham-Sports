@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-02T08:28:24.419Z",
+  "fetchedAt": "2026-09-02T14:27:26.293Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [],
   "standings": [
@@ -16,7 +16,7 @@
     },
     {
       "place": "2",
-      "team": "Crittenden Panthers",
+      "team": "Redwood Griffins",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -25,6 +25,15 @@
     },
     {
       "place": "3",
+      "team": "Crittenden Panthers",
+      "w": 1,
+      "l": 0,
+      "t": 0,
+      "pct": "1.000",
+      "streak": "Won 1"
+    },
+    {
+      "place": "4",
       "team": "Kennedy Cougars",
       "w": 0,
       "l": 0,
@@ -33,7 +42,7 @@
       "streak": "--"
     },
     {
-      "place": "4",
+      "place": "5",
       "team": "Columbia Bulldogs",
       "w": 0,
       "l": 0,
@@ -42,7 +51,7 @@
       "streak": "--"
     },
     {
-      "place": "5",
+      "place": "6",
       "team": "Hyde Lions",
       "w": 0,
       "l": 0,
@@ -51,7 +60,7 @@
       "streak": "--"
     },
     {
-      "place": "6",
+      "place": "7",
       "team": "Cupertino Bears",
       "w": 0,
       "l": 0,
@@ -60,7 +69,7 @@
       "streak": "--"
     },
     {
-      "place": "7",
+      "place": "8",
       "team": "Graham Bears",
       "w": 0,
       "l": 0,
@@ -69,26 +78,17 @@
       "streak": "--"
     },
     {
-      "place": "8",
-      "team": "Blach Falcons",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
       "place": "9",
-      "team": "Redwood Griffins",
+      "team": "Egan Vikings",
       "w": 0,
-      "l": 0,
+      "l": 1,
       "t": 0,
-      "pct": "--",
-      "streak": "--"
+      "pct": "0.000",
+      "streak": "Lost 1"
     },
     {
       "place": "10",
-      "team": "Egan Vikings",
+      "team": "Blach Falcons",
       "w": 0,
       "l": 1,
       "t": 0,
