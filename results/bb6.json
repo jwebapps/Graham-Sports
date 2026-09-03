@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-02T21:25:05.746Z",
+  "fetchedAt": "2026-09-03T00:36:45.569Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -16,11 +16,11 @@
     {
       "place": "1",
       "team": "Sunnyvale Spartans",
-      "w": 1,
+      "w": 2,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 1"
+      "streak": "Won 2"
     },
     {
       "place": "2",
@@ -51,7 +51,7 @@
     },
     {
       "place": "5",
-      "team": "Kennedy Cougars",
+      "team": "Lawson Lightning",
       "w": 0,
       "l": 0,
       "t": 0,
@@ -60,12 +60,12 @@
     },
     {
       "place": "6",
-      "team": "Lawson Lightning",
+      "team": "Kennedy Cougars",
       "w": 0,
-      "l": 0,
+      "l": 1,
       "t": 0,
-      "pct": "--",
-      "streak": "--"
+      "pct": "0.000",
+      "streak": "Lost 1"
     },
     {
       "place": "7",
