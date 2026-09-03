@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-02T23:24:30.428Z",
+  "fetchedAt": "2026-09-03T05:08:44.499Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -15,7 +15,7 @@
   "standings": [
     {
       "place": "1",
-      "team": "Blach Falcons",
+      "team": "Kennedy Cougars",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -24,7 +24,7 @@
     },
     {
       "place": "2",
-      "team": "Cupertino Bears",
+      "team": "Blach Falcons",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -33,7 +33,7 @@
     },
     {
       "place": "3",
-      "team": "Crittenden Panthers",
+      "team": "Cupertino Bears",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -42,7 +42,7 @@
     },
     {
       "place": "4",
-      "team": "Egan Vikings",
+      "team": "Crittenden Panthers",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -51,12 +51,12 @@
     },
     {
       "place": "5",
-      "team": "Kennedy Cougars",
-      "w": 0,
+      "team": "Egan Vikings",
+      "w": 1,
       "l": 0,
       "t": 0,
-      "pct": "--",
-      "streak": "--"
+      "pct": "1.000",
+      "streak": "Won 1"
     },
     {
       "place": "6",
@@ -96,7 +96,7 @@
     },
     {
       "place": "10",
-      "team": "Sunnyvale Spartans",
+      "team": "Miller Mustangs",
       "w": 0,
       "l": 1,
       "t": 0,
@@ -105,12 +105,12 @@
     },
     {
       "place": "11",
-      "team": "Miller Mustangs",
+      "team": "Sunnyvale Spartans",
       "w": 0,
-      "l": 1,
+      "l": 2,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 1"
+      "streak": "Lost 2"
     }
   ]
 }

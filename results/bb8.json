@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-02T21:25:05.193Z",
+  "fetchedAt": "2026-09-03T05:08:44.183Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "place": "2",
-      "team": "Sunnyvale Spartans",
+      "team": "Egan Vikings",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -33,7 +33,7 @@
     },
     {
       "place": "3",
-      "team": "Egan Vikings",
+      "team": "Kennedy Cougars",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -60,12 +60,12 @@
     },
     {
       "place": "6",
-      "team": "Kennedy Cougars",
-      "w": 0,
-      "l": 0,
+      "team": "Sunnyvale Spartans",
+      "w": 1,
+      "l": 1,
       "t": 0,
-      "pct": "--",
-      "streak": "--"
+      "pct": "0.500",
+      "streak": "Lost 1"
     },
     {
       "place": "7",
