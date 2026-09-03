@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-03T05:08:44.499Z",
+  "fetchedAt": "2026-09-03T16:27:39.447Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -42,7 +42,7 @@
     },
     {
       "place": "4",
-      "team": "Crittenden Panthers",
+      "team": "Hyde Lions",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -51,7 +51,7 @@
     },
     {
       "place": "5",
-      "team": "Egan Vikings",
+      "team": "Crittenden Panthers",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -60,24 +60,15 @@
     },
     {
       "place": "6",
-      "team": "Columbia Bulldogs",
-      "w": 0,
+      "team": "Egan Vikings",
+      "w": 1,
       "l": 0,
       "t": 0,
-      "pct": "--",
-      "streak": "--"
+      "pct": "1.000",
+      "streak": "Won 1"
     },
     {
       "place": "7",
-      "team": "Hyde Lions",
-      "w": 0,
-      "l": 0,
-      "t": 0,
-      "pct": "--",
-      "streak": "--"
-    },
-    {
-      "place": "8",
       "team": "Lawson Lightning",
       "w": 0,
       "l": 1,
@@ -86,8 +77,17 @@
       "streak": "Lost 1"
     },
     {
-      "place": "9",
+      "place": "8",
       "team": "Graham Bears",
+      "w": 0,
+      "l": 1,
+      "t": 0,
+      "pct": "0.000",
+      "streak": "Lost 1"
+    },
+    {
+      "place": "9",
+      "team": "Columbia Bulldogs",
       "w": 0,
       "l": 1,
       "t": 0,
