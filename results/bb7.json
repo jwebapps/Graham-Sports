@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-04T16:27:22.566Z",
+  "fetchedAt": "2026-09-04T17:24:10.423Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -14,8 +14,8 @@
     {
       "date": "2026-09-03T16:00:00",
       "opp": "Hyde Lions",
-      "us": 31,
-      "them": 39,
+      "us": 32,
+      "them": 40,
       "status": "final"
     }
   ],
