@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-04T02:26:26.818Z",
+  "fetchedAt": "2026-09-04T15:27:28.009Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -69,12 +69,12 @@
     },
     {
       "place": "7",
-      "team": "Lawson Lightning",
-      "w": 0,
+      "team": "Columbia Bulldogs",
+      "w": 1,
       "l": 1,
       "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 1"
+      "pct": "0.500",
+      "streak": "Won 1"
     },
     {
       "place": "8",
@@ -87,7 +87,7 @@
     },
     {
       "place": "9",
-      "team": "Columbia Bulldogs",
+      "team": "Miller Mustangs",
       "w": 0,
       "l": 1,
       "t": 0,
@@ -96,12 +96,12 @@
     },
     {
       "place": "10",
-      "team": "Miller Mustangs",
+      "team": "Lawson Lightning",
       "w": 0,
-      "l": 1,
+      "l": 2,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 1"
+      "streak": "Lost 2"
     },
     {
       "place": "11",
