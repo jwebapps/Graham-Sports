@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-04T02:26:26.502Z",
+  "fetchedAt": "2026-09-04T18:27:17.001Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -60,20 +60,20 @@
     },
     {
       "place": "6",
+      "team": "Lawson Lightning",
+      "w": 1,
+      "l": 1,
+      "t": 0,
+      "pct": "0.500",
+      "streak": "Won 1"
+    },
+    {
+      "place": "7",
       "team": "Cupertino Bears",
       "w": 1,
       "l": 1,
       "t": 0,
       "pct": "0.500",
-      "streak": "Lost 1"
-    },
-    {
-      "place": "7",
-      "team": "Columbia Bulldogs",
-      "w": 0,
-      "l": 1,
-      "t": 0,
-      "pct": "0.000",
       "streak": "Lost 1"
     },
     {
@@ -96,7 +96,7 @@
     },
     {
       "place": "10",
-      "team": "Lawson Lightning",
+      "team": "Graham Bears",
       "w": 0,
       "l": 1,
       "t": 0,
@@ -105,12 +105,12 @@
     },
     {
       "place": "11",
-      "team": "Graham Bears",
+      "team": "Columbia Bulldogs",
       "w": 0,
-      "l": 1,
+      "l": 2,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 1"
+      "streak": "Lost 2"
     }
   ]
 }
