@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-03T00:36:45.569Z",
+  "fetchedAt": "2026-09-04T00:35:37.040Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "place": "2",
-      "team": "Cupertino Bears",
+      "team": "Miller Mustangs",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -33,7 +33,7 @@
     },
     {
       "place": "3",
-      "team": "Hyde Lions",
+      "team": "Cupertino Bears",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -42,12 +42,12 @@
     },
     {
       "place": "4",
-      "team": "Miller Mustangs",
-      "w": 0,
+      "team": "Hyde Lions",
+      "w": 1,
       "l": 0,
       "t": 0,
-      "pct": "--",
-      "streak": "--"
+      "pct": "1.000",
+      "streak": "Won 1"
     },
     {
       "place": "5",
@@ -69,15 +69,6 @@
     },
     {
       "place": "7",
-      "team": "Crittenden Panthers",
-      "w": 0,
-      "l": 1,
-      "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 1"
-    },
-    {
-      "place": "8",
       "team": "Graham Bears",
       "w": 0,
       "l": 1,
@@ -86,13 +77,22 @@
       "streak": "Lost 1"
     },
     {
-      "place": "9",
+      "place": "8",
       "team": "Columbia Bulldogs",
       "w": 0,
       "l": 1,
       "t": 0,
       "pct": "0.000",
       "streak": "Lost 1"
+    },
+    {
+      "place": "9",
+      "team": "Crittenden Panthers",
+      "w": 0,
+      "l": 2,
+      "t": 0,
+      "pct": "0.000",
+      "streak": "Lost 2"
     }
   ]
 }
