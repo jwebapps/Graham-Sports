@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-04T13:27:20.061Z",
+  "fetchedAt": "2026-09-04T14:26:17.495Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -33,6 +33,15 @@
     },
     {
       "place": "3",
+      "team": "Kennedy Cougars",
+      "w": 1,
+      "l": 0,
+      "t": 1,
+      "pct": "0.750",
+      "streak": "Won 1"
+    },
+    {
+      "place": "4",
       "team": "Columbia Bulldogs",
       "w": 1,
       "l": 0,
@@ -41,22 +50,13 @@
       "streak": "Won 1"
     },
     {
-      "place": "4",
+      "place": "5",
       "team": "Redwood Griffins",
       "w": 1,
       "l": 0,
       "t": 0,
       "pct": "1.000",
       "streak": "Won 1"
-    },
-    {
-      "place": "5",
-      "team": "Kennedy Cougars",
-      "w": 0,
-      "l": 0,
-      "t": 1,
-      "pct": "0.500",
-      "streak": "Tied 1"
     },
     {
       "place": "6",
@@ -87,15 +87,6 @@
     },
     {
       "place": "9",
-      "team": "Blach Falcons",
-      "w": 0,
-      "l": 1,
-      "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 1"
-    },
-    {
-      "place": "10",
       "team": "Sunnyvale Spartans",
       "w": 0,
       "l": 1,
@@ -104,8 +95,17 @@
       "streak": "Tied 1"
     },
     {
-      "place": "11",
+      "place": "10",
       "team": "Egan Vikings",
+      "w": 0,
+      "l": 2,
+      "t": 0,
+      "pct": "0.000",
+      "streak": "Lost 2"
+    },
+    {
+      "place": "11",
+      "team": "Blach Falcons",
       "w": 0,
       "l": 2,
       "t": 0,
