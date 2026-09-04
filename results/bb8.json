@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-04T00:35:36.629Z",
+  "fetchedAt": "2026-09-04T02:26:26.502Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -24,6 +24,15 @@
     },
     {
       "place": "2",
+      "team": "Blach Falcons",
+      "w": 2,
+      "l": 0,
+      "t": 0,
+      "pct": "1.000",
+      "streak": "Won 2"
+    },
+    {
+      "place": "3",
       "team": "Hyde Lions",
       "w": 1,
       "l": 0,
@@ -32,26 +41,17 @@
       "streak": "Won 1"
     },
     {
-      "place": "3",
-      "team": "Kennedy Cougars",
-      "w": 1,
-      "l": 0,
-      "t": 0,
-      "pct": "1.000",
-      "streak": "Won 1"
-    },
-    {
       "place": "4",
-      "team": "Blach Falcons",
+      "team": "Sunnyvale Spartans",
       "w": 1,
-      "l": 0,
+      "l": 1,
       "t": 0,
-      "pct": "1.000",
-      "streak": "Won 1"
+      "pct": "0.500",
+      "streak": "Lost 1"
     },
     {
       "place": "5",
-      "team": "Sunnyvale Spartans",
+      "team": "Kennedy Cougars",
       "w": 1,
       "l": 1,
       "t": 0,
