@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-04T15:27:28.009Z",
+  "fetchedAt": "2026-09-04T16:27:22.566Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -9,6 +9,13 @@
       "opp": "Cupertino Bears",
       "us": 30,
       "them": 58,
+      "status": "final"
+    },
+    {
+      "date": "2026-09-03T16:00:00",
+      "opp": "Hyde Lions",
+      "us": 31,
+      "them": 39,
       "status": "final"
     }
   ],
@@ -24,16 +31,16 @@
     },
     {
       "place": "2",
-      "team": "Cupertino Bears",
-      "w": 1,
+      "team": "Hyde Lions",
+      "w": 2,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 1"
+      "streak": "Won 2"
     },
     {
       "place": "3",
-      "team": "Hyde Lions",
+      "team": "Cupertino Bears",
       "w": 1,
       "l": 0,
       "t": 0,
@@ -78,15 +85,6 @@
     },
     {
       "place": "8",
-      "team": "Graham Bears",
-      "w": 0,
-      "l": 1,
-      "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 1"
-    },
-    {
-      "place": "9",
       "team": "Miller Mustangs",
       "w": 0,
       "l": 1,
@@ -95,8 +93,17 @@
       "streak": "Lost 1"
     },
     {
-      "place": "10",
+      "place": "9",
       "team": "Lawson Lightning",
+      "w": 0,
+      "l": 2,
+      "t": 0,
+      "pct": "0.000",
+      "streak": "Lost 2"
+    },
+    {
+      "place": "10",
+      "team": "Graham Bears",
       "w": 0,
       "l": 2,
       "t": 0,
