@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-04T17:24:10.423Z",
+  "fetchedAt": "2026-09-08T20:27:08.920Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -40,12 +40,12 @@
     },
     {
       "place": "3",
-      "team": "Cupertino Bears",
-      "w": 1,
+      "team": "Egan Vikings",
+      "w": 2,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 1"
+      "streak": "Won 2"
     },
     {
       "place": "4",
@@ -58,16 +58,16 @@
     },
     {
       "place": "5",
-      "team": "Egan Vikings",
+      "team": "Kennedy Cougars",
       "w": 1,
-      "l": 0,
+      "l": 1,
       "t": 0,
-      "pct": "1.000",
-      "streak": "Won 1"
+      "pct": "0.500",
+      "streak": "Lost 1"
     },
     {
       "place": "6",
-      "team": "Kennedy Cougars",
+      "team": "Cupertino Bears",
       "w": 1,
       "l": 1,
       "t": 0,
