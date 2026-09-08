@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-04T18:27:17.001Z",
+  "fetchedAt": "2026-09-08T15:29:43.221Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -10,12 +10,19 @@
       "us": 46,
       "them": 51,
       "status": "final"
+    },
+    {
+      "date": "2026-09-03T16:00:00",
+      "opp": "Hyde Lions",
+      "us": 58,
+      "them": 74,
+      "status": "final"
     }
   ],
   "standings": [
     {
       "place": "1",
-      "team": "Egan Vikings",
+      "team": "Hyde Lions",
       "w": 2,
       "l": 0,
       "t": 0,
@@ -24,7 +31,7 @@
     },
     {
       "place": "2",
-      "team": "Blach Falcons",
+      "team": "Egan Vikings",
       "w": 2,
       "l": 0,
       "t": 0,
@@ -33,12 +40,12 @@
     },
     {
       "place": "3",
-      "team": "Hyde Lions",
-      "w": 1,
+      "team": "Blach Falcons",
+      "w": 2,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 1"
+      "streak": "Won 2"
     },
     {
       "place": "4",
@@ -96,16 +103,16 @@
     },
     {
       "place": "10",
-      "team": "Graham Bears",
+      "team": "Columbia Bulldogs",
       "w": 0,
-      "l": 1,
+      "l": 2,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 1"
+      "streak": "Lost 2"
     },
     {
       "place": "11",
-      "team": "Columbia Bulldogs",
+      "team": "Graham Bears",
       "w": 0,
       "l": 2,
       "t": 0,
