@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-09T00:37:25.198Z",
+  "fetchedAt": "2026-09-09T03:27:50.297Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -22,7 +22,7 @@
   "standings": [
     {
       "place": "1",
-      "team": "Hyde Lions",
+      "team": "Crittenden Panthers",
       "w": 2,
       "l": 0,
       "t": 0,
@@ -40,6 +40,15 @@
     },
     {
       "place": "3",
+      "team": "Kennedy Cougars",
+      "w": 2,
+      "l": 1,
+      "t": 0,
+      "pct": "0.667",
+      "streak": "Won 1"
+    },
+    {
+      "place": "4",
       "team": "Blach Falcons",
       "w": 2,
       "l": 1,
@@ -48,7 +57,7 @@
       "streak": "Lost 1"
     },
     {
-      "place": "4",
+      "place": "5",
       "team": "Cupertino Bears",
       "w": 2,
       "l": 1,
@@ -57,31 +66,22 @@
       "streak": "Won 1"
     },
     {
-      "place": "5",
-      "team": "Crittenden Panthers",
-      "w": 1,
-      "l": 0,
-      "t": 0,
-      "pct": "1.000",
-      "streak": "Won 1"
-    },
-    {
       "place": "6",
-      "team": "Kennedy Cougars",
-      "w": 1,
+      "team": "Hyde Lions",
+      "w": 2,
       "l": 1,
       "t": 0,
-      "pct": "0.500",
+      "pct": "0.667",
       "streak": "Lost 1"
     },
     {
       "place": "7",
       "team": "Columbia Bulldogs",
       "w": 1,
-      "l": 1,
+      "l": 2,
       "t": 0,
-      "pct": "0.500",
-      "streak": "Won 1"
+      "pct": "0.333",
+      "streak": "Lost 1"
     },
     {
       "place": "8",

@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-08T15:29:43.221Z",
+  "fetchedAt": "2026-09-09T03:27:49.989Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -58,6 +58,15 @@
     },
     {
       "place": "5",
+      "team": "Miller Mustangs",
+      "w": 1,
+      "l": 1,
+      "t": 0,
+      "pct": "0.500",
+      "streak": "Won 1"
+    },
+    {
+      "place": "6",
       "team": "Kennedy Cougars",
       "w": 1,
       "l": 1,
@@ -66,7 +75,7 @@
       "streak": "Lost 1"
     },
     {
-      "place": "6",
+      "place": "7",
       "team": "Lawson Lightning",
       "w": 1,
       "l": 1,
@@ -75,7 +84,7 @@
       "streak": "Won 1"
     },
     {
-      "place": "7",
+      "place": "8",
       "team": "Cupertino Bears",
       "w": 1,
       "l": 1,
@@ -84,26 +93,17 @@
       "streak": "Lost 1"
     },
     {
-      "place": "8",
-      "team": "Crittenden Panthers",
-      "w": 0,
-      "l": 1,
-      "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 1"
-    },
-    {
       "place": "9",
-      "team": "Miller Mustangs",
+      "team": "Columbia Bulldogs",
       "w": 0,
-      "l": 1,
+      "l": 2,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 1"
+      "streak": "Lost 2"
     },
     {
       "place": "10",
-      "team": "Columbia Bulldogs",
+      "team": "Crittenden Panthers",
       "w": 0,
       "l": 2,
       "t": 0,
