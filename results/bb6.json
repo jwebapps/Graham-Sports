@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-09T15:28:28.265Z",
+  "fetchedAt": "2026-09-09T19:25:36.702Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -49,6 +49,15 @@
     },
     {
       "place": "4",
+      "team": "Columbia Bulldogs",
+      "w": 2,
+      "l": 1,
+      "t": 0,
+      "pct": "0.667",
+      "streak": "Won 2"
+    },
+    {
+      "place": "5",
       "team": "Hyde Lions",
       "w": 2,
       "l": 1,
@@ -57,7 +66,7 @@
       "streak": "Won 1"
     },
     {
-      "place": "5",
+      "place": "6",
       "team": "Graham Bears",
       "w": 1,
       "l": 1,
@@ -66,17 +75,8 @@
       "streak": "Won 1"
     },
     {
-      "place": "6",
-      "team": "Columbia Bulldogs",
-      "w": 1,
-      "l": 1,
-      "t": 0,
-      "pct": "0.500",
-      "streak": "Won 1"
-    },
-    {
       "place": "7",
-      "team": "Kennedy Cougars",
+      "team": "Lawson Lightning",
       "w": 0,
       "l": 1,
       "t": 0,
@@ -85,12 +85,12 @@
     },
     {
       "place": "8",
-      "team": "Lawson Lightning",
+      "team": "Kennedy Cougars",
       "w": 0,
-      "l": 1,
+      "l": 2,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 1"
+      "streak": "Lost 2"
     },
     {
       "place": "9",
