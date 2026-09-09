@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-09T03:27:49.989Z",
+  "fetchedAt": "2026-09-09T14:28:26.940Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -22,25 +22,25 @@
   "standings": [
     {
       "place": "1",
-      "team": "Hyde Lions",
-      "w": 2,
+      "team": "Egan Vikings",
+      "w": 3,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 2"
+      "streak": "Won 3"
     },
     {
       "place": "2",
-      "team": "Egan Vikings",
-      "w": 2,
+      "team": "Blach Falcons",
+      "w": 3,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 2"
+      "streak": "Won 3"
     },
     {
       "place": "3",
-      "team": "Blach Falcons",
+      "team": "Hyde Lions",
       "w": 2,
       "l": 0,
       "t": 0,
@@ -78,19 +78,19 @@
       "place": "7",
       "team": "Lawson Lightning",
       "w": 1,
-      "l": 1,
+      "l": 2,
       "t": 0,
-      "pct": "0.500",
-      "streak": "Won 1"
+      "pct": "0.333",
+      "streak": "Lost 1"
     },
     {
       "place": "8",
       "team": "Cupertino Bears",
       "w": 1,
-      "l": 1,
+      "l": 2,
       "t": 0,
-      "pct": "0.500",
-      "streak": "Lost 1"
+      "pct": "0.333",
+      "streak": "Lost 2"
     },
     {
       "place": "9",
