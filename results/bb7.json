@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-09T15:28:28.039Z",
+  "fetchedAt": "2026-09-09T16:29:15.613Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -22,7 +22,7 @@
   "standings": [
     {
       "place": "1",
-      "team": "Egan Vikings",
+      "team": "Crittenden Panthers",
       "w": 3,
       "l": 0,
       "t": 0,
@@ -31,12 +31,12 @@
     },
     {
       "place": "2",
-      "team": "Crittenden Panthers",
-      "w": 2,
+      "team": "Egan Vikings",
+      "w": 3,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 2"
+      "streak": "Won 3"
     },
     {
       "place": "3",
@@ -85,15 +85,6 @@
     },
     {
       "place": "8",
-      "team": "Miller Mustangs",
-      "w": 0,
-      "l": 1,
-      "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 1"
-    },
-    {
-      "place": "9",
       "team": "Graham Bears",
       "w": 0,
       "l": 2,
@@ -102,8 +93,17 @@
       "streak": "Lost 2"
     },
     {
-      "place": "10",
+      "place": "9",
       "team": "Sunnyvale Spartans",
+      "w": 0,
+      "l": 2,
+      "t": 0,
+      "pct": "0.000",
+      "streak": "Lost 2"
+    },
+    {
+      "place": "10",
+      "team": "Miller Mustangs",
       "w": 0,
       "l": 2,
       "t": 0,
