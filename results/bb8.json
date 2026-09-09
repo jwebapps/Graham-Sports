@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-09T15:28:27.689Z",
+  "fetchedAt": "2026-09-09T17:26:49.412Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -49,6 +49,15 @@
     },
     {
       "place": "4",
+      "team": "Kennedy Cougars",
+      "w": 2,
+      "l": 1,
+      "t": 0,
+      "pct": "0.667",
+      "streak": "Won 1"
+    },
+    {
+      "place": "5",
       "team": "Sunnyvale Spartans",
       "w": 1,
       "l": 1,
@@ -57,22 +66,13 @@
       "streak": "Lost 1"
     },
     {
-      "place": "5",
+      "place": "6",
       "team": "Miller Mustangs",
       "w": 1,
       "l": 1,
       "t": 0,
       "pct": "0.500",
       "streak": "Won 1"
-    },
-    {
-      "place": "6",
-      "team": "Kennedy Cougars",
-      "w": 1,
-      "l": 1,
-      "t": 0,
-      "pct": "0.500",
-      "streak": "Lost 1"
     },
     {
       "place": "7",
@@ -94,7 +94,7 @@
     },
     {
       "place": "9",
-      "team": "Columbia Bulldogs",
+      "team": "Graham Bears",
       "w": 0,
       "l": 2,
       "t": 0,
@@ -103,12 +103,12 @@
     },
     {
       "place": "10",
-      "team": "Graham Bears",
+      "team": "Columbia Bulldogs",
       "w": 0,
-      "l": 2,
+      "l": 3,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 2"
+      "streak": "Lost 3"
     },
     {
       "place": "11",
