@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-08T15:29:43.665Z",
+  "fetchedAt": "2026-09-09T15:28:28.265Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -49,21 +49,21 @@
     },
     {
       "place": "4",
+      "team": "Hyde Lions",
+      "w": 2,
+      "l": 1,
+      "t": 0,
+      "pct": "0.667",
+      "streak": "Won 1"
+    },
+    {
+      "place": "5",
       "team": "Graham Bears",
       "w": 1,
       "l": 1,
       "t": 0,
       "pct": "0.500",
       "streak": "Won 1"
-    },
-    {
-      "place": "5",
-      "team": "Hyde Lions",
-      "w": 1,
-      "l": 1,
-      "t": 0,
-      "pct": "0.500",
-      "streak": "Lost 1"
     },
     {
       "place": "6",
@@ -96,10 +96,10 @@
       "place": "9",
       "team": "Crittenden Panthers",
       "w": 0,
-      "l": 2,
+      "l": 3,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 2"
+      "streak": "Lost 3"
     }
   ]
 }
