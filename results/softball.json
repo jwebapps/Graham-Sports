@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-11T01:25:55.142Z",
+  "fetchedAt": "2026-09-11T14:27:42.665Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -42,16 +42,16 @@
     },
     {
       "place": "4",
-      "team": "Miller Mustangs",
-      "w": 2,
+      "team": "Columbia Bulldogs",
+      "w": 3,
       "l": 1,
       "t": 0,
-      "pct": "0.667",
-      "streak": "Won 1"
+      "pct": "0.750",
+      "streak": "Won 2"
     },
     {
       "place": "5",
-      "team": "Columbia Bulldogs",
+      "team": "Miller Mustangs",
       "w": 2,
       "l": 1,
       "t": 0,
@@ -78,39 +78,39 @@
     },
     {
       "place": "8",
-      "team": "Egan Vikings",
-      "w": 0,
+      "team": "Blach Falcons",
+      "w": 1,
       "l": 3,
       "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 3"
+      "pct": "0.250",
+      "streak": "Won 1"
     },
     {
       "place": "9",
-      "team": "Hyde Lions",
-      "w": 0,
-      "l": 3,
-      "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 3"
-    },
-    {
-      "place": "10",
-      "team": "Blach Falcons",
-      "w": 0,
-      "l": 3,
-      "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 3"
-    },
-    {
-      "place": "11",
       "team": "Sunnyvale Spartans",
       "w": 0,
       "l": 3,
       "t": 1,
       "pct": "0.125",
       "streak": "Lost 2"
+    },
+    {
+      "place": "10",
+      "team": "Egan Vikings",
+      "w": 0,
+      "l": 4,
+      "t": 0,
+      "pct": "0.000",
+      "streak": "Lost 4"
+    },
+    {
+      "place": "11",
+      "team": "Hyde Lions",
+      "w": 0,
+      "l": 4,
+      "t": 0,
+      "pct": "0.000",
+      "streak": "Lost 4"
     }
   ]
 }
