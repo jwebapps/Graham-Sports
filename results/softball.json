@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-10T01:26:05.756Z",
+  "fetchedAt": "2026-09-11T00:33:46.366Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -16,11 +16,11 @@
     {
       "place": "1",
       "team": "Cupertino Bears",
-      "w": 3,
+      "w": 4,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 3"
+      "streak": "Won 4"
     },
     {
       "place": "2",
@@ -78,15 +78,6 @@
     },
     {
       "place": "8",
-      "team": "Sunnyvale Spartans",
-      "w": 0,
-      "l": 2,
-      "t": 1,
-      "pct": "0.167",
-      "streak": "Lost 1"
-    },
-    {
-      "place": "9",
       "team": "Egan Vikings",
       "w": 0,
       "l": 3,
@@ -95,7 +86,7 @@
       "streak": "Lost 3"
     },
     {
-      "place": "10",
+      "place": "9",
       "team": "Hyde Lions",
       "w": 0,
       "l": 3,
@@ -104,13 +95,22 @@
       "streak": "Lost 3"
     },
     {
-      "place": "11",
+      "place": "10",
       "team": "Blach Falcons",
       "w": 0,
       "l": 3,
       "t": 0,
       "pct": "0.000",
       "streak": "Lost 3"
+    },
+    {
+      "place": "11",
+      "team": "Sunnyvale Spartans",
+      "w": 0,
+      "l": 3,
+      "t": 1,
+      "pct": "0.125",
+      "streak": "Lost 2"
     }
   ]
 }

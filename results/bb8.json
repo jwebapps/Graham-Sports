@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-10T01:26:04.932Z",
+  "fetchedAt": "2026-09-11T00:33:45.558Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -56,21 +56,21 @@
     },
     {
       "place": "4",
+      "team": "Kennedy Cougars",
+      "w": 3,
+      "l": 1,
+      "t": 0,
+      "pct": "0.750",
+      "streak": "Won 2"
+    },
+    {
+      "place": "5",
       "team": "Miller Mustangs",
       "w": 2,
       "l": 1,
       "t": 0,
       "pct": "0.667",
       "streak": "Won 2"
-    },
-    {
-      "place": "5",
-      "team": "Kennedy Cougars",
-      "w": 2,
-      "l": 1,
-      "t": 0,
-      "pct": "0.667",
-      "streak": "Won 1"
     },
     {
       "place": "6",
@@ -110,7 +110,7 @@
     },
     {
       "place": "10",
-      "team": "Crittenden Panthers",
+      "team": "Graham Bears",
       "w": 0,
       "l": 3,
       "t": 0,
@@ -119,12 +119,12 @@
     },
     {
       "place": "11",
-      "team": "Graham Bears",
+      "team": "Crittenden Panthers",
       "w": 0,
-      "l": 3,
+      "l": 4,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 3"
+      "streak": "Lost 4"
     }
   ]
 }
