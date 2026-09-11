@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-11T14:27:42.055Z",
+  "fetchedAt": "2026-09-11T16:28:00.324Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -74,30 +74,30 @@
     },
     {
       "place": "6",
-      "team": "Sunnyvale Spartans",
-      "w": 1,
-      "l": 1,
+      "team": "Cupertino Bears",
+      "w": 2,
+      "l": 2,
       "t": 0,
       "pct": "0.500",
-      "streak": "Lost 1"
+      "streak": "Won 1"
     },
     {
       "place": "7",
+      "team": "Sunnyvale Spartans",
+      "w": 1,
+      "l": 2,
+      "t": 0,
+      "pct": "0.333",
+      "streak": "Lost 2"
+    },
+    {
+      "place": "8",
       "team": "Lawson Lightning",
       "w": 1,
       "l": 2,
       "t": 0,
       "pct": "0.333",
       "streak": "Lost 1"
-    },
-    {
-      "place": "8",
-      "team": "Cupertino Bears",
-      "w": 1,
-      "l": 2,
-      "t": 0,
-      "pct": "0.333",
-      "streak": "Lost 2"
     },
     {
       "place": "9",
