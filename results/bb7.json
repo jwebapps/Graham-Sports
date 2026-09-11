@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-11T02:27:31.263Z",
+  "fetchedAt": "2026-09-11T15:27:01.295Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -23,6 +23,13 @@
       "opp": "Miller Mustangs",
       "us": 44,
       "them": 45,
+      "status": "final"
+    },
+    {
+      "date": "2026-09-10T16:00:00",
+      "opp": "Lawson Lightning",
+      "us": 55,
+      "them": 36,
       "status": "final"
     }
   ],
@@ -101,6 +108,15 @@
     },
     {
       "place": "9",
+      "team": "Graham Bears",
+      "w": 1,
+      "l": 3,
+      "t": 0,
+      "pct": "0.250",
+      "streak": "Won 1"
+    },
+    {
+      "place": "10",
       "team": "Sunnyvale Spartans",
       "w": 0,
       "l": 2,
@@ -109,22 +125,13 @@
       "streak": "Lost 2"
     },
     {
-      "place": "10",
+      "place": "11",
       "team": "Lawson Lightning",
       "w": 0,
-      "l": 3,
+      "l": 4,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 3"
-    },
-    {
-      "place": "11",
-      "team": "Graham Bears",
-      "w": 0,
-      "l": 3,
-      "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 3"
+      "streak": "Lost 4"
     }
   ]
 }
