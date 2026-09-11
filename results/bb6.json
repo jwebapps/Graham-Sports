@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-10T01:26:05.539Z",
+  "fetchedAt": "2026-09-11T01:25:54.870Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -29,6 +29,15 @@
   "standings": [
     {
       "place": "1",
+      "team": "Sunnyvale Spartans",
+      "w": 3,
+      "l": 0,
+      "t": 0,
+      "pct": "1.000",
+      "streak": "Won 3"
+    },
+    {
+      "place": "2",
       "team": "Miller Mustangs",
       "w": 2,
       "l": 0,
@@ -37,21 +46,12 @@
       "streak": "Won 2"
     },
     {
-      "place": "2",
-      "team": "Sunnyvale Spartans",
-      "w": 2,
-      "l": 0,
-      "t": 0,
-      "pct": "1.000",
-      "streak": "Won 2"
-    },
-    {
       "place": "3",
-      "team": "Cupertino Bears",
-      "w": 1,
-      "l": 0,
+      "team": "Hyde Lions",
+      "w": 2,
+      "l": 1,
       "t": 0,
-      "pct": "1.000",
+      "pct": "0.667",
       "streak": "Won 1"
     },
     {
@@ -65,15 +65,24 @@
     },
     {
       "place": "5",
-      "team": "Hyde Lions",
-      "w": 2,
+      "team": "Cupertino Bears",
+      "w": 1,
       "l": 1,
       "t": 0,
-      "pct": "0.667",
-      "streak": "Won 1"
+      "pct": "0.500",
+      "streak": "Lost 1"
     },
     {
       "place": "6",
+      "team": "Kennedy Cougars",
+      "w": 1,
+      "l": 2,
+      "t": 0,
+      "pct": "0.333",
+      "streak": "Won 1"
+    },
+    {
+      "place": "7",
       "team": "Lawson Lightning",
       "w": 0,
       "l": 1,
@@ -82,7 +91,7 @@
       "streak": "Lost 1"
     },
     {
-      "place": "7",
+      "place": "8",
       "team": "Graham Bears",
       "w": 1,
       "l": 2,
@@ -91,22 +100,13 @@
       "streak": "Lost 1"
     },
     {
-      "place": "8",
-      "team": "Kennedy Cougars",
-      "w": 0,
-      "l": 2,
-      "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 2"
-    },
-    {
       "place": "9",
       "team": "Crittenden Panthers",
       "w": 0,
-      "l": 3,
+      "l": 4,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 3"
+      "streak": "Lost 4"
     }
   ]
 }
