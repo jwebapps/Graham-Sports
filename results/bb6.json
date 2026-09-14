@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-11T01:25:54.870Z",
+  "fetchedAt": "2026-09-14T01:26:45.541Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -23,6 +23,13 @@
       "opp": "Miller Mustangs",
       "us": 33,
       "them": 37,
+      "status": "final"
+    },
+    {
+      "date": "2026-09-10T17:00:00",
+      "opp": "Lawson Lightning",
+      "us": 57,
+      "them": 20,
       "status": "final"
     }
   ],
@@ -74,6 +81,15 @@
     },
     {
       "place": "6",
+      "team": "Graham Bears",
+      "w": 2,
+      "l": 2,
+      "t": 0,
+      "pct": "0.500",
+      "streak": "Won 1"
+    },
+    {
+      "place": "7",
       "team": "Kennedy Cougars",
       "w": 1,
       "l": 2,
@@ -82,22 +98,13 @@
       "streak": "Won 1"
     },
     {
-      "place": "7",
+      "place": "8",
       "team": "Lawson Lightning",
       "w": 0,
-      "l": 1,
-      "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 1"
-    },
-    {
-      "place": "8",
-      "team": "Graham Bears",
-      "w": 1,
       "l": 2,
       "t": 0,
-      "pct": "0.333",
-      "streak": "Lost 1"
+      "pct": "0.000",
+      "streak": "Lost 2"
     },
     {
       "place": "9",

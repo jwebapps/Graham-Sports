@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-11T16:28:00.324Z",
+  "fetchedAt": "2026-09-14T01:26:45.138Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -23,6 +23,13 @@
       "opp": "Miller Mustangs",
       "us": 53,
       "them": 61,
+      "status": "final"
+    },
+    {
+      "date": "2026-09-10T16:00:00",
+      "opp": "Lawson Lightning",
+      "us": 50,
+      "them": 40,
       "status": "final"
     }
   ],
@@ -92,21 +99,21 @@
     },
     {
       "place": "8",
-      "team": "Lawson Lightning",
+      "team": "Graham Bears",
       "w": 1,
-      "l": 2,
+      "l": 3,
       "t": 0,
-      "pct": "0.333",
-      "streak": "Lost 1"
+      "pct": "0.250",
+      "streak": "Won 1"
     },
     {
       "place": "9",
-      "team": "Graham Bears",
-      "w": 0,
+      "team": "Lawson Lightning",
+      "w": 1,
       "l": 3,
       "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 3"
+      "pct": "0.250",
+      "streak": "Lost 2"
     },
     {
       "place": "10",
