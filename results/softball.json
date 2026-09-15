@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-14T01:26:45.751Z",
+  "fetchedAt": "2026-09-15T23:24:47.407Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -16,6 +16,13 @@
       "opp": "Redwood Griffins",
       "us": 2,
       "them": 26,
+      "status": "final"
+    },
+    {
+      "date": "2026-09-14T16:00:00",
+      "opp": "Columbia Bulldogs",
+      "us": 7,
+      "them": 22,
       "status": "final"
     }
   ],
@@ -50,11 +57,11 @@
     {
       "place": "4",
       "team": "Columbia Bulldogs",
-      "w": 3,
+      "w": 4,
       "l": 1,
       "t": 0,
-      "pct": "0.750",
-      "streak": "Won 2"
+      "pct": "0.800",
+      "streak": "Won 3"
     },
     {
       "place": "5",
@@ -78,10 +85,10 @@
       "place": "7",
       "team": "Graham Bears",
       "w": 1,
-      "l": 2,
+      "l": 3,
       "t": 0,
-      "pct": "0.333",
-      "streak": "Lost 1"
+      "pct": "0.250",
+      "streak": "Lost 2"
     },
     {
       "place": "8",
