@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-15T17:24:41.385Z",
+  "fetchedAt": "2026-09-15T22:25:52.241Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -30,6 +30,13 @@
       "opp": "Lawson Lightning",
       "us": 50,
       "them": 40,
+      "status": "final"
+    },
+    {
+      "date": "2026-09-14T16:00:00",
+      "opp": "Columbia Bulldogs",
+      "us": 47,
+      "them": 20,
       "status": "final"
     }
   ],
@@ -90,6 +97,15 @@
     },
     {
       "place": "7",
+      "team": "Graham Bears",
+      "w": 2,
+      "l": 3,
+      "t": 0,
+      "pct": "0.400",
+      "streak": "Won 2"
+    },
+    {
+      "place": "8",
       "team": "Sunnyvale Spartans",
       "w": 1,
       "l": 3,
@@ -98,7 +114,7 @@
       "streak": "Lost 3"
     },
     {
-      "place": "8",
+      "place": "9",
       "team": "Lawson Lightning",
       "w": 1,
       "l": 3,
@@ -107,17 +123,8 @@
       "streak": "Lost 2"
     },
     {
-      "place": "9",
-      "team": "Graham Bears",
-      "w": 1,
-      "l": 3,
-      "t": 0,
-      "pct": "0.250",
-      "streak": "Won 1"
-    },
-    {
       "place": "10",
-      "team": "Columbia Bulldogs",
+      "team": "Crittenden Panthers",
       "w": 0,
       "l": 4,
       "t": 0,
@@ -126,12 +133,12 @@
     },
     {
       "place": "11",
-      "team": "Crittenden Panthers",
+      "team": "Columbia Bulldogs",
       "w": 0,
-      "l": 4,
+      "l": 5,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 4"
+      "streak": "Lost 5"
     }
   ]
 }
