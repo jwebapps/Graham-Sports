@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-14T01:26:45.138Z",
+  "fetchedAt": "2026-09-15T17:24:41.385Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -63,20 +63,20 @@
     },
     {
       "place": "4",
+      "team": "Miller Mustangs",
+      "w": 3,
+      "l": 1,
+      "t": 0,
+      "pct": "0.750",
+      "streak": "Won 3"
+    },
+    {
+      "place": "5",
       "team": "Kennedy Cougars",
       "w": 3,
       "l": 1,
       "t": 0,
       "pct": "0.750",
-      "streak": "Won 2"
-    },
-    {
-      "place": "5",
-      "team": "Miller Mustangs",
-      "w": 2,
-      "l": 1,
-      "t": 0,
-      "pct": "0.667",
       "streak": "Won 2"
     },
     {
@@ -92,28 +92,28 @@
       "place": "7",
       "team": "Sunnyvale Spartans",
       "w": 1,
-      "l": 2,
-      "t": 0,
-      "pct": "0.333",
-      "streak": "Lost 2"
-    },
-    {
-      "place": "8",
-      "team": "Graham Bears",
-      "w": 1,
       "l": 3,
       "t": 0,
       "pct": "0.250",
-      "streak": "Won 1"
+      "streak": "Lost 3"
     },
     {
-      "place": "9",
+      "place": "8",
       "team": "Lawson Lightning",
       "w": 1,
       "l": 3,
       "t": 0,
       "pct": "0.250",
       "streak": "Lost 2"
+    },
+    {
+      "place": "9",
+      "team": "Graham Bears",
+      "w": 1,
+      "l": 3,
+      "t": 0,
+      "pct": "0.250",
+      "streak": "Won 1"
     },
     {
       "place": "10",

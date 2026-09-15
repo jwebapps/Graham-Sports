@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-14T01:26:45.541Z",
+  "fetchedAt": "2026-09-15T17:24:41.850Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -31,44 +31,51 @@
       "us": 57,
       "them": 20,
       "status": "final"
+    },
+    {
+      "date": "2026-09-14T16:00:00",
+      "opp": "Columbia Bulldogs",
+      "us": 51,
+      "them": 44,
+      "status": "final"
     }
   ],
   "standings": [
     {
       "place": "1",
       "team": "Sunnyvale Spartans",
-      "w": 3,
+      "w": 4,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 3"
+      "streak": "Won 4"
     },
     {
       "place": "2",
       "team": "Miller Mustangs",
       "w": 2,
-      "l": 0,
+      "l": 1,
       "t": 0,
-      "pct": "1.000",
-      "streak": "Won 2"
+      "pct": "0.667",
+      "streak": "Lost 1"
     },
     {
       "place": "3",
+      "team": "Graham Bears",
+      "w": 3,
+      "l": 2,
+      "t": 0,
+      "pct": "0.600",
+      "streak": "Won 2"
+    },
+    {
+      "place": "4",
       "team": "Hyde Lions",
       "w": 2,
       "l": 1,
       "t": 0,
       "pct": "0.667",
       "streak": "Won 1"
-    },
-    {
-      "place": "4",
-      "team": "Columbia Bulldogs",
-      "w": 2,
-      "l": 1,
-      "t": 0,
-      "pct": "0.667",
-      "streak": "Won 2"
     },
     {
       "place": "5",
@@ -81,12 +88,12 @@
     },
     {
       "place": "6",
-      "team": "Graham Bears",
+      "team": "Columbia Bulldogs",
       "w": 2,
       "l": 2,
       "t": 0,
       "pct": "0.500",
-      "streak": "Won 1"
+      "streak": "Lost 1"
     },
     {
       "place": "7",
