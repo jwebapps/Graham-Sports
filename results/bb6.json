@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-15T17:24:41.850Z",
+  "fetchedAt": "2026-09-16T00:33:06.137Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -52,12 +52,12 @@
     },
     {
       "place": "2",
-      "team": "Miller Mustangs",
+      "team": "Cupertino Bears",
       "w": 2,
       "l": 1,
       "t": 0,
       "pct": "0.667",
-      "streak": "Lost 1"
+      "streak": "Won 1"
     },
     {
       "place": "3",
@@ -79,12 +79,12 @@
     },
     {
       "place": "5",
-      "team": "Cupertino Bears",
-      "w": 1,
-      "l": 1,
+      "team": "Miller Mustangs",
+      "w": 2,
+      "l": 2,
       "t": 0,
       "pct": "0.500",
-      "streak": "Lost 1"
+      "streak": "Lost 2"
     },
     {
       "place": "6",

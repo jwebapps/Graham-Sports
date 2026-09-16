@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-15T23:24:47.407Z",
+  "fetchedAt": "2026-09-16T00:33:06.379Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -29,12 +29,12 @@
   "standings": [
     {
       "place": "1",
-      "team": "Cupertino Bears",
-      "w": 4,
+      "team": "Crittenden Panthers",
+      "w": 5,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 4"
+      "streak": "Won 5"
     },
     {
       "place": "2",
@@ -47,15 +47,6 @@
     },
     {
       "place": "3",
-      "team": "Crittenden Panthers",
-      "w": 4,
-      "l": 0,
-      "t": 0,
-      "pct": "1.000",
-      "streak": "Won 4"
-    },
-    {
-      "place": "4",
       "team": "Columbia Bulldogs",
       "w": 4,
       "l": 1,
@@ -64,13 +55,22 @@
       "streak": "Won 3"
     },
     {
-      "place": "5",
-      "team": "Miller Mustangs",
-      "w": 2,
+      "place": "4",
+      "team": "Cupertino Bears",
+      "w": 4,
       "l": 1,
       "t": 0,
-      "pct": "0.667",
-      "streak": "Won 1"
+      "pct": "0.800",
+      "streak": "Lost 1"
+    },
+    {
+      "place": "5",
+      "team": "Miller Mustangs",
+      "w": 3,
+      "l": 1,
+      "t": 0,
+      "pct": "0.750",
+      "streak": "Won 2"
     },
     {
       "place": "6",
@@ -110,7 +110,7 @@
     },
     {
       "place": "10",
-      "team": "Egan Vikings",
+      "team": "Hyde Lions",
       "w": 0,
       "l": 4,
       "t": 0,
@@ -119,12 +119,12 @@
     },
     {
       "place": "11",
-      "team": "Hyde Lions",
+      "team": "Egan Vikings",
       "w": 0,
-      "l": 4,
+      "l": 5,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 4"
+      "streak": "Lost 5"
     }
   ]
 }
