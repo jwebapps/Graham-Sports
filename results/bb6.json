@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-16T15:27:02.194Z",
+  "fetchedAt": "2026-09-16T17:25:26.304Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -44,11 +44,11 @@
     {
       "place": "1",
       "team": "Sunnyvale Spartans",
-      "w": 4,
+      "w": 5,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 4"
+      "streak": "Won 5"
     },
     {
       "place": "2",
@@ -70,15 +70,6 @@
     },
     {
       "place": "4",
-      "team": "Hyde Lions",
-      "w": 2,
-      "l": 1,
-      "t": 0,
-      "pct": "0.667",
-      "streak": "Won 1"
-    },
-    {
-      "place": "5",
       "team": "Miller Mustangs",
       "w": 2,
       "l": 2,
@@ -87,7 +78,7 @@
       "streak": "Lost 2"
     },
     {
-      "place": "6",
+      "place": "5",
       "team": "Kennedy Cougars",
       "w": 2,
       "l": 2,
@@ -96,8 +87,17 @@
       "streak": "Won 2"
     },
     {
-      "place": "7",
+      "place": "6",
       "team": "Columbia Bulldogs",
+      "w": 2,
+      "l": 2,
+      "t": 0,
+      "pct": "0.500",
+      "streak": "Lost 1"
+    },
+    {
+      "place": "7",
+      "team": "Hyde Lions",
       "w": 2,
       "l": 2,
       "t": 0,
