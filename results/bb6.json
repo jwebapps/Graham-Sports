@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-16T00:33:06.137Z",
+  "fetchedAt": "2026-09-16T15:27:02.194Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -88,6 +88,15 @@
     },
     {
       "place": "6",
+      "team": "Kennedy Cougars",
+      "w": 2,
+      "l": 2,
+      "t": 0,
+      "pct": "0.500",
+      "streak": "Won 2"
+    },
+    {
+      "place": "7",
       "team": "Columbia Bulldogs",
       "w": 2,
       "l": 2,
@@ -96,22 +105,13 @@
       "streak": "Lost 1"
     },
     {
-      "place": "7",
-      "team": "Kennedy Cougars",
-      "w": 1,
-      "l": 2,
-      "t": 0,
-      "pct": "0.333",
-      "streak": "Won 1"
-    },
-    {
       "place": "8",
       "team": "Lawson Lightning",
       "w": 0,
-      "l": 2,
+      "l": 3,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 2"
+      "streak": "Lost 3"
     },
     {
       "place": "9",

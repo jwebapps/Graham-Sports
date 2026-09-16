@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-16T01:25:50.671Z",
+  "fetchedAt": "2026-09-16T15:27:02.006Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -52,7 +52,7 @@
     },
     {
       "place": "2",
-      "team": "Cupertino Bears",
+      "team": "Kennedy Cougars",
       "w": 4,
       "l": 1,
       "t": 0,
@@ -61,12 +61,12 @@
     },
     {
       "place": "3",
-      "team": "Kennedy Cougars",
-      "w": 3,
+      "team": "Cupertino Bears",
+      "w": 4,
       "l": 1,
       "t": 0,
-      "pct": "0.750",
-      "streak": "Won 2"
+      "pct": "0.800",
+      "streak": "Won 3"
     },
     {
       "place": "4",
@@ -124,7 +124,7 @@
     },
     {
       "place": "10",
-      "team": "Lawson Lightning",
+      "team": "Sunnyvale Spartans",
       "w": 0,
       "l": 4,
       "t": 0,
@@ -133,12 +133,12 @@
     },
     {
       "place": "11",
-      "team": "Sunnyvale Spartans",
+      "team": "Lawson Lightning",
       "w": 0,
-      "l": 4,
+      "l": 5,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 4"
+      "streak": "Lost 5"
     }
   ]
 }
