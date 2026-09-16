@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-16T00:33:05.525Z",
+  "fetchedAt": "2026-09-16T01:25:50.392Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -61,21 +61,21 @@
     },
     {
       "place": "3",
+      "team": "Miller Mustangs",
+      "w": 4,
+      "l": 1,
+      "t": 0,
+      "pct": "0.800",
+      "streak": "Won 4"
+    },
+    {
+      "place": "4",
       "team": "Hyde Lions",
       "w": 3,
       "l": 1,
       "t": 0,
       "pct": "0.750",
       "streak": "Lost 1"
-    },
-    {
-      "place": "4",
-      "team": "Miller Mustangs",
-      "w": 3,
-      "l": 1,
-      "t": 0,
-      "pct": "0.750",
-      "streak": "Won 3"
     },
     {
       "place": "5",
@@ -90,10 +90,10 @@
       "place": "6",
       "team": "Cupertino Bears",
       "w": 2,
-      "l": 2,
+      "l": 3,
       "t": 0,
-      "pct": "0.500",
-      "streak": "Won 1"
+      "pct": "0.400",
+      "streak": "Lost 1"
     },
     {
       "place": "7",
