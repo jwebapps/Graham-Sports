@@ -139,3 +139,10 @@ Fans mode shows:
 - tap-through from any fan card into the existing team page
 
 The original My Team view remains unchanged.
+
+
+## Fans icon update
+The Graham Fans view now uses sport icons instead of BB8 / SB / XC text tags:
+- numbered basketball icons for BB6 / BB7 / BB8
+- softball icon for Girls Softball
+- shoe icon for Cross Country
