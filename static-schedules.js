@@ -28,7 +28,7 @@ window.GRAHAM_SCHEDULES = {
     ['2026-09-03T17:00:00',true,'Hyde Lions','Graham Gym'],
     ['2026-09-09T16:00:00',true,'Miller Mustangs','Graham Gym'],
     ['2026-09-10T17:00:00',true,'Lawson Lightning','Graham Gym'],
-    ['2026-09-15T16:00:00',false,'Columbia Bulldogs','Columbia Gym'],
+    ['2026-09-14T16:00:00',false,'Columbia Bulldogs','Columbia Gym'],
     ['2026-09-22T17:00:00',false,'Kennedy Cougars','Kennedy Gym'],
     ['2026-09-24T16:00:00',true,'Sunnyvale Spartans','Graham Gym'],
     ['2026-10-01T17:00:00',false,'Crittenden Panthers','Crittenden Gym']

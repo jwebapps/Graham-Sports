@@ -6,22 +6,7 @@ const SOURCES = {
   bb7: { label: '7th Boys Basketball', url: 'https://valleyal.org/schedule/731082/7th-grade' },
   bb6: { label: '6th Boys Basketball', url: 'https://valleyal.org/schedule/731083/6th-grade' },
   softball: { label: 'Girls Softball', url: 'https://valleyal.org/schedule/722499/6th7th8th-grade' },
-  xc: { label: 'Cross Country', url: 'https://valleyal.org/schedule/722106/6th-7th-8th', allMeetRows: true },
-  gv8: { label: '8th Girls Volleyball', url: 'https://valleyal.org/schedule/731089/8th-grade' },
-  gv7: { label: '7th Girls Volleyball', url: 'https://valleyal.org/schedule/731090/7th-grade' },
-  gv6: { label: '6th Girls Volleyball', url: 'https://valleyal.org/schedule/731091/6th-grade' },
-  wrestling: { label: 'Wrestling', url: 'https://valleyal.org/schedule/731088/6th-7th-8th' },
-  bv8: { label: '8th Boys Volleyball', url: 'https://valleyal.org/schedule/731404/8th-grade' },
-  bv7: { label: '7th Boys Volleyball', url: 'https://valleyal.org/schedule/731405/7th-grade' },
-  bv6: { label: '6th Boys Volleyball', url: 'https://valleyal.org/schedule/731406/6th-grade' },
-  gs78: { label: '7th/8th Girls Soccer', url: 'https://valleyal.org/schedule/731407/7th8th-grade' },
-  gs67: { label: '6th/7th Girls Soccer', url: 'https://valleyal.org/schedule/731408/6th7th-grade' },
-  bs78: { label: '7th/8th Boys Soccer', url: 'https://valleyal.org/schedule/731409/7th8th-grade' },
-  bs67: { label: '6th/7th Boys Soccer', url: 'https://valleyal.org/schedule/731410/6th7th-grade' },
-  gb8: { label: '8th Girls Basketball', url: 'https://valleyal.org/schedule/731411/8th-grade' },
-  gb7: { label: '7th Girls Basketball', url: 'https://valleyal.org/schedule/731412/7th-grade' },
-  gb6: { label: '6th Girls Basketball', url: 'https://valleyal.org/schedule/731413/6th-grade' },
-  track: { label: 'Track & Field', url: 'https://valleyal.org/schedule/732606/6th-7th-8th' }
+  xc: { label: 'Cross Country', url: 'https://valleyal.org/schedule/722106/6th-7th-8th', allMeetRows: true }
 };
 function clean(s){return String(s||'').replace(/\u00a0/g,' ').replace(/\s+/g,' ').trim()}
 function isGraham(name){return /^Graham Bear(?:s)?$/i.test(clean(name))}

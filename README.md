@@ -101,3 +101,10 @@ Google Calendar: the mobile button now shows desktop subscription instructions a
 The app now determines Next Game and Upcoming Games from the actual event date/time.
 A game automatically drops out of Upcoming three hours after its scheduled start even if VAL has not yet posted a final score.
 Past games without a synced result are labeled Past rather than remaining stuck as the next game.
+
+
+## 6th grade score fix
+- Seeded current VAL scores and standings for 6th Boys Basketball.
+- Corrected Columbia game from Sep 15 to Sep 14.
+- Result merge now falls back to a unique opponent match if VAL reschedules a game date.
+- Browser results cache bumped to v2.

@@ -472,10 +472,23 @@ function gameKey(g){
 }
 function mergeResults(body){
   if(!state.payload || body.id!==state.selected) return;
-  const byKey=new Map((body.results||[]).map(g=>[gameKey(g),g]));
+  const results=body.results||[];
+  const byKey=new Map(results.map(g=>[gameKey(g),g]));
+  const byOpponent=new Map();
+  for(const r of results){
+    const opp=String(r.opp||'').toLowerCase().replace(/\s+/g,' ').trim();
+    if(!opp) continue;
+    if(!byOpponent.has(opp)) byOpponent.set(opp,[]);
+    byOpponent.get(opp).push(r);
+  }
   state.payload.games=state.payload.games.map(g=>{
-    const r=byKey.get(gameKey(g));
-    return r ? {...g,us:r.us,them:r.them,status:r.status||((r.us!=null&&r.them!=null)?'final':'scheduled')} : g;
+    let r=byKey.get(gameKey(g));
+    if(!r){
+      const opp=String(g.opp||'').toLowerCase().replace(/\s+/g,' ').trim();
+      const matches=byOpponent.get(opp)||[];
+      if(matches.length===1) r=matches[0];
+    }
+    return r ? {...g,date:r.date||g.date,us:r.us,them:r.them,status:r.status||((r.us!=null&&r.them!=null)?'final':'scheduled')} : g;
   });
   state.payload.standings=body.standings||[];
   state.payload.resultsSyncedAt=body.fetchedAt||new Date().toISOString();
@@ -492,7 +505,7 @@ async function syncResults(force=false){
   const seq=++state.requestSeq;
   if(state.abort) state.abort.abort();
   state.abort=new AbortController();
-  const cacheKey='gh-results:v1:'+requestedTeam;
+  const cacheKey='gh-results:v2:'+requestedTeam;
   if(!force){
     try{
       const cached=JSON.parse(localStorage.getItem(cacheKey));
