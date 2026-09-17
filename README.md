@@ -124,3 +124,18 @@ Past games without a synced result are labeled Past rather than remaining stuck 
 - Corrected Columbia games from Sep 15 to Sep 14.
 - Preserved opponent-based result matching for rescheduled games.
 - Results cache bumped to v3 and PWA cache to v6.
+
+
+## Graham Fans
+This build adds a second app view for people who want to follow Graham sports without following a specific athlete/team.
+
+Open directly with:
+`?view=fans`
+
+Fans mode shows:
+- upcoming games across BB8, BB7, BB6, Girls Softball, and Cross Country
+- latest posted results
+- team records and current Graham standing
+- tap-through from any fan card into the existing team page
+
+The original My Team view remains unchanged.

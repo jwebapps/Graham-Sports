@@ -201,6 +201,33 @@
     .google-calendar-help.open{display:block}
     .google-calendar-help ol{margin:8px 0 12px;padding-left:20px;color:var(--ink);font-size:13px;line-height:1.45}
     .calendar-copy-status{min-height:18px;margin-top:8px;color:var(--muted);font-size:12px;text-align:center}
+  
+    .view-switch{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 16px}
+    .view-switch button{border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:999px;padding:10px 12px;font-weight:900;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+    .view-switch button.active{background:#000;color:#fff;border-color:#000}
+    .fans-hero{background:#000;color:#fff;border-radius:16px;padding:18px;box-shadow:var(--shadow);margin-bottom:14px}
+    .fans-hero .eyebrow{color:var(--red);font-size:11px;font-weight:950;text-transform:uppercase;letter-spacing:.08em}
+    .fans-hero h2{margin:7px 0 4px;font-size:28px;line-height:1}
+    .fans-hero p{margin:0;color:#d8d8d8;font-size:13px}
+    .fan-cards{display:grid;gap:10px}
+    .fan-game-card{border:1px solid var(--line);border-radius:14px;padding:13px;background:#fff;display:grid;grid-template-columns:62px 1fr auto;gap:10px;align-items:center}
+    .fan-game-card .team-code{font-size:11px;font-weight:950;color:var(--red);text-transform:uppercase}
+    .fan-game-card .match{font-size:15px;font-weight:900;line-height:1.15}
+    .fan-game-card .when{font-size:11px;color:var(--muted);margin-top:4px}
+    .fan-game-card .score-big{font-size:18px;font-weight:950}
+    .fan-game-card .result-pill{display:inline-block;margin-top:4px;padding:4px 7px;border-radius:999px;font-size:10px;font-weight:950;text-transform:uppercase}
+    .result-pill.win{background:#e9f5ec;color:#24723f}
+    .result-pill.loss{background:#fce8e7;color:#a52b23}
+    .result-pill.tie{background:#f0f0f0;color:#555}
+    .record-grid{display:grid;gap:8px}
+    .record-row{display:grid;grid-template-columns:1fr 54px 54px;gap:8px;align-items:center;padding:12px 12px;border:1px solid var(--line);border-radius:12px;background:#fff}
+    .record-row .name{font-weight:900;font-size:14px}
+    .record-row .sub{font-size:10px;color:var(--muted);margin-top:3px}
+    .record-row .record{font-weight:950;text-align:center;color:var(--red)}
+    .record-row .place{font-size:12px;text-align:right;color:var(--muted);font-weight:850}
+    .fan-team-link{border:0;background:transparent;padding:0;text-align:left;width:100%;color:inherit}
+    .fans-all-calendar{width:100%;margin-top:10px;border:0;border-radius:12px;padding:13px;background:var(--red);color:#fff;font-weight:950;text-transform:uppercase;font-size:12px}
+
   </style>
 </head>
 <body>
@@ -212,7 +239,12 @@
   </header>
 
   <main class="content">
+    <div class="view-switch" id="viewSwitch">
+      <button id="myTeamViewBtn" onclick="setAppView('team')">My Team</button>
+      <button id="fansViewBtn" onclick="setAppView('fans')">Graham Fans</button>
+    </div>
     <section id="home" class="screen active"></section>
+    <section id="fansHome" class="screen"></section>
     <section id="schedule" class="screen"></section>
     <section id="standings" class="screen"></section>
     <section id="teams" class="screen"></section>
@@ -236,12 +268,14 @@ const teamOptions = [
   ['xc','Cross Country']
 ];
 const validTeamIds = new Set(teamOptions.map(([id]) => id));
-const urlTeam = new URLSearchParams(window.location.search).get('team');
+const urlParams = new URLSearchParams(window.location.search);
+const urlTeam = urlParams.get('team');
+const urlView = urlParams.get('view');
 const savedTeam = localStorage.getItem('team');
 const initialTeam = validTeamIds.has(urlTeam) ? urlTeam : (validTeamIds.has(savedTeam) ? savedTeam : 'bb7');
-const state = { selected:initialTeam, payload:null, loading:false, error:null, scheduleFilter:'all', requestSeq:0, abort:null };
+const state = { selected:initialTeam, appView:(urlView==='fans'?'fans':'team'), payload:null, loading:false, error:null, scheduleFilter:'all', requestSeq:0, abort:null };
 localStorage.setItem('team',initialTeam);
-if(urlTeam!==initialTeam){const url=new URL(location.href);url.searchParams.set('team',initialTeam);history.replaceState(null,'',url)}
+if(urlTeam!==initialTeam || (state.appView==='fans' && urlView!=='fans')){const url=new URL(location.href);url.searchParams.set('team',initialTeam);if(state.appView==='fans')url.searchParams.set('view','fans');history.replaceState(null,'',url)}
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmtTime = iso => new Date(iso).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'});
@@ -455,6 +489,168 @@ async function copyGoogleCalendarUrl(){
   }
 }
 
+
+function teamCode(id){
+  return ({bb8:'BB8',bb7:'BB7',bb6:'BB6',softball:'SB',xc:'XC'})[id] || id.toUpperCase();
+}
+function setAppView(view){
+  state.appView = view==='fans' ? 'fans' : 'team';
+  const url=new URL(location.href);
+  if(state.appView==='fans') url.searchParams.set('view','fans'); else url.searchParams.delete('view');
+  history.replaceState(null,'',url);
+  renderViewMode();
+}
+function renderViewMode(){
+  const isFans=state.appView==='fans';
+  document.getElementById('myTeamViewBtn')?.classList.toggle('active',!isFans);
+  document.getElementById('fansViewBtn')?.classList.toggle('active',isFans);
+  document.querySelectorAll('.bottom .navbtn').forEach(b=>b.style.display=isFans?'none':'');
+  document.getElementById('home')?.classList.toggle('active',!isFans);
+  document.getElementById('schedule')?.classList.remove('active');
+  document.getElementById('standings')?.classList.remove('active');
+  document.getElementById('teams')?.classList.remove('active');
+  document.getElementById('fansHome')?.classList.toggle('active',isFans);
+  if(isFans) renderFansHome();
+}
+function staticTeamPayload(id){
+  const t=window.GRAHAM_SCHEDULES?.[id];
+  if(!t) return null;
+  return {
+    id, label:t.label, team:'Graham Bears',
+    games:(t.games||[]).map(g=>({...g})),
+    standings:[], resultsSyncedAt:null, practice:t.practice||null
+  };
+}
+async function fetchTeamResultsForFans(id){
+  const payload=staticTeamPayload(id);
+  if(!payload) return null;
+  try{
+    const r=await fetch(`results/${encodeURIComponent(id)}.json?ts=${Date.now()}`,{cache:'no-store'});
+    if(r.ok){
+      const body=await r.json();
+      const results=body.results||[];
+      const byKey=new Map(results.map(g=>[gameKey(g),g]));
+      const byOpponent=new Map();
+      for(const rr of results){
+        const opp=String(rr.opp||'').toLowerCase().replace(/\s+/g,' ').trim();
+        if(!opp) continue;
+        if(!byOpponent.has(opp)) byOpponent.set(opp,[]);
+        byOpponent.get(opp).push(rr);
+      }
+      payload.games=payload.games.map(g=>{
+        let rr=byKey.get(gameKey(g));
+        if(!rr){
+          const opp=String(g.opp||'').toLowerCase().replace(/\s+/g,' ').trim();
+          const matches=byOpponent.get(opp)||[];
+          if(matches.length===1) rr=matches[0];
+        }
+        return rr ? {...g,date:rr.date||g.date,us:rr.us,them:rr.them,status:rr.status||((rr.us!=null&&rr.them!=null)?'final':'scheduled')} : g;
+      });
+      payload.standings=body.standings||[];
+      payload.resultsSyncedAt=body.fetchedAt||null;
+    }
+  }catch(e){}
+  return payload;
+}
+function fanResultOutcome(g){
+  if(g.status!=='final') return '';
+  if(g.us==null || g.them==null) return g.result||'';
+  if(g.us>g.them) return 'W';
+  if(g.us<g.them) return 'L';
+  return 'T';
+}
+function fanGameCard(teamId,p,g,mode){
+  const code=teamCode(teamId);
+  const d=new Date(g.date);
+  const date=d.toLocaleDateString(undefined,{month:'short',day:'numeric'});
+  const time=d.toLocaleTimeString([],{hour:'numeric',minute:'2-digit'});
+  if(mode==='result'){
+    const outcome=fanResultOutcome(g);
+    const cls=outcome==='W'?'win':outcome==='L'?'loss':'tie';
+    const score=(g.us!=null&&g.them!=null)?`${g.us}–${g.them}`:(outcome||'Final');
+    return `<button class="fan-team-link" onclick="openTeamFromFans('${teamId}')"><div class="fan-game-card">
+      <div><div class="team-code">${code}</div><div class="when">${date}</div></div>
+      <div><div class="match">${esc(g.opp)}</div><div class="when">${g.home?'Home':'Away'} · ${esc(venueShort(g.venue))}</div></div>
+      <div style="text-align:right"><div class="score-big">${score}</div><span class="result-pill ${cls}">${outcome||'Final'}</span></div>
+    </div></button>`;
+  }
+  return `<button class="fan-team-link" onclick="openTeamFromFans('${teamId}')"><div class="fan-game-card">
+    <div><div class="team-code">${code}</div><div class="when">${date}</div></div>
+    <div><div class="match">${g.home?'vs':'@'} ${esc(g.opp)}</div><div class="when">${time} · ${esc(venueShort(g.venue))}</div></div>
+    <div><span class="badge">${g.home?'Home':'Away'}</span></div>
+  </div></button>`;
+}
+function currentTeamPlace(p){
+  const row=(p.standings||[]).find(x=>/Graham/i.test(x.team||''));
+  return row ? `${row.place}${String(row.place).match(/^\d+$/)?ordinalSuffix(Number(row.place)):''}` : '—';
+}
+function ordinalSuffix(n){
+  const v=n%100;
+  return (v>=11&&v<=13)?'th':({1:'st',2:'nd',3:'rd'}[n%10]||'th');
+}
+function openTeamFromFans(id){
+  state.selected=id;
+  localStorage.setItem('team',id);
+  state.appView='team';
+  const url=new URL(location.href);
+  url.searchParams.set('team',id);
+  url.searchParams.delete('view');
+  history.replaceState(null,'',url);
+  renderViewMode();
+  loadTeam(id,true);
+}
+async function renderFansHome(){
+  const el=document.getElementById('fansHome');
+  if(!el) return;
+  el.innerHTML=`<div class="fans-hero"><div class="eyebrow">Graham Bears</div><h2>Fans</h2><p>Scores, standings and what’s next across Graham athletics.</p></div><div class="empty">Loading Graham sports…</div>`;
+  const ids=['bb8','bb7','bb6','softball','xc'];
+  const payloads=(await Promise.all(ids.map(fetchTeamResultsForFans))).filter(Boolean);
+  const now=Date.now();
+
+  const upcoming=[];
+  const results=[];
+  for(const p of payloads){
+    for(const g of p.games||[]){
+      const start=new Date(g.date).getTime();
+      if(g.status==='final' || start+3*60*60*1000<now){
+        if(g.status==='final') results.push({teamId:p.id,p,g});
+      }else{
+        upcoming.push({teamId:p.id,p,g});
+      }
+    }
+  }
+  upcoming.sort((a,b)=>new Date(a.g.date)-new Date(b.g.date));
+  results.sort((a,b)=>new Date(b.g.date)-new Date(a.g.date));
+
+  const recordRows=payloads.map(p=>{
+    const r=record(p.games||[]);
+    const hasGames=(p.games||[]).some(g=>g.status==='final');
+    const recordText=hasGames?`${r.w}-${r.l}${r.t?`-${r.t}`:''}`:'—';
+    const row=(p.standings||[]).find(x=>/Graham/i.test(x.team||''));
+    const place=row?.place?`${row.place}${ordinalSuffix(Number(row.place))}`:'—';
+    return `<button class="fan-team-link" onclick="openTeamFromFans('${p.id}')"><div class="record-row">
+      <div><div class="name">${esc(p.label)}</div><div class="sub">${teamCode(p.id)}</div></div>
+      <div class="record">${recordText}</div>
+      <div class="place">${place}</div>
+    </div></button>`;
+  }).join('');
+
+  el.innerHTML=`
+    <div class="fans-hero"><div class="eyebrow">Graham Bears</div><h2>Fans</h2><p>Scores, standings and what’s next across Graham athletics.</p></div>
+
+    <div class="section"><div class="section-head"><h3 class="section-title">Coming Up</h3></div>
+      <div class="fan-cards">${upcoming.length?upcoming.slice(0,8).map(x=>fanGameCard(x.teamId,x.p,x.g,'upcoming')).join(''):'<div class="empty">No upcoming games are currently listed.</div>'}</div>
+    </div>
+
+    <div class="section"><div class="section-head"><h3 class="section-title">Latest Results</h3></div>
+      <div class="fan-cards">${results.length?results.slice(0,8).map(x=>fanGameCard(x.teamId,x.p,x.g,'result')).join(''):'<div class="empty">No results have been posted yet.</div>'}</div>
+    </div>
+
+    <div class="section"><div class="section-head"><h3 class="section-title">Bears at a Glance</h3></div>
+      <div class="record-grid">${recordRows}</div>
+    </div>`;
+}
+
 function render(){
   $('#teamQuick').textContent=shortTeam();
   if(!state.payload){state.payload=staticPayload(state.selected)}
@@ -499,6 +695,7 @@ function loadTeam(){
   state.payload=staticPayload(state.selected);
   state.loading=false; state.error=null;
   render();
+renderViewMode();
   syncResults(false);
 }
 async function syncResults(force=false){
