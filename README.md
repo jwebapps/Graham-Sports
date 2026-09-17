@@ -95,3 +95,9 @@ The GitHub Actions results sync is limited to the five active fall team IDs.
 
 
 Google Calendar: the mobile button now shows desktop subscription instructions and copies the hosted ICS URL. Once added on Google Calendar web, it syncs to Android.
+
+
+## Next-game logic fix
+The app now determines Next Game and Upcoming Games from the actual event date/time.
+A game automatically drops out of Upcoming three hours after its scheduled start even if VAL has not yet posted a final score.
+Past games without a synced result are labeled Past rather than remaining stuck as the next game.

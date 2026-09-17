@@ -261,12 +261,13 @@ function venueShort(v){return (v||'Venue TBD').replace('Middle School','MS').rep
 function gameRow(g){
   const p=dparts(g.date),final=g.status==='final';
   const outcome=final?(g.us>g.them?'W':g.us<g.them?'L':'T'):'';
+  const pastUnscored=!final && isPastGame(g);
   const badgeClass=final?`badge final ${outcome==='W'?'win':outcome==='L'?'loss':''}`:'badge';
   return `<div class="game">
     <div class="datebox"><div class="mon">${p.mon}</div><div class="day">${p.day}</div><div class="dow">${p.dow}</div></div>
     <div class="homeaway-icon ${g.home?'home':''}">${g.home?'⌂':'@'}</div>
     <div><div class="opponent">${esc(g.opp)}</div><div class="small">${fmtTime(g.date)} · ${esc(venueShort(g.venue))}</div></div>
-    <div>${final?`<div class="score">${g.us}–${g.them}</div>`:''}<span class="${badgeClass}">${final?outcome:(g.home?'Home':'Away')}</span></div>
+    <div>${final?`<div class="score">${g.us}–${g.them}</div>`:''}<span class="${badgeClass}">${final?outcome:(pastUnscored?'Past':(g.home?'Home':'Away'))}</span></div>
   </div>`;
 }
 function standingsMarkup(rows){
@@ -324,6 +325,24 @@ function icsStamp(){
 }
 
 
+
+function gameStartMs(g){
+  return new Date(g.date).getTime();
+}
+function gameEndMs(g){
+  // Keep a game/meet as the current event for up to 3 hours after start.
+  return gameStartMs(g) + 3*60*60*1000;
+}
+function isUpcomingGame(g){
+  return g.status !== 'final' && gameEndMs(g) >= Date.now();
+}
+function isPastGame(g){
+  return g.status === 'final' || gameEndMs(g) < Date.now();
+}
+function sortedGames(games){
+  return [...games].sort((a,b)=>gameStartMs(a)-gameStartMs(b));
+}
+
 function renderHero(p,next,r){
   if(!next)return `<div class="section-kicker"><span class="icon">▣</span>Season status</div><div class="hero"><div class="sport-ribbon">${esc(p.label)}</div><div class="school-name">Graham Bears</div><div class="matchup">Season complete</div><div class="record"><div class="record-label">Final record</div><div class="record-value">${r.w}-${r.l}</div></div></div>`;
   return `<div class="section-kicker"><span class="icon">▣</span>Next Game</div>
@@ -347,8 +366,8 @@ function renderHero(p,next,r){
 function renderHome(){
   const p=state.payload;if(!p)return;
   const finals=p.games.filter(g=>g.status==='final');
-  const upcoming=p.games.filter(g=>g.status!=='final');
-  const next=upcoming[0],r=record(p.games);
+  const upcoming=sortedGames(p.games.filter(isUpcomingGame));
+  const next=upcoming[0]||null,r=record(p.games);
   $('#home').innerHTML=`${state.error?`<div class="error-note">Using saved data because the latest results file could not be loaded: ${esc(state.error)}</div>`:''}
     ${renderHero(p,next,r)}
     <div class="section"><div class="section-head"><h2 class="section-title">Practice</h2></div>${practiceMarkup(p)}</div>
@@ -358,7 +377,7 @@ function renderHome(){
 }
 function renderSchedule(){
   const p=state.payload;if(!p)return;
-  const games=p.games.filter(g=>state.scheduleFilter==='all'||(state.scheduleFilter==='upcoming'?g.status!=='final':g.status==='final'));
+  const games=sortedGames(p.games.filter(g=>state.scheduleFilter==='all'||(state.scheduleFilter==='upcoming'?isUpcomingGame(g):isPastGame(g))));
   const groups={};games.forEach(g=>(groups[monthKey(g.date)] ||= []).push(g));
   $('#schedule').innerHTML=`<div class="sub-header"><img src="assets/graham-bears-logo.png" class="sub-logo" alt=""><div class="sub-title">Schedule</div></div>
     <button class="calendar-team-btn" onclick="openCalendarMenu()">＋ Add Team Calendar</button>
@@ -501,7 +520,7 @@ function setFilter(id){state.scheduleFilter=id;renderSchedule()}
 function go(id){document.querySelectorAll('.screen').forEach(x=>x.classList.toggle('active',x.id===id));document.querySelectorAll('.navbtn').forEach(x=>x.classList.toggle('active',x.dataset.screen===id));window.scrollTo({top:0,behavior:'smooth'})}
 document.querySelectorAll('.navbtn').forEach(b=>b.addEventListener('click',()=>go(b.dataset.screen)));
 async function copyTeamLink(){const url=new URL(location.href);url.searchParams.set('team',state.selected);try{await navigator.clipboard.writeText(url.href);alert('Team link copied.')}catch(e){prompt('Copy this team link:',url.href)}}
-async function shareGame(){const g=state.payload?.games.find(x=>x.status!=='final');if(!g)return;const text=`${state.payload.label}: ${fmtLong(g.date)} at ${fmtTime(g.date)} — ${g.home?'vs':'at'} ${g.opp}, ${g.venue}`;if(navigator.share){try{await navigator.share({title:'Graham Bears Game',text,url:location.href})}catch(e){}}else{try{await navigator.clipboard.writeText(text);alert('Game details copied.')}catch(e){}}}
+async function shareGame(){const g=sortedGames((state.payload?.games||[]).filter(isUpcomingGame))[0];if(!g)return;const text=`${state.payload.label}: ${fmtLong(g.date)} at ${fmtTime(g.date)} — ${g.home?'vs':'at'} ${g.opp}, ${g.venue}`;if(navigator.share){try{await navigator.share({title:'Graham Bears Game',text,url:location.href})}catch(e){}}else{try{await navigator.clipboard.writeText(text);alert('Game details copied.')}catch(e){}}}
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{})}
 loadTeam();
 </script>
