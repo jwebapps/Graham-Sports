@@ -157,3 +157,11 @@ The Graham Fans view now uses image assets stored in `assets/sports/`:
 - `xc.png`
 
 To update their appearance later, replace those PNG files and keep the filenames the same.
+
+
+## Icon tweak
+Updated `assets/sports/basketball-6.png` and `assets/sports/basketball-7.png` so the numbers are solid black like the 8 icon. Service worker cache bumped to `graham-fans-v4`.
+
+
+## My Team header icon
+The upper-right team control in My Team mode now shows the selected team's sport icon rather than a text abbreviation. The control is hidden in Graham Fans mode.

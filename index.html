@@ -87,18 +87,21 @@
     .team-link{
       position:absolute;
       right:16px;
-      top:calc(28px + env(safe-area-inset-top));
+      top:calc(24px + env(safe-area-inset-top));
       z-index:3;
+      width:50px;
+      height:50px;
       border:1px solid #3b3b3b;
       background:#0e0e0e;
       color:#fff;
-      border-radius:999px;
-      padding:9px 11px;
-      font-size:11px;
-      font-weight:900;
-      letter-spacing:.04em;
-      text-transform:uppercase;
+      border-radius:50%;
+      padding:4px;
+      display:grid;
+      place-items:center;
+      overflow:hidden;
     }
+    .team-link .sport-icon{width:40px;height:40px;flex-basis:40px}
+    .team-link .sport-icon-img{width:40px;height:40px;object-fit:contain;display:block}
 
     .content{padding:18px 18px 28px;background:#fff;position:relative;z-index:1}
     .section-kicker{display:flex;align-items:center;gap:9px;color:var(--red);font-size:17px;font-weight:950;text-transform:uppercase;letter-spacing:.03em;margin:3px 0 14px}
@@ -525,6 +528,8 @@ function renderViewMode(){
   const isFans=state.appView==='fans';
   document.getElementById('myTeamViewBtn')?.classList.toggle('active',!isFans);
   document.getElementById('fansViewBtn')?.classList.toggle('active',isFans);
+  const teamQuick=document.getElementById('teamQuick');
+  if(teamQuick) teamQuick.style.display=isFans?'none':'grid';
   document.querySelectorAll('.bottom .navbtn').forEach(b=>b.style.display=isFans?'none':'');
   document.getElementById('home')?.classList.toggle('active',!isFans);
   document.getElementById('schedule')?.classList.remove('active');
@@ -673,7 +678,12 @@ async function renderFansHome(){
 }
 
 function render(){
-  $('#teamQuick').textContent=shortTeam();
+  const teamQuick=$('#teamQuick');
+  if(teamQuick){
+    teamQuick.innerHTML=sportIconMarkup(state.selected,true);
+    teamQuick.setAttribute('aria-label',`Choose team. Current team: ${selectedLabel()}`);
+    teamQuick.setAttribute('title',selectedLabel());
+  }
   if(!state.payload){state.payload=staticPayload(state.selected)}
   renderHome();renderSchedule();renderStandings();renderTeams();
 }
