@@ -173,3 +173,7 @@ Removed the “Graham Bears” eyebrow and “Fans” heading from the Fans hero
 
 ## Navigation cleanup
 Removed the small Graham Bears logo from the Schedule, Standings, and Teams section headers. The main app header logo remains unchanged.
+
+
+## Top UI refresh
+Refined the My Team / Graham Fans switch and replaced full-width black page-title bars with clean white headings and red accent rules. The Graham Fans intro is now lightweight descriptive text with a red accent instead of a black card. Schedule filters were also restyled to match.
