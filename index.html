@@ -623,7 +623,7 @@ function sportIconMarkup(id,small=false){
     xc:{src:'assets/sports/xc.png',alt:'cross country'}
   };
   const icon=iconMap[id];
-  if(icon) return `<div class="sport-icon${sizeClass}"><img class="sport-icon-img" src="${icon.src}" alt="${icon.alt}" loading="lazy" decoding="async"></div>`;
+  if(icon) return `<div class="sport-icon sport-${id}${sizeClass}"><img class="sport-icon-img sport-${id}-img" src="${icon.src}" alt="${icon.alt}" loading="lazy" decoding="async"></div>`;
   return `<div class="sport-icon${sizeClass}"><span>${esc(teamCode(id))}</span></div>`;
 }
 function setAppView(view){

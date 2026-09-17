@@ -181,3 +181,7 @@ Refined the My Team / Graham Fans switch and replaced full-width black page-titl
 
 ## Upper-right team icon sizing
 Enlarged the team icon inside the circular upper-right button so it fills the circle better, especially for softball and XC. Bumped service worker cache to `graham-fans-v8`.
+
+
+## Header team icon centering
+Adjusted the upper-right team icon button so each sport icon is better centered. The basketballs are shifted slightly upward, softball is centered higher, and XC is slightly smaller and shifted upward so it no longer gets clipped. Cache bumped to `graham-fans-v9`.
