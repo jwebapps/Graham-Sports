@@ -229,45 +229,9 @@
     .fans-all-calendar{width:100%;margin-top:10px;border:0;border-radius:12px;padding:13px;background:var(--red);color:#fff;font-weight:950;text-transform:uppercase;font-size:12px}
 
   
-    .sport-icon{width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;position:relative;flex:0 0 44px}
+    .sport-icon{width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px}
     .sport-icon.small{width:40px;height:40px;flex-basis:40px}
-    .sport-icon.ball{border-radius:50%;font-weight:950}
-    .sport-icon.basketball{
-      background:#f28c18;color:#fff;border:2px solid #2b1a07;
-      box-shadow:inset 0 0 0 2px rgba(255,255,255,.08);
-      font-size:16px;line-height:1;
-    }
-    .sport-icon.basketball::before,
-    .sport-icon.basketball::after{
-      content:"";position:absolute;inset:0;border-radius:50%;pointer-events:none;
-    }
-    .sport-icon.basketball::before{
-      background:
-        linear-gradient(90deg, transparent 47%, #2b1a07 47%, #2b1a07 53%, transparent 53%),
-        linear-gradient(0deg, transparent 47%, #2b1a07 47%, #2b1a07 53%, transparent 53%);
-      opacity:.9;
-    }
-    .sport-icon.basketball::after{
-      background:
-        radial-gradient(circle at 0% 50%, transparent 64%, #2b1a07 65%, #2b1a07 69%, transparent 70%),
-        radial-gradient(circle at 100% 50%, transparent 64%, #2b1a07 65%, #2b1a07 69%, transparent 70%);
-      opacity:.9;
-    }
-    .sport-icon.softball{
-      background:#f5d74f;color:#b32020;border:2px solid #b32020;border-radius:50%;
-      font-size:18px;font-weight:950;
-    }
-    .sport-icon.softball::before,
-    .sport-icon.softball::after{
-      content:"";position:absolute;width:22px;height:10px;border:2px dashed #b32020;border-color:#b32020 transparent transparent transparent;border-radius:50%;
-      left:50%;transform:translateX(-50%);
-    }
-    .sport-icon.softball::before{top:9px;transform:translateX(-50%) rotate(18deg)}
-    .sport-icon.softball::after{bottom:9px;transform:translateX(-50%) rotate(198deg)}
-    .sport-icon.xc{
-      background:#fff;border:2px solid var(--line);border-radius:12px;color:#444;font-size:22px;
-    }
-    .sport-icon-label{position:absolute;bottom:-11px;left:50%;transform:translateX(-50%);font-size:9px;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+    .sport-icon-img{width:100%;height:100%;display:block;object-fit:contain}
     .fan-game-card .icon-wrap{display:flex;align-items:center;justify-content:center}
     .record-row .icon-cell{display:flex;align-items:center;gap:10px}
     .record-row .icon-cell .meta{min-width:0}
@@ -539,11 +503,15 @@ function teamCode(id){
 }
 function sportIconMarkup(id,small=false){
   const sizeClass=small?' small':'';
-  if(id==='bb8') return `<div class="sport-icon ball basketball${sizeClass}" aria-label="8th boys basketball"><span>8</span></div>`;
-  if(id==='bb7') return `<div class="sport-icon ball basketball${sizeClass}" aria-label="7th boys basketball"><span>7</span></div>`;
-  if(id==='bb6') return `<div class="sport-icon ball basketball${sizeClass}" aria-label="6th boys basketball"><span>6</span></div>`;
-  if(id==='softball') return `<div class="sport-icon softball${sizeClass}" aria-label="girls softball"><span>🥎</span></div>`;
-  if(id==='xc') return `<div class="sport-icon xc${sizeClass}" aria-label="cross country"><span>👟</span></div>`;
+  const iconMap={
+    bb6:{src:'assets/sports/basketball-6.png',alt:'6th boys basketball'},
+    bb7:{src:'assets/sports/basketball-7.png',alt:'7th boys basketball'},
+    bb8:{src:'assets/sports/basketball-8.png',alt:'8th boys basketball'},
+    softball:{src:'assets/sports/softball.png',alt:'girls softball'},
+    xc:{src:'assets/sports/xc.png',alt:'cross country'}
+  };
+  const icon=iconMap[id];
+  if(icon) return `<div class="sport-icon${sizeClass}"><img class="sport-icon-img" src="${icon.src}" alt="${icon.alt}" loading="lazy" decoding="async"></div>`;
   return `<div class="sport-icon${sizeClass}"><span>${esc(teamCode(id))}</span></div>`;
 }
 function setAppView(view){

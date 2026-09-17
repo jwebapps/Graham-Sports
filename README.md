@@ -146,3 +146,14 @@ The Graham Fans view now uses sport icons instead of BB8 / SB / XC text tags:
 - numbered basketball icons for BB6 / BB7 / BB8
 - softball icon for Girls Softball
 - shoe icon for Cross Country
+
+
+## Fans sport icons
+The Graham Fans view now uses image assets stored in `assets/sports/`:
+- `basketball-6.png`
+- `basketball-7.png`
+- `basketball-8.png`
+- `softball.png`
+- `xc.png`
+
+To update their appearance later, replace those PNG files and keep the filenames the same.
