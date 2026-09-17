@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-17T18:45:00Z",
+  "fetchedAt": "2026-09-17T19:25:02.352Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -9,6 +9,7 @@
       "opp": "Cupertino Bears",
       "us": 23,
       "them": 49,
+      "result": null,
       "status": "final"
     },
     {
@@ -16,6 +17,7 @@
       "opp": "Hyde Lions",
       "us": 63,
       "them": 44,
+      "result": null,
       "status": "final"
     },
     {
@@ -23,6 +25,7 @@
       "opp": "Miller Mustangs",
       "us": 33,
       "them": 37,
+      "result": null,
       "status": "final"
     },
     {
@@ -30,6 +33,7 @@
       "opp": "Lawson Lightning",
       "us": 57,
       "them": 20,
+      "result": null,
       "status": "final"
     },
     {
@@ -37,6 +41,7 @@
       "opp": "Columbia Bulldogs",
       "us": 51,
       "them": 44,
+      "result": null,
       "status": "final"
     }
   ],
