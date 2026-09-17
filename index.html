@@ -628,7 +628,7 @@ function openTeamFromFans(id){
 async function renderFansHome(){
   const el=document.getElementById('fansHome');
   if(!el) return;
-  el.innerHTML=`<div class="fans-hero"><div class="eyebrow">Graham Bears</div><h2>Fans</h2><p>Scores, standings and what’s next across Graham athletics.</p></div><div class="empty">Loading Graham sports…</div>`;
+  el.innerHTML=`<div class="fans-hero"><p>Scores, standings and what’s next across Graham athletics.</p></div><div class="empty">Loading Graham sports…</div>`;
   const ids=['bb8','bb7','bb6','softball','xc'];
   const payloads=(await Promise.all(ids.map(fetchTeamResultsForFans))).filter(Boolean);
   const now=Date.now();
@@ -662,7 +662,7 @@ async function renderFansHome(){
   }).join('');
 
   el.innerHTML=`
-    <div class="fans-hero"><div class="eyebrow">Graham Bears</div><h2>Fans</h2><p>Scores, standings and what’s next across Graham athletics.</p></div>
+    <div class="fans-hero"><p>Scores, standings and what’s next across Graham athletics.</p></div>
 
     <div class="section"><div class="section-head"><h3 class="section-title">Coming Up</h3></div>
       <div class="fan-cards">${upcoming.length?upcoming.slice(0,8).map(x=>fanGameCard(x.teamId,x.p,x.g,'upcoming')).join(''):'<div class="empty">No upcoming games are currently listed.</div>'}</div>

@@ -165,3 +165,7 @@ Updated `assets/sports/basketball-6.png` and `assets/sports/basketball-7.png` so
 
 ## My Team header icon
 The upper-right team control in My Team mode now shows the selected team's sport icon rather than a text abbreviation. The control is hidden in Graham Fans mode.
+
+
+## Fans hero cleanup
+Removed the “Graham Bears” eyebrow and “Fans” heading from the Fans hero, leaving only the descriptive line.
