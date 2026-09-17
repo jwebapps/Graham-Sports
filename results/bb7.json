@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-16T16:27:18.594Z",
+  "fetchedAt": "2026-09-17T02:27:40.839Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -89,11 +89,11 @@
     {
       "place": "6",
       "team": "Blach Falcons",
-      "w": 2,
+      "w": 3,
       "l": 2,
       "t": 0,
-      "pct": "0.500",
-      "streak": "Lost 2"
+      "pct": "0.600",
+      "streak": "Won 1"
     },
     {
       "place": "7",
@@ -115,21 +115,21 @@
     },
     {
       "place": "9",
-      "team": "Columbia Bulldogs",
-      "w": 1,
-      "l": 4,
-      "t": 0,
-      "pct": "0.200",
-      "streak": "Lost 3"
-    },
-    {
-      "place": "10",
       "team": "Sunnyvale Spartans",
       "w": 1,
       "l": 4,
       "t": 0,
       "pct": "0.200",
       "streak": "Won 1"
+    },
+    {
+      "place": "10",
+      "team": "Columbia Bulldogs",
+      "w": 1,
+      "l": 5,
+      "t": 0,
+      "pct": "0.167",
+      "streak": "Lost 4"
     },
     {
       "place": "11",
