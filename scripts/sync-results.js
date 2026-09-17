@@ -8,7 +8,7 @@ fs.mkdirSync(outDir,{recursive:true});
   for(const [id,source] of Object.entries(SOURCES)){
     try{
       const full=await getTeamData(id);
-      const results=(full.games||[]).filter(g=>g.status==='final').map(g=>({date:g.date,opp:g.opp,us:g.us,them:g.them,status:g.status}));
+      const results=(full.games||[]).filter(g=>g.status==='final').map(g=>({date:g.date,opp:g.opp,us:g.us,them:g.them,result:g.result||null,status:g.status}));
       const body={id:full.id,label:full.label,fetchedAt:full.fetchedAt,sourceUrl:source.url,results,standings:full.standings||[]};
       const fp=path.join(outDir,`${id}.json`);
       let shouldWrite=true;

@@ -108,3 +108,11 @@ Past games without a synced result are labeled Past rather than remaining stuck 
 - Corrected Columbia game from Sep 15 to Sep 14.
 - Result merge now falls back to a unique opponent match if VAL reschedules a game date.
 - Browser results cache bumped to v2.
+
+
+## Softball scores fix
+- Restored current Graham softball results and 1-3 standings record.
+- Supports VAL W/L-only results when no numeric score is published.
+- Corrected Columbia to Sep 14 and postponed Miller game to Sep 21.
+- Updated softball calendar/practice exclusions to match corrected schedule.
+- Future GitHub Actions syncs now preserve W/L-only result rows.

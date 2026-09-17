@@ -10,7 +10,7 @@ const SOURCES = {
 };
 function clean(s){return String(s||'').replace(/\u00a0/g,' ').replace(/\s+/g,' ').trim()}
 function isGraham(name){return /^Graham Bear(?:s)?$/i.test(clean(name))}
-function splitTeamScore(text){const t=clean(text),m=t.match(/^(.*\S)\s+(\d+)$/);return m?{team:clean(m[1]),score:Number(m[2])}:{team:t,score:null}}
+function splitTeamScore(text){const t=clean(text),num=t.match(/^(.*\S)\s+(\d+)$/);if(num)return {team:clean(num[1]),score:Number(num[2]),result:null};const wl=t.match(/^(.*\S)\s+([WLT])$/i);if(wl)return {team:clean(wl[1]),score:null,result:wl[2].toUpperCase()};return {team:t,score:null,result:null}}
 function parseDateTime(dateText,timeText){
   const dm=clean(dateText).match(/(\d{1,2})\/(\d{1,2})/); if(!dm)return null;
   const month=Number(dm[1]),day=Number(dm[2]),year=month>=7?2026:2027;
@@ -36,7 +36,7 @@ function parseGames($,source={}){
     rows.slice(hi+1).forEach(({cells})=>{
       if(cells.length<=Math.max(di,ti,homei,awayi,li))return; const home=splitTeamScore(cells[homei]),away=splitTeamScore(cells[awayi]),isXC=!!source.allMeetRows;
       if(!isXC&&!isGraham(home.team)&&!isGraham(away.team))return; const date=parseDateTime(cells[di],cells[ti]); if(!date)return;
-      const homeSide=isGraham(home.team); games.push({date,home:isXC?false:homeSide,opp:isXC?`VAL Cross Country Meet · ${home.team} / ${away.team}`:(homeSide?away.team:home.team),us:isXC?null:(homeSide?home.score:away.score),them:isXC?null:(homeSide?away.score:home.score),status:isXC?'scheduled':(home.score!==null&&away.score!==null?'final':'scheduled')});
+      const homeSide=isGraham(home.team); const grahamResult=isXC?null:(homeSide?home.result:away.result); const finalNumeric=home.score!==null&&away.score!==null; const finalOutcome=!!grahamResult; games.push({date,home:isXC?false:homeSide,opp:isXC?`VAL Cross Country Meet · ${home.team} / ${away.team}`:(homeSide?away.team:home.team),us:isXC?null:(homeSide?home.score:away.score),them:isXC?null:(homeSide?away.score:home.score),result:grahamResult,status:isXC?'scheduled':((finalNumeric||finalOutcome)?'final':'scheduled')});
     });
   });
   const seen=new Set(); return games.filter(g=>{const k=`${g.date}|${g.home}|${g.opp}`;if(seen.has(k))return false;seen.add(k);return true}).sort((a,b)=>a.date.localeCompare(b.date));

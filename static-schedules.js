@@ -36,10 +36,10 @@ window.GRAHAM_SCHEDULES = {
   softball: {label:'Girls Softball', sourceUrl:'https://valleyal.org/schedule/722499/6th7th8th-grade', practice:{start:'2026-08-24',end:'2026-10-01',days:[1,2,3,4],startTime:'15:30',endTime:'17:00',venue:'Graham Field',note:'3:30–5:00 PM on non-game days. No Friday practices.'}, games:[
     ['2026-09-01T16:00:00',true,'Cupertino Bears','Graham Field'],
     ['2026-09-03T16:00:00',true,'Hyde Lions','Graham Field'],
-    ['2026-09-09T16:00:00',false,'Miller Mustangs','Miller Field'],
-    ['2026-09-10T16:00:00',true,'Redwood Griffins','Graham Field'],
-    ['2026-09-15T16:00:00',true,'Columbia Bulldogs','Graham Field'],
+        ['2026-09-10T16:00:00',true,'Redwood Griffins','Graham Field'],
+    ['2026-09-14T16:00:00',true,'Columbia Bulldogs','Graham Field'],
     ['2026-09-17T16:00:00',false,'Egan Vikings','Egan Field'],
+    ['2026-09-21T16:00:00',false,'Miller Mustangs','Miller Field'],
     ['2026-09-22T16:00:00',false,'Kennedy Cougars','Kennedy Field'],
     ['2026-09-24T16:00:00',false,'Sunnyvale Spartans','Sunnyvale Field'],
     ['2026-09-29T16:00:00',true,'Blach Falcons','Graham Field'],

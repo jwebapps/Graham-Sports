@@ -249,7 +249,7 @@ const fmtLong = iso => new Date(iso).toLocaleDateString(undefined,{weekday:'shor
 const dparts = iso => {const d=new Date(iso);return {dow:d.toLocaleDateString(undefined,{weekday:'short'}),day:d.getDate(),mon:d.toLocaleDateString(undefined,{month:'short'})}};
 const monthKey = iso => new Date(iso).toLocaleDateString(undefined,{month:'long',year:'numeric'});
 function selectedLabel(){return teamOptions.find(x=>x[0]===state.selected)?.[1]||state.selected}
-function record(games){let w=0,l=0,t=0;games.filter(g=>g.status==='final').forEach(g=>{if(g.us>g.them)w++;else if(g.us<g.them)l++;else t++});return {w,l,t}}
+function record(games,standings=[]){const row=(standings||[]).find(x=>/Graham/i.test(x.team||''));if(row)return {w:Number(row.w)||0,l:Number(row.l)||0,t:Number(row.t)||0};let w=0,l=0,t=0;games.filter(g=>g.status==='final').forEach(g=>{const r=String(g.result||'').toUpperCase();if(r==='W')w++;else if(r==='L')l++;else if(r==='T')t++;else if(g.us!=null&&g.them!=null){if(g.us>g.them)w++;else if(g.us<g.them)l++;else t++}});return {w,l,t}}
 function directions(g){
   const destination=(g.venueAddress||'').trim();
   if(destination) return 'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(destination)+'&travelmode=driving';
@@ -260,14 +260,15 @@ function shortTeam(){return selectedLabel().replace('Basketball','BB').replace('
 function venueShort(v){return (v||'Venue TBD').replace('Middle School','MS').replace('Graham Middle School','Graham MS')}
 function gameRow(g){
   const p=dparts(g.date),final=g.status==='final';
-  const outcome=final?(g.us>g.them?'W':g.us<g.them?'L':'T'):'';
+  const outcome=final?(String(g.result||'').toUpperCase()||(g.us>g.them?'W':g.us<g.them?'L':'T')):'';
+  const hasNumericScore=final&&g.us!=null&&g.them!=null;
   const pastUnscored=!final && isPastGame(g);
   const badgeClass=final?`badge final ${outcome==='W'?'win':outcome==='L'?'loss':''}`:'badge';
   return `<div class="game">
     <div class="datebox"><div class="mon">${p.mon}</div><div class="day">${p.day}</div><div class="dow">${p.dow}</div></div>
     <div class="homeaway-icon ${g.home?'home':''}">${g.home?'⌂':'@'}</div>
     <div><div class="opponent">${esc(g.opp)}</div><div class="small">${fmtTime(g.date)} · ${esc(venueShort(g.venue))}</div></div>
-    <div>${final?`<div class="score">${g.us}–${g.them}</div>`:''}<span class="${badgeClass}">${final?outcome:(pastUnscored?'Past':(g.home?'Home':'Away'))}</span></div>
+    <div>${hasNumericScore?`<div class="score">${g.us}–${g.them}</div>`:''}<span class="${badgeClass}">${final?outcome:(pastUnscored?'Past':(g.home?'Home':'Away'))}</span></div>
   </div>`;
 }
 function standingsMarkup(rows){
@@ -367,7 +368,7 @@ function renderHome(){
   const p=state.payload;if(!p)return;
   const finals=p.games.filter(g=>g.status==='final');
   const upcoming=sortedGames(p.games.filter(isUpcomingGame));
-  const next=upcoming[0]||null,r=record(p.games);
+  const next=upcoming[0]||null,r=record(p.games,p.standings);
   $('#home').innerHTML=`${state.error?`<div class="error-note">Using saved data because the latest results file could not be loaded: ${esc(state.error)}</div>`:''}
     ${renderHero(p,next,r)}
     <div class="section"><div class="section-head"><h2 class="section-title">Practice</h2></div>${practiceMarkup(p)}</div>
@@ -488,7 +489,7 @@ function mergeResults(body){
       const matches=byOpponent.get(opp)||[];
       if(matches.length===1) r=matches[0];
     }
-    return r ? {...g,date:r.date||g.date,us:r.us,them:r.them,status:r.status||((r.us!=null&&r.them!=null)?'final':'scheduled')} : g;
+    return r ? {...g,date:r.date||g.date,us:r.us,them:r.them,result:r.result||g.result||null,status:r.status||((r.us!=null&&r.them!=null)||r.result?'final':'scheduled')} : g;
   });
   state.payload.standings=body.standings||[];
   state.payload.resultsSyncedAt=body.fetchedAt||new Date().toISOString();
@@ -505,7 +506,7 @@ async function syncResults(force=false){
   const seq=++state.requestSeq;
   if(state.abort) state.abort.abort();
   state.abort=new AbortController();
-  const cacheKey='gh-results:v2:'+requestedTeam;
+  const cacheKey='gh-results:v3:'+requestedTeam;
   if(!force){
     try{
       const cached=JSON.parse(localStorage.getItem(cacheKey));
