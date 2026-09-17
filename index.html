@@ -425,7 +425,7 @@ function renderSchedule(){
   const p=state.payload;if(!p)return;
   const games=sortedGames(p.games.filter(g=>state.scheduleFilter==='all'||(state.scheduleFilter==='upcoming'?isUpcomingGame(g):isPastGame(g))));
   const groups={};games.forEach(g=>(groups[monthKey(g.date)] ||= []).push(g));
-  $('#schedule').innerHTML=`<div class="sub-header"><img src="assets/graham-bears-logo.png" class="sub-logo" alt=""><div class="sub-title">Schedule</div></div>
+  $('#schedule').innerHTML=`<div class="sub-header"><div class="sub-title">Schedule</div></div>
     <button class="calendar-team-btn" onclick="openCalendarMenu()">＋ Add Team Calendar</button>
     <div class="filter-tabs">${[['all','All Games'],['upcoming','Upcoming'],['completed','Completed']].map(([id,label])=>`<button class="filter-tab ${state.scheduleFilter===id?'active':''}" onclick="setFilter('${id}')">${label}</button>`).join('')}</div>
     ${Object.entries(groups).map(([m,gs])=>`<div class="month-title">${esc(m)}</div><div class="game-list">${gs.map(gameRow).join('')}</div>`).join('') || '<div class="empty">No preloaded games are available for this team yet.</div>'}
@@ -433,10 +433,10 @@ function renderSchedule(){
 }
 function renderStandings(){
   const p=state.payload;if(!p)return;
-  $('#standings').innerHTML=`<div class="sub-header"><img src="assets/graham-bears-logo.png" class="sub-logo" alt=""><div class="sub-title">Standings</div></div><div style="height:16px"></div>${standingsMarkup(p.standings)}<div class="footer-note">Standings are shown as currently published by the Valley Athletic League.</div>`;
+  $('#standings').innerHTML=`<div class="sub-header"><div class="sub-title">Standings</div></div><div style="height:16px"></div>${standingsMarkup(p.standings)}<div class="footer-note">Standings are shown as currently published by the Valley Athletic League.</div>`;
 }
 function renderTeams(){
-  $('#teams').innerHTML=`<div class="sub-header"><img src="assets/graham-bears-logo.png" class="sub-logo" alt=""><div class="sub-title">Teams</div></div><div style="height:16px"></div><div class="card settings">
+  $('#teams').innerHTML=`<div class="sub-header"><div class="sub-title">Teams</div></div><div style="height:16px"></div><div class="card settings">
     <div class="section-title" style="margin-bottom:8px">Choose a team</div>
     <label>VAL division</label><select onchange="selectTeam(this.value)">${teamOptions.map(([id,label])=>`<option value="${id}" ${id===state.selected?'selected':''}>${esc(label)}</option>`).join('')}</select>
     <label>School</label><input value="Graham Middle School" disabled>

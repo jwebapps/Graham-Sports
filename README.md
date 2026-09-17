@@ -169,3 +169,7 @@ The upper-right team control in My Team mode now shows the selected team's sport
 
 ## Fans hero cleanup
 Removed the “Graham Bears” eyebrow and “Fans” heading from the Fans hero, leaving only the descriptive line.
+
+
+## Navigation cleanup
+Removed the small Graham Bears logo from the Schedule, Standings, and Teams section headers. The main app header logo remains unchanged.
