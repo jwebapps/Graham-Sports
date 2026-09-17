@@ -116,3 +116,11 @@ Past games without a synced result are labeled Past rather than remaining stuck 
 - Corrected Columbia to Sep 14 and postponed Miller game to Sep 21.
 - Updated softball calendar/practice exclusions to match corrected schedule.
 - Future GitHub Actions syncs now preserve W/L-only result rows.
+
+
+## BB7 / BB8 score fixes
+- Seeded current VAL scores and standings for 7th and 8th Boys Basketball.
+- Both teams are 2-3 through five completed games.
+- Corrected Columbia games from Sep 15 to Sep 14.
+- Preserved opponent-based result matching for rescheduled games.
+- Results cache bumped to v3 and PWA cache to v6.
