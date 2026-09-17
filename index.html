@@ -89,19 +89,22 @@
       right:16px;
       top:calc(24px + env(safe-area-inset-top));
       z-index:3;
-      width:50px;
-      height:50px;
-      border:1px solid #3b3b3b;
-      background:#0e0e0e;
+      width:52px;
+      height:52px;
+      border:0;
+      background:transparent;
       color:#fff;
-      border-radius:50%;
-      padding:1px;
+      border-radius:0;
+      padding:0;
       display:grid;
       place-items:center;
-      overflow:hidden;
+      overflow:visible;
+      box-shadow:none;
+      appearance:none;
+      -webkit-appearance:none;
     }
     .team-link .sport-icon{width:48px;height:48px;flex-basis:48px;display:grid;place-items:center}
-    .team-link .sport-icon-img{width:48px;height:48px;object-fit:contain;display:block}
+    .team-link .sport-icon-img{width:48px;height:48px;object-fit:contain;object-position:center center;display:block}
 
     .content{padding:18px 18px 28px;background:#fff;position:relative;z-index:1}
     .section-kicker{display:flex;align-items:center;gap:9px;color:var(--red);font-size:17px;font-weight:950;text-transform:uppercase;letter-spacing:.03em;margin:3px 0 14px}

@@ -185,3 +185,7 @@ Enlarged the team icon inside the circular upper-right button so it fills the ci
 
 ## Header team icon centering
 Adjusted the upper-right team icon button so each sport icon is better centered. The basketballs are shifted slightly upward, softball is centered higher, and XC is slightly smaller and shifted upward so it no longer gets clipped. Cache bumped to `graham-fans-v9`.
+
+
+## Header team icon button
+Removed the light gray circular outline/background from the upper-right team icon so only the icon itself appears. Cache bumped to `graham-fans-v10`.
