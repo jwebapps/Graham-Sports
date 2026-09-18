@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-18T03:26:31.777Z",
+  "fetchedAt": "2026-09-18T04:26:56.252Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -48,16 +48,16 @@
   "standings": [
     {
       "place": "1",
-      "team": "Egan Vikings",
-      "w": 5,
+      "team": "Blach Falcons",
+      "w": 6,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 5"
+      "streak": "Won 6"
     },
     {
       "place": "2",
-      "team": "Blach Falcons",
+      "team": "Egan Vikings",
       "w": 5,
       "l": 0,
       "t": 0,
@@ -111,21 +111,21 @@
     },
     {
       "place": "8",
-      "team": "Sunnyvale Spartans",
-      "w": 1,
-      "l": 3,
-      "t": 0,
-      "pct": "0.250",
-      "streak": "Lost 3"
-    },
-    {
-      "place": "9",
       "team": "Lawson Lightning",
       "w": 1,
       "l": 3,
       "t": 0,
       "pct": "0.250",
       "streak": "Lost 2"
+    },
+    {
+      "place": "9",
+      "team": "Sunnyvale Spartans",
+      "w": 1,
+      "l": 4,
+      "t": 0,
+      "pct": "0.200",
+      "streak": "Lost 4"
     },
     {
       "place": "10",

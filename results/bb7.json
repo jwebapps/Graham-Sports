@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-18T01:25:14.318Z",
+  "fetchedAt": "2026-09-18T04:26:56.595Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -75,6 +75,15 @@
     },
     {
       "place": "4",
+      "team": "Blach Falcons",
+      "w": 4,
+      "l": 2,
+      "t": 0,
+      "pct": "0.667",
+      "streak": "Won 2"
+    },
+    {
+      "place": "5",
       "team": "Crittenden Panthers",
       "w": 3,
       "l": 2,
@@ -83,7 +92,7 @@
       "streak": "Lost 2"
     },
     {
-      "place": "5",
+      "place": "6",
       "team": "Hyde Lions",
       "w": 3,
       "l": 2,
@@ -92,22 +101,13 @@
       "streak": "Lost 1"
     },
     {
-      "place": "6",
-      "team": "Blach Falcons",
-      "w": 3,
-      "l": 2,
-      "t": 0,
-      "pct": "0.600",
-      "streak": "Won 1"
-    },
-    {
       "place": "7",
       "team": "Miller Mustangs",
-      "w": 2,
+      "w": 3,
       "l": 3,
       "t": 0,
-      "pct": "0.400",
-      "streak": "Lost 1"
+      "pct": "0.500",
+      "streak": "Won 1"
     },
     {
       "place": "8",
@@ -120,15 +120,6 @@
     },
     {
       "place": "9",
-      "team": "Sunnyvale Spartans",
-      "w": 1,
-      "l": 4,
-      "t": 0,
-      "pct": "0.200",
-      "streak": "Won 1"
-    },
-    {
-      "place": "10",
       "team": "Columbia Bulldogs",
       "w": 1,
       "l": 5,
@@ -137,13 +128,22 @@
       "streak": "Lost 4"
     },
     {
+      "place": "10",
+      "team": "Sunnyvale Spartans",
+      "w": 1,
+      "l": 5,
+      "t": 0,
+      "pct": "0.167",
+      "streak": "Lost 1"
+    },
+    {
       "place": "11",
       "team": "Lawson Lightning",
       "w": 0,
-      "l": 5,
+      "l": 6,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 5"
+      "streak": "Lost 6"
     }
   ]
 }
