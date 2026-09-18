@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-17T21:25:42.043Z",
+  "fetchedAt": "2026-09-18T01:25:14.845Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -40,16 +40,16 @@
   "standings": [
     {
       "place": "1",
-      "team": "Redwood Griffins",
-      "w": 5,
+      "team": "Crittenden Panthers",
+      "w": 6,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 5"
+      "streak": "Won 6"
     },
     {
       "place": "2",
-      "team": "Crittenden Panthers",
+      "team": "Redwood Griffins",
       "w": 5,
       "l": 0,
       "t": 0,
@@ -67,21 +67,21 @@
     },
     {
       "place": "4",
-      "team": "Cupertino Bears",
-      "w": 4,
-      "l": 1,
-      "t": 0,
-      "pct": "0.800",
-      "streak": "Lost 1"
-    },
-    {
-      "place": "5",
       "team": "Miller Mustangs",
       "w": 3,
       "l": 1,
       "t": 0,
       "pct": "0.750",
       "streak": "Won 2"
+    },
+    {
+      "place": "5",
+      "team": "Cupertino Bears",
+      "w": 4,
+      "l": 2,
+      "t": 0,
+      "pct": "0.667",
+      "streak": "Lost 2"
     },
     {
       "place": "6",
