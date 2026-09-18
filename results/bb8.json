@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-18T04:26:56.252Z",
+  "fetchedAt": "2026-09-17T18:45:00Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -9,7 +9,6 @@
       "opp": "Cupertino Bears",
       "us": 46,
       "them": 51,
-      "result": null,
       "status": "final"
     },
     {
@@ -17,7 +16,6 @@
       "opp": "Hyde Lions",
       "us": 58,
       "them": 74,
-      "result": null,
       "status": "final"
     },
     {
@@ -25,7 +23,6 @@
       "opp": "Miller Mustangs",
       "us": 53,
       "them": 61,
-      "result": null,
       "status": "final"
     },
     {
@@ -33,7 +30,6 @@
       "opp": "Lawson Lightning",
       "us": 50,
       "them": 40,
-      "result": null,
       "status": "final"
     },
     {
@@ -41,22 +37,12 @@
       "opp": "Columbia Bulldogs",
       "us": 47,
       "them": 20,
-      "result": null,
       "status": "final"
     }
   ],
   "standings": [
     {
       "place": "1",
-      "team": "Blach Falcons",
-      "w": 6,
-      "l": 0,
-      "t": 0,
-      "pct": "1.000",
-      "streak": "Won 6"
-    },
-    {
-      "place": "2",
       "team": "Egan Vikings",
       "w": 5,
       "l": 0,
@@ -65,16 +51,16 @@
       "streak": "Won 5"
     },
     {
-      "place": "3",
-      "team": "Hyde Lions",
+      "place": "2",
+      "team": "Blach Falcons",
       "w": 4,
-      "l": 1,
+      "l": 0,
       "t": 0,
-      "pct": "0.800",
-      "streak": "Won 1"
+      "pct": "1.000",
+      "streak": "Won 4"
     },
     {
-      "place": "4",
+      "place": "3",
       "team": "Miller Mustangs",
       "w": 4,
       "l": 1,
@@ -83,22 +69,31 @@
       "streak": "Won 4"
     },
     {
+      "place": "4",
+      "team": "Hyde Lions",
+      "w": 3,
+      "l": 1,
+      "t": 0,
+      "pct": "0.750",
+      "streak": "Lost 1"
+    },
+    {
       "place": "5",
       "team": "Kennedy Cougars",
       "w": 3,
-      "l": 2,
+      "l": 1,
       "t": 0,
-      "pct": "0.600",
-      "streak": "Lost 1"
+      "pct": "0.750",
+      "streak": "Won 2"
     },
     {
       "place": "6",
       "team": "Cupertino Bears",
-      "w": 3,
+      "w": 2,
       "l": 3,
       "t": 0,
-      "pct": "0.500",
-      "streak": "Won 1"
+      "pct": "0.400",
+      "streak": "Lost 1"
     },
     {
       "place": "7",
@@ -111,6 +106,15 @@
     },
     {
       "place": "8",
+      "team": "Sunnyvale Spartans",
+      "w": 1,
+      "l": 3,
+      "t": 0,
+      "pct": "0.250",
+      "streak": "Lost 3"
+    },
+    {
+      "place": "9",
       "team": "Lawson Lightning",
       "w": 1,
       "l": 3,
@@ -119,31 +123,22 @@
       "streak": "Lost 2"
     },
     {
-      "place": "9",
-      "team": "Sunnyvale Spartans",
-      "w": 1,
-      "l": 4,
-      "t": 0,
-      "pct": "0.200",
-      "streak": "Lost 4"
-    },
-    {
       "place": "10",
       "team": "Columbia Bulldogs",
       "w": 0,
-      "l": 6,
+      "l": 5,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 6"
+      "streak": "Lost 5"
     },
     {
       "place": "11",
       "team": "Crittenden Panthers",
       "w": 0,
-      "l": 6,
+      "l": 5,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 6"
+      "streak": "Lost 5"
     }
   ]
 }

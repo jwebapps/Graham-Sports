@@ -1,4 +1,4 @@
-const CACHE='graham-fans-v10';
+const CACHE='graham-seasons-placeholder-v1';
 const ASSETS=['./','./index.html','./static-schedules.js','./manifest.webmanifest','./assets/graham-bears-logo.png','./assets/icon-192.png','./assets/icon-512.png','./assets/sports/basketball-6.png','./assets/sports/basketball-7.png','./assets/sports/basketball-8.png','./assets/sports/softball.png','./assets/sports/xc.png'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)))});
 self.addEventListener('activate',e=>e.waitUntil(Promise.all([self.clients.claim(),caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))])));

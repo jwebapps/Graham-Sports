@@ -189,3 +189,7 @@ Adjusted the upper-right team icon button so each sport icon is better centered.
 
 ## Header team icon button
 Removed the light gray circular outline/background from the upper-right team icon so only the icon itself appears. Cache bumped to `graham-fans-v10`.
+
+
+## Future-season placeholders
+Season 1 remains fully functional and unchanged. The Teams page now has Season 1–5 tabs. Seasons 2–5 are display-only placeholders showing start dates, season windows, and sports; no future schedule/result syncing has been enabled yet. Boys basketball icons were updated to the B6/B7/B8 versions.

@@ -351,6 +351,40 @@
       .fans-hero{margin-bottom:17px}
     }
 
+  
+    .season-tabs{
+      display:flex;gap:7px;overflow-x:auto;padding:2px 1px 8px;margin:0 0 14px;
+      scrollbar-width:none;-webkit-overflow-scrolling:touch;
+    }
+    .season-tabs::-webkit-scrollbar{display:none}
+    .season-tab{
+      flex:0 0 auto;border:1px solid #ddd;background:#fff;color:#666;border-radius:999px;
+      padding:9px 13px;font-size:11px;font-weight:950;text-transform:uppercase;letter-spacing:.03em;
+    }
+    .season-tab.active{background:#000;color:#fff;border-color:#000}
+    .season-tab.current:not(.active){border-color:var(--red);color:var(--red)}
+    .season-now{
+      display:inline-flex;align-items:center;gap:6px;background:var(--red-soft);color:var(--red);
+      padding:5px 9px;border-radius:999px;font-size:10px;font-weight:950;text-transform:uppercase;
+      letter-spacing:.04em;margin-bottom:12px;
+    }
+    .season-placeholder{
+      border:1px solid var(--line);border-radius:16px;background:#fff;padding:18px;
+      box-shadow:var(--shadow);
+    }
+    .season-placeholder .season-number{
+      color:var(--red);font-size:12px;font-weight:950;text-transform:uppercase;letter-spacing:.07em;
+      margin-bottom:7px;
+    }
+    .season-placeholder h2{margin:0 0 4px;font-size:26px;line-height:1.05;color:#111}
+    .season-placeholder .dates{font-size:13px;color:var(--muted);font-weight:800;margin-bottom:18px}
+    .season-placeholder .sports-label{font-size:10px;color:var(--muted);font-weight:950;text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px}
+    .season-placeholder .sports-list{font-size:15px;font-weight:850;line-height:1.55;color:#222}
+    .season-placeholder .coming-note{
+      margin-top:18px;padding:13px 14px;border-radius:12px;background:#f5f5f5;color:#555;
+      font-size:12px;line-height:1.45;
+    }
+
   </style>
 </head>
 <body>
@@ -397,6 +431,7 @@ const urlView = urlParams.get('view');
 const savedTeam = localStorage.getItem('team');
 const initialTeam = validTeamIds.has(urlTeam) ? urlTeam : (validTeamIds.has(savedTeam) ? savedTeam : 'bb7');
 const state = { selected:initialTeam, appView:(urlView==='fans'?'fans':'team'), payload:null, loading:false, error:null, scheduleFilter:'all', requestSeq:0, abort:null };
+let teamsSeasonTab=1;
 localStorage.setItem('team',initialTeam);
 if(urlTeam!==initialTeam || (state.appView==='fans' && urlView!=='fans')){const url=new URL(location.href);url.searchParams.set('team',initialTeam);if(state.appView==='fans')url.searchParams.set('view','fans');history.replaceState(null,'',url)}
 const $ = s => document.querySelector(s);
@@ -547,8 +582,37 @@ function renderStandings(){
   const p=state.payload;if(!p)return;
   $('#standings').innerHTML=`<div class="sub-header"><div class="sub-title">Standings</div></div><div style="height:16px"></div>${standingsMarkup(p.standings)}<div class="footer-note">Standings are shown as currently published by the Valley Athletic League.</div>`;
 }
+
+const seasonPlaceholders={
+  1:{label:'Season 1',dates:'Aug 24 – Oct 7, 2026',begins:'Current season',sports:['Cross Country','8th / 7th / 6th Boys Basketball','Girls Softball']},
+  2:{label:'Season 2',dates:'Oct 12 – Dec 3, 2026',begins:'Begins October 12',sports:['Wrestling','8th Girls Volleyball','7th Girls Volleyball','6th Girls Volleyball']},
+  3:{label:'Season 3',dates:'Dec 7, 2026 – Feb 4, 2027',begins:'Begins December 7',sports:['8th Boys Volleyball','7th Boys Volleyball','6th Boys Volleyball','7th/8th Girls Soccer','6th/7th Girls Soccer']},
+  4:{label:'Season 4',dates:'Feb 8 – Apr 1, 2027',begins:'Begins February 8',sports:['8th Girls Basketball','7th Girls Basketball','6th Girls Basketball','7th/8th Boys Soccer','6th/7th Boys Soccer']},
+  5:{label:'Season 5',dates:'Apr 5 – May 12, 2027',begins:'Begins April 5',sports:['Track & Field']}
+};
+function setTeamsSeasonTab(n){teamsSeasonTab=Number(n)||1;renderTeams();}
+function seasonTabsMarkup(){
+  return `<div class="season-tabs" aria-label="Graham sports seasons">${[1,2,3,4,5].map(n=>`<button class="season-tab ${teamsSeasonTab===n?'active':''} ${n===1?'current':''}" onclick="setTeamsSeasonTab(${n})">Season ${n}</button>`).join('')}</div>`;
+}
+function futureSeasonMarkup(n){
+  const s=seasonPlaceholders[n];
+  return `<div class="season-placeholder">
+    <div class="season-number">${esc(s.label)}</div>
+    <h2>${esc(s.begins)}</h2>
+    <div class="dates">${esc(s.dates)}</div>
+    <div class="sports-label">Sports</div>
+    <div class="sports-list">${s.sports.map(esc).join(' · ')}</div>
+    <div class="coming-note">This is a placeholder for the upcoming season. Team schedules, scores, standings, practices, and calendar subscriptions will be added once they are ready. Season 1 remains unchanged.</div>
+  </div>`;
+}
+
 function renderTeams(){
-  $('#teams').innerHTML=`<div class="sub-header"><div class="sub-title">Teams</div></div><div style="height:16px"></div><div class="card settings">
+  const tabs=seasonTabsMarkup();
+  if(teamsSeasonTab!==1){
+    $('#teams').innerHTML=`<div class="sub-header"><div class="sub-title">Teams</div></div><div style="height:16px"></div>${tabs}${futureSeasonMarkup(teamsSeasonTab)}`;
+    return;
+  }
+  $('#teams').innerHTML=`<div class="sub-header"><div class="sub-title">Teams</div></div><div style="height:16px"></div>${tabs}<div class="season-now">Season 1 · Current</div><div class="card settings">
     <div class="section-title" style="margin-bottom:8px">Choose a team</div>
     <label>VAL division</label><select onchange="selectTeam(this.value)">${teamOptions.map(([id,label])=>`<option value="${id}" ${id===state.selected?'selected':''}>${esc(label)}</option>`).join('')}</select>
     <label>School</label><input value="Graham Middle School" disabled>
