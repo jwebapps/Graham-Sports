@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-17T21:25:41.804Z",
+  "fetchedAt": "2026-09-18T00:32:54.404Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -58,11 +58,11 @@
     {
       "place": "2",
       "team": "Cupertino Bears",
-      "w": 2,
+      "w": 3,
       "l": 1,
       "t": 0,
-      "pct": "0.667",
-      "streak": "Won 1"
+      "pct": "0.750",
+      "streak": "Won 2"
     },
     {
       "place": "3",
@@ -122,10 +122,10 @@
       "place": "9",
       "team": "Crittenden Panthers",
       "w": 0,
-      "l": 4,
+      "l": 5,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 4"
+      "streak": "Lost 5"
     }
   ]
 }
