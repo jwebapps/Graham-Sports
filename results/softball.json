@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-18T15:26:33.132Z",
+  "fetchedAt": "2026-09-18T16:25:52.632Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -94,6 +94,15 @@
     },
     {
       "place": "7",
+      "team": "Sunnyvale Spartans",
+      "w": 2,
+      "l": 3,
+      "t": 1,
+      "pct": "0.417",
+      "streak": "Won 2"
+    },
+    {
+      "place": "8",
       "team": "Graham Bears",
       "w": 1,
       "l": 3,
@@ -102,22 +111,13 @@
       "streak": "Lost 2"
     },
     {
-      "place": "8",
+      "place": "9",
       "team": "Blach Falcons",
       "w": 1,
-      "l": 3,
+      "l": 4,
       "t": 0,
-      "pct": "0.250",
-      "streak": "Won 1"
-    },
-    {
-      "place": "9",
-      "team": "Sunnyvale Spartans",
-      "w": 1,
-      "l": 3,
-      "t": 1,
-      "pct": "0.300",
-      "streak": "Won 1"
+      "pct": "0.200",
+      "streak": "Lost 1"
     },
     {
       "place": "10",
