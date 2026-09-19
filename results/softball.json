@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-18T16:25:52.632Z",
+  "fetchedAt": "2026-09-19T00:32:54.479Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -33,6 +33,14 @@
       "opp": "Columbia Bulldogs",
       "us": 7,
       "them": 22,
+      "result": null,
+      "status": "final"
+    },
+    {
+      "date": "2026-09-17T16:00:00",
+      "opp": "Egan Vikings",
+      "us": 18,
+      "them": 6,
       "result": null,
       "status": "final"
     }
@@ -94,21 +102,21 @@
     },
     {
       "place": "7",
+      "team": "Graham Bears",
+      "w": 2,
+      "l": 3,
+      "t": 0,
+      "pct": "0.400",
+      "streak": "Won 1"
+    },
+    {
+      "place": "8",
       "team": "Sunnyvale Spartans",
       "w": 2,
       "l": 3,
       "t": 1,
       "pct": "0.417",
       "streak": "Won 2"
-    },
-    {
-      "place": "8",
-      "team": "Graham Bears",
-      "w": 1,
-      "l": 3,
-      "t": 0,
-      "pct": "0.250",
-      "streak": "Lost 2"
     },
     {
       "place": "9",
@@ -123,10 +131,10 @@
       "place": "10",
       "team": "Egan Vikings",
       "w": 0,
-      "l": 5,
+      "l": 6,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 5"
+      "streak": "Lost 6"
     },
     {
       "place": "11",
