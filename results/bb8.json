@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-18T15:26:32.414Z",
+  "fetchedAt": "2026-09-22T01:37:55.995Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -43,12 +43,20 @@
       "them": 20,
       "result": null,
       "status": "final"
+    },
+    {
+      "date": "2026-09-17T16:00:00",
+      "opp": "Egan Vikings",
+      "us": 47,
+      "them": 61,
+      "result": null,
+      "status": "final"
     }
   ],
   "standings": [
     {
       "place": "1",
-      "team": "Blach Falcons",
+      "team": "Egan Vikings",
       "w": 6,
       "l": 0,
       "t": 0,
@@ -57,12 +65,12 @@
     },
     {
       "place": "2",
-      "team": "Egan Vikings",
-      "w": 5,
+      "team": "Blach Falcons",
+      "w": 6,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 5"
+      "streak": "Won 6"
     },
     {
       "place": "3",
@@ -104,10 +112,10 @@
       "place": "7",
       "team": "Graham Bears",
       "w": 2,
-      "l": 3,
+      "l": 4,
       "t": 0,
-      "pct": "0.400",
-      "streak": "Won 2"
+      "pct": "0.333",
+      "streak": "Lost 1"
     },
     {
       "place": "8",
