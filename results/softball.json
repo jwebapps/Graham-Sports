@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-22T01:37:56.938Z",
+  "fetchedAt": "2026-09-22T07:42:54.391Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -75,11 +75,11 @@
     {
       "place": "3",
       "team": "Columbia Bulldogs",
-      "w": 4,
+      "w": 5,
       "l": 1,
       "t": 0,
-      "pct": "0.800",
-      "streak": "Won 3"
+      "pct": "0.833",
+      "streak": "Won 4"
     },
     {
       "place": "4",
@@ -130,10 +130,10 @@
       "place": "9",
       "team": "Blach Falcons",
       "w": 1,
-      "l": 4,
+      "l": 5,
       "t": 0,
-      "pct": "0.200",
-      "streak": "Lost 1"
+      "pct": "0.167",
+      "streak": "Lost 2"
     },
     {
       "place": "10",
