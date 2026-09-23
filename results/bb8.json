@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-23T16:58:51.273Z",
+  "fetchedAt": "2026-09-23T23:42:15.132Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -92,11 +92,11 @@
     {
       "place": "4",
       "team": "Miller Mustangs",
-      "w": 5,
+      "w": 6,
       "l": 1,
       "t": 0,
-      "pct": "0.833",
-      "streak": "Won 5"
+      "pct": "0.857",
+      "streak": "Won 6"
     },
     {
       "place": "5",
@@ -147,10 +147,10 @@
       "place": "10",
       "team": "Columbia Bulldogs",
       "w": 0,
-      "l": 6,
+      "l": 7,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 6"
+      "streak": "Lost 7"
     },
     {
       "place": "11",

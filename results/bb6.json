@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-23T16:58:51.744Z",
+  "fetchedAt": "2026-09-23T23:42:15.551Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -74,21 +74,21 @@
     },
     {
       "place": "3",
+      "team": "Miller Mustangs",
+      "w": 4,
+      "l": 2,
+      "t": 0,
+      "pct": "0.667",
+      "streak": "Won 2"
+    },
+    {
+      "place": "4",
       "team": "Graham Bears",
       "w": 4,
       "l": 2,
       "t": 0,
       "pct": "0.667",
       "streak": "Won 3"
-    },
-    {
-      "place": "4",
-      "team": "Miller Mustangs",
-      "w": 3,
-      "l": 2,
-      "t": 0,
-      "pct": "0.600",
-      "streak": "Won 1"
     },
     {
       "place": "5",
@@ -103,10 +103,10 @@
       "place": "6",
       "team": "Columbia Bulldogs",
       "w": 2,
-      "l": 2,
+      "l": 3,
       "t": 0,
-      "pct": "0.500",
-      "streak": "Lost 1"
+      "pct": "0.400",
+      "streak": "Lost 2"
     },
     {
       "place": "7",
