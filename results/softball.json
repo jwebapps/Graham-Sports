@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-23T05:58:38.520Z",
+  "fetchedAt": "2026-09-23T16:58:51.947Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -65,20 +65,20 @@
     {
       "place": "1",
       "team": "Redwood Griffins",
-      "w": 6,
+      "w": 7,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 6"
+      "streak": "Won 7"
     },
     {
       "place": "2",
       "team": "Crittenden Panthers",
-      "w": 6,
+      "w": 7,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 6"
+      "streak": "Won 7"
     },
     {
       "place": "3",
@@ -101,11 +101,11 @@
     {
       "place": "5",
       "team": "Cupertino Bears",
-      "w": 4,
+      "w": 5,
       "l": 2,
       "t": 0,
-      "pct": "0.667",
-      "streak": "Lost 2"
+      "pct": "0.714",
+      "streak": "Won 1"
     },
     {
       "place": "6",
@@ -120,10 +120,10 @@
       "place": "7",
       "team": "Sunnyvale Spartans",
       "w": 2,
-      "l": 3,
+      "l": 4,
       "t": 1,
-      "pct": "0.417",
-      "streak": "Won 2"
+      "pct": "0.357",
+      "streak": "Lost 1"
     },
     {
       "place": "8",
@@ -138,10 +138,10 @@
       "place": "9",
       "team": "Blach Falcons",
       "w": 1,
-      "l": 5,
+      "l": 6,
       "t": 0,
-      "pct": "0.167",
-      "streak": "Lost 2"
+      "pct": "0.143",
+      "streak": "Lost 3"
     },
     {
       "place": "10",
@@ -156,10 +156,10 @@
       "place": "11",
       "team": "Hyde Lions",
       "w": 0,
-      "l": 6,
+      "l": 7,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 6"
+      "streak": "Lost 7"
     }
   ]
 }
