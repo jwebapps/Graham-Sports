@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-22T07:42:54.391Z",
+  "fetchedAt": "2026-09-23T00:33:28.889Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -74,21 +74,21 @@
     },
     {
       "place": "3",
-      "team": "Columbia Bulldogs",
+      "team": "Miller Mustangs",
       "w": 5,
-      "l": 1,
+      "l": 2,
       "t": 0,
-      "pct": "0.833",
-      "streak": "Won 4"
+      "pct": "0.714",
+      "streak": "Won 2"
     },
     {
       "place": "4",
-      "team": "Miller Mustangs",
-      "w": 4,
+      "team": "Columbia Bulldogs",
+      "w": 5,
       "l": 2,
       "t": 0,
-      "pct": "0.667",
-      "streak": "Won 1"
+      "pct": "0.714",
+      "streak": "Lost 1"
     },
     {
       "place": "5",

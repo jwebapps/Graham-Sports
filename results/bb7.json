@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-18T17:23:47.788Z",
+  "fetchedAt": "2026-09-23T00:33:28.431Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -65,16 +65,16 @@
     },
     {
       "place": "2",
-      "team": "Kennedy Cougars",
-      "w": 5,
+      "team": "Cupertino Bears",
+      "w": 6,
       "l": 1,
       "t": 0,
-      "pct": "0.833",
-      "streak": "Won 4"
+      "pct": "0.857",
+      "streak": "Won 5"
     },
     {
       "place": "3",
-      "team": "Cupertino Bears",
+      "team": "Kennedy Cougars",
       "w": 5,
       "l": 1,
       "t": 0,
@@ -84,38 +84,38 @@
     {
       "place": "4",
       "team": "Blach Falcons",
-      "w": 4,
+      "w": 5,
       "l": 2,
       "t": 0,
-      "pct": "0.667",
-      "streak": "Won 2"
+      "pct": "0.714",
+      "streak": "Won 3"
     },
     {
       "place": "5",
       "team": "Crittenden Panthers",
       "w": 3,
-      "l": 2,
-      "t": 0,
-      "pct": "0.600",
-      "streak": "Lost 2"
-    },
-    {
-      "place": "6",
-      "team": "Hyde Lions",
-      "w": 3,
       "l": 3,
       "t": 0,
       "pct": "0.500",
-      "streak": "Lost 2"
+      "streak": "Lost 3"
     },
     {
-      "place": "7",
+      "place": "6",
       "team": "Miller Mustangs",
       "w": 3,
       "l": 3,
       "t": 0,
       "pct": "0.500",
       "streak": "Won 1"
+    },
+    {
+      "place": "7",
+      "team": "Hyde Lions",
+      "w": 3,
+      "l": 4,
+      "t": 0,
+      "pct": "0.429",
+      "streak": "Lost 3"
     },
     {
       "place": "8",
