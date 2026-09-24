@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-23T23:42:15.132Z",
+  "fetchedAt": "2026-09-24T15:06:33.345Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -73,21 +73,21 @@
     },
     {
       "place": "2",
-      "team": "Egan Vikings",
-      "w": 6,
-      "l": 0,
+      "team": "Hyde Lions",
+      "w": 7,
+      "l": 1,
       "t": 0,
-      "pct": "1.000",
-      "streak": "Won 6"
+      "pct": "0.875",
+      "streak": "Won 4"
     },
     {
       "place": "3",
-      "team": "Hyde Lions",
+      "team": "Egan Vikings",
       "w": 6,
       "l": 1,
       "t": 0,
       "pct": "0.857",
-      "streak": "Won 3"
+      "streak": "Lost 1"
     },
     {
       "place": "4",
