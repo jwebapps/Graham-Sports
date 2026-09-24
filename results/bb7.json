@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-23T23:42:15.363Z",
+  "fetchedAt": "2026-09-24T04:51:07.814Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -57,11 +57,11 @@
     {
       "place": "1",
       "team": "Egan Vikings",
-      "w": 6,
+      "w": 7,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 6"
+      "streak": "Won 7"
     },
     {
       "place": "2",
@@ -101,21 +101,21 @@
     },
     {
       "place": "6",
-      "team": "Hyde Lions",
-      "w": 3,
-      "l": 4,
-      "t": 0,
-      "pct": "0.429",
-      "streak": "Lost 3"
-    },
-    {
-      "place": "7",
       "team": "Miller Mustangs",
       "w": 3,
       "l": 4,
       "t": 0,
       "pct": "0.429",
       "streak": "Lost 1"
+    },
+    {
+      "place": "7",
+      "team": "Hyde Lions",
+      "w": 3,
+      "l": 5,
+      "t": 0,
+      "pct": "0.375",
+      "streak": "Lost 4"
     },
     {
       "place": "8",
