@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-24T04:51:07.814Z",
+  "fetchedAt": "2026-09-25T01:30:32.253Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -51,35 +51,43 @@
       "them": 57,
       "result": null,
       "status": "final"
+    },
+    {
+      "date": "2026-09-22T16:00:00",
+      "opp": "Kennedy Cougars",
+      "us": 34,
+      "them": 54,
+      "result": null,
+      "status": "final"
     }
   ],
   "standings": [
     {
       "place": "1",
-      "team": "Egan Vikings",
+      "team": "Kennedy Cougars",
       "w": 7,
-      "l": 0,
+      "l": 1,
       "t": 0,
-      "pct": "1.000",
-      "streak": "Won 7"
+      "pct": "0.875",
+      "streak": "Won 6"
     },
     {
       "place": "2",
-      "team": "Cupertino Bears",
-      "w": 6,
+      "team": "Egan Vikings",
+      "w": 7,
       "l": 1,
       "t": 0,
-      "pct": "0.857",
-      "streak": "Won 5"
+      "pct": "0.875",
+      "streak": "Lost 1"
     },
     {
       "place": "3",
-      "team": "Kennedy Cougars",
-      "w": 5,
+      "team": "Cupertino Bears",
+      "w": 7,
       "l": 1,
       "t": 0,
-      "pct": "0.833",
-      "streak": "Won 4"
+      "pct": "0.875",
+      "streak": "Won 6"
     },
     {
       "place": "4",
@@ -93,11 +101,11 @@
     {
       "place": "5",
       "team": "Crittenden Panthers",
-      "w": 3,
+      "w": 4,
       "l": 4,
       "t": 0,
-      "pct": "0.429",
-      "streak": "Lost 4"
+      "pct": "0.500",
+      "streak": "Won 1"
     },
     {
       "place": "6",
@@ -121,22 +129,13 @@
       "place": "8",
       "team": "Graham Bears",
       "w": 2,
-      "l": 4,
-      "t": 0,
-      "pct": "0.333",
-      "streak": "Lost 1"
-    },
-    {
-      "place": "9",
-      "team": "Columbia Bulldogs",
-      "w": 2,
       "l": 5,
       "t": 0,
       "pct": "0.286",
-      "streak": "Won 1"
+      "streak": "Lost 2"
     },
     {
-      "place": "10",
+      "place": "9",
       "team": "Sunnyvale Spartans",
       "w": 2,
       "l": 5,
@@ -145,13 +144,22 @@
       "streak": "Won 1"
     },
     {
+      "place": "10",
+      "team": "Columbia Bulldogs",
+      "w": 2,
+      "l": 6,
+      "t": 0,
+      "pct": "0.250",
+      "streak": "Lost 1"
+    },
+    {
       "place": "11",
       "team": "Lawson Lightning",
       "w": 0,
-      "l": 7,
+      "l": 8,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 7"
+      "streak": "Lost 8"
     }
   ]
 }

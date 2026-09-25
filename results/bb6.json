@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-09-23T23:42:15.551Z",
+  "fetchedAt": "2026-09-25T01:30:32.493Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -51,17 +51,25 @@
       "them": 28,
       "result": null,
       "status": "final"
+    },
+    {
+      "date": "2026-09-24T16:00:00",
+      "opp": "Sunnyvale Spartans",
+      "us": 48,
+      "them": 64,
+      "result": null,
+      "status": "final"
     }
   ],
   "standings": [
     {
       "place": "1",
       "team": "Sunnyvale Spartans",
-      "w": 6,
+      "w": 7,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 6"
+      "streak": "Won 7"
     },
     {
       "place": "2",
@@ -85,10 +93,10 @@
       "place": "4",
       "team": "Graham Bears",
       "w": 4,
-      "l": 2,
+      "l": 3,
       "t": 0,
-      "pct": "0.667",
-      "streak": "Won 3"
+      "pct": "0.571",
+      "streak": "Lost 1"
     },
     {
       "place": "5",
