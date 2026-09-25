@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-25T07:49:02.670Z",
+  "fetchedAt": "2026-09-25T18:36:56.758Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -100,11 +100,11 @@
     {
       "place": "4",
       "team": "Blach Falcons",
-      "w": 5,
+      "w": 6,
       "l": 2,
       "t": 0,
-      "pct": "0.714",
-      "streak": "Won 3"
+      "pct": "0.750",
+      "streak": "Won 4"
     },
     {
       "place": "5",
@@ -117,21 +117,21 @@
     },
     {
       "place": "6",
-      "team": "Miller Mustangs",
-      "w": 3,
-      "l": 4,
-      "t": 0,
-      "pct": "0.429",
-      "streak": "Lost 1"
-    },
-    {
-      "place": "7",
       "team": "Hyde Lions",
       "w": 3,
       "l": 5,
       "t": 0,
       "pct": "0.375",
       "streak": "Lost 4"
+    },
+    {
+      "place": "7",
+      "team": "Miller Mustangs",
+      "w": 3,
+      "l": 5,
+      "t": 0,
+      "pct": "0.375",
+      "streak": "Lost 2"
     },
     {
       "place": "8",

@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-25T01:30:31.929Z",
+  "fetchedAt": "2026-09-25T18:36:56.498Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -64,15 +64,6 @@
   "standings": [
     {
       "place": "1",
-      "team": "Blach Falcons",
-      "w": 7,
-      "l": 0,
-      "t": 0,
-      "pct": "1.000",
-      "streak": "Won 7"
-    },
-    {
-      "place": "2",
       "team": "Hyde Lions",
       "w": 7,
       "l": 1,
@@ -81,7 +72,7 @@
       "streak": "Won 4"
     },
     {
-      "place": "3",
+      "place": "2",
       "team": "Egan Vikings",
       "w": 7,
       "l": 1,
@@ -90,13 +81,22 @@
       "streak": "Won 1"
     },
     {
-      "place": "4",
+      "place": "3",
       "team": "Miller Mustangs",
-      "w": 6,
+      "w": 7,
       "l": 1,
       "t": 0,
-      "pct": "0.857",
-      "streak": "Won 6"
+      "pct": "0.875",
+      "streak": "Won 7"
+    },
+    {
+      "place": "4",
+      "team": "Blach Falcons",
+      "w": 7,
+      "l": 1,
+      "t": 0,
+      "pct": "0.875",
+      "streak": "Lost 1"
     },
     {
       "place": "5",
@@ -110,11 +110,11 @@
     {
       "place": "6",
       "team": "Cupertino Bears",
-      "w": 3,
+      "w": 4,
       "l": 4,
       "t": 0,
-      "pct": "0.429",
-      "streak": "Lost 1"
+      "pct": "0.500",
+      "streak": "Won 1"
     },
     {
       "place": "7",
@@ -136,30 +136,30 @@
     },
     {
       "place": "9",
-      "team": "Lawson Lightning",
+      "team": "Crittenden Panthers",
       "w": 1,
-      "l": 6,
+      "l": 7,
       "t": 0,
-      "pct": "0.143",
-      "streak": "Lost 5"
+      "pct": "0.125",
+      "streak": "Won 1"
     },
     {
       "place": "10",
-      "team": "Columbia Bulldogs",
-      "w": 0,
+      "team": "Lawson Lightning",
+      "w": 1,
       "l": 7,
       "t": 0,
-      "pct": "0.000",
-      "streak": "Lost 7"
+      "pct": "0.125",
+      "streak": "Lost 6"
     },
     {
       "place": "11",
-      "team": "Crittenden Panthers",
+      "team": "Columbia Bulldogs",
       "w": 0,
-      "l": 7,
+      "l": 8,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 7"
+      "streak": "Lost 8"
     }
   ]
 }
