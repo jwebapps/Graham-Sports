@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-24T15:06:34.105Z",
+  "fetchedAt": "2026-09-25T07:49:03.146Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -110,11 +110,11 @@
     {
       "place": "6",
       "team": "Kennedy Cougars",
-      "w": 3,
+      "w": 4,
       "l": 3,
       "t": 1,
-      "pct": "0.500",
-      "streak": "Won 2"
+      "pct": "0.563",
+      "streak": "Won 3"
     },
     {
       "place": "7",
@@ -136,21 +136,21 @@
     },
     {
       "place": "9",
-      "team": "Egan Vikings",
-      "w": 1,
-      "l": 6,
-      "t": 0,
-      "pct": "0.143",
-      "streak": "Won 1"
-    },
-    {
-      "place": "10",
       "team": "Blach Falcons",
       "w": 1,
       "l": 6,
       "t": 0,
       "pct": "0.143",
       "streak": "Lost 3"
+    },
+    {
+      "place": "10",
+      "team": "Egan Vikings",
+      "w": 1,
+      "l": 7,
+      "t": 0,
+      "pct": "0.125",
+      "streak": "Lost 1"
     },
     {
       "place": "11",
