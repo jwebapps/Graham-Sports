@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-27T18:24:30.062Z",
+  "fetchedAt": "2026-09-30T00:27:23.604Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -57,6 +57,14 @@
       "opp": "Kennedy Cougars",
       "us": 0,
       "them": 15,
+      "result": null,
+      "status": "final"
+    },
+    {
+      "date": "2026-09-24T16:00:00",
+      "opp": "Sunnyvale Spartans",
+      "us": 5,
+      "them": 17,
       "result": null,
       "status": "final"
     }
@@ -119,20 +127,20 @@
     {
       "place": "7",
       "team": "Sunnyvale Spartans",
-      "w": 2,
+      "w": 3,
       "l": 4,
       "t": 1,
-      "pct": "0.357",
-      "streak": "Lost 1"
+      "pct": "0.438",
+      "streak": "Won 1"
     },
     {
       "place": "8",
       "team": "Graham Bears",
       "w": 2,
-      "l": 5,
+      "l": 6,
       "t": 0,
-      "pct": "0.286",
-      "streak": "Lost 2"
+      "pct": "0.250",
+      "streak": "Lost 3"
     },
     {
       "place": "9",
