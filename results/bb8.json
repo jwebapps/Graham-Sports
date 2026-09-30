@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-09-30T06:43:21.917Z",
+  "fetchedAt": "2026-09-30T19:20:15.482Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -59,11 +59,28 @@
       "them": 42,
       "result": null,
       "status": "final"
+    },
+    {
+      "date": "2026-09-29T16:00:00",
+      "opp": "Blach Falcons",
+      "us": 34,
+      "them": 45,
+      "result": null,
+      "status": "final"
     }
   ],
   "standings": [
     {
       "place": "1",
+      "team": "Hyde Lions",
+      "w": 8,
+      "l": 1,
+      "t": 0,
+      "pct": "0.889",
+      "streak": "Won 5"
+    },
+    {
+      "place": "2",
       "team": "Egan Vikings",
       "w": 8,
       "l": 1,
@@ -72,43 +89,25 @@
       "streak": "Won 2"
     },
     {
-      "place": "2",
-      "team": "Miller Mustangs",
-      "w": 7,
-      "l": 1,
-      "t": 0,
-      "pct": "0.875",
-      "streak": "Won 7"
-    },
-    {
       "place": "3",
-      "team": "Blach Falcons",
-      "w": 7,
+      "team": "Miller Mustangs",
+      "w": 8,
       "l": 1,
       "t": 0,
-      "pct": "0.875",
-      "streak": "Lost 1"
+      "pct": "0.889",
+      "streak": "Won 8"
     },
     {
       "place": "4",
-      "team": "Hyde Lions",
-      "w": 7,
+      "team": "Blach Falcons",
+      "w": 8,
       "l": 1,
       "t": 0,
-      "pct": "0.875",
-      "streak": "Won 4"
+      "pct": "0.889",
+      "streak": "Won 1"
     },
     {
       "place": "5",
-      "team": "Kennedy Cougars",
-      "w": 4,
-      "l": 4,
-      "t": 0,
-      "pct": "0.500",
-      "streak": "Lost 3"
-    },
-    {
-      "place": "6",
       "team": "Cupertino Bears",
       "w": 4,
       "l": 4,
@@ -117,13 +116,22 @@
       "streak": "Won 1"
     },
     {
+      "place": "6",
+      "team": "Kennedy Cougars",
+      "w": 4,
+      "l": 5,
+      "t": 0,
+      "pct": "0.444",
+      "streak": "Lost 4"
+    },
+    {
       "place": "7",
       "team": "Graham Bears",
       "w": 3,
-      "l": 4,
+      "l": 5,
       "t": 0,
-      "pct": "0.429",
-      "streak": "Won 1"
+      "pct": "0.375",
+      "streak": "Lost 1"
     },
     {
       "place": "8",
@@ -147,10 +155,10 @@
       "place": "10",
       "team": "Lawson Lightning",
       "w": 1,
-      "l": 7,
+      "l": 8,
       "t": 0,
-      "pct": "0.125",
-      "streak": "Lost 6"
+      "pct": "0.111",
+      "streak": "Lost 7"
     },
     {
       "place": "11",

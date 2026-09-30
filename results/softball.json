@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-09-30T06:43:22.610Z",
+  "fetchedAt": "2026-09-30T19:20:16.295Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -67,17 +67,25 @@
       "them": 17,
       "result": null,
       "status": "final"
+    },
+    {
+      "date": "2026-09-29T16:00:00",
+      "opp": "Blach Falcons",
+      "us": 8,
+      "them": 7,
+      "result": null,
+      "status": "final"
     }
   ],
   "standings": [
     {
       "place": "1",
       "team": "Redwood Griffins",
-      "w": 8,
+      "w": 9,
       "l": 0,
       "t": 0,
       "pct": "1.000",
-      "streak": "Won 8"
+      "streak": "Won 9"
     },
     {
       "place": "2",
@@ -136,23 +144,14 @@
     {
       "place": "8",
       "team": "Graham Bears",
-      "w": 2,
+      "w": 3,
       "l": 6,
       "t": 0,
-      "pct": "0.250",
-      "streak": "Lost 3"
+      "pct": "0.333",
+      "streak": "Won 1"
     },
     {
       "place": "9",
-      "team": "Blach Falcons",
-      "w": 1,
-      "l": 7,
-      "t": 0,
-      "pct": "0.125",
-      "streak": "Lost 4"
-    },
-    {
-      "place": "10",
       "team": "Egan Vikings",
       "w": 1,
       "l": 8,
@@ -161,13 +160,22 @@
       "streak": "Lost 2"
     },
     {
+      "place": "10",
+      "team": "Blach Falcons",
+      "w": 1,
+      "l": 8,
+      "t": 0,
+      "pct": "0.111",
+      "streak": "Lost 5"
+    },
+    {
       "place": "11",
       "team": "Hyde Lions",
       "w": 0,
-      "l": 8,
+      "l": 9,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 8"
+      "streak": "Lost 9"
     }
   ]
 }

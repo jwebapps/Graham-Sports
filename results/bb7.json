@@ -1,7 +1,7 @@
 {
   "id": "bb7",
   "label": "7th Boys Basketball",
-  "fetchedAt": "2026-09-30T06:43:22.193Z",
+  "fetchedAt": "2026-09-30T19:20:15.807Z",
   "sourceUrl": "https://valleyal.org/schedule/731082/7th-grade",
   "results": [
     {
@@ -67,6 +67,14 @@
       "them": 53,
       "result": null,
       "status": "final"
+    },
+    {
+      "date": "2026-09-29T16:00:00",
+      "opp": "Blach Falcons",
+      "us": 26,
+      "them": 45,
+      "result": null,
+      "status": "final"
     }
   ],
   "standings": [
@@ -100,11 +108,11 @@
     {
       "place": "4",
       "team": "Blach Falcons",
-      "w": 6,
+      "w": 7,
       "l": 2,
       "t": 0,
-      "pct": "0.750",
-      "streak": "Won 4"
+      "pct": "0.778",
+      "streak": "Won 5"
     },
     {
       "place": "5",
@@ -118,11 +126,11 @@
     {
       "place": "6",
       "team": "Hyde Lions",
-      "w": 3,
+      "w": 4,
       "l": 5,
       "t": 0,
-      "pct": "0.375",
-      "streak": "Lost 4"
+      "pct": "0.444",
+      "streak": "Won 1"
     },
     {
       "place": "7",
@@ -137,10 +145,10 @@
       "place": "8",
       "team": "Graham Bears",
       "w": 3,
-      "l": 5,
+      "l": 6,
       "t": 0,
-      "pct": "0.375",
-      "streak": "Won 1"
+      "pct": "0.333",
+      "streak": "Lost 1"
     },
     {
       "place": "9",
@@ -164,10 +172,10 @@
       "place": "11",
       "team": "Lawson Lightning",
       "w": 0,
-      "l": 8,
+      "l": 9,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 8"
+      "streak": "Lost 9"
     }
   ]
 }
