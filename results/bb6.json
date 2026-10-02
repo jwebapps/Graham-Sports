@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-10-02T02:16:09.074Z",
+  "fetchedAt": "2026-10-02T08:37:18.305Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -91,11 +91,11 @@
     {
       "place": "3",
       "team": "Miller Mustangs",
-      "w": 5,
+      "w": 6,
       "l": 2,
       "t": 0,
-      "pct": "0.714",
-      "streak": "Won 3"
+      "pct": "0.750",
+      "streak": "Won 4"
     },
     {
       "place": "4",
@@ -110,10 +110,10 @@
       "place": "5",
       "team": "Hyde Lions",
       "w": 4,
-      "l": 3,
+      "l": 4,
       "t": 0,
-      "pct": "0.571",
-      "streak": "Won 1"
+      "pct": "0.500",
+      "streak": "Lost 1"
     },
     {
       "place": "6",

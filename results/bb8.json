@@ -1,7 +1,7 @@
 {
   "id": "bb8",
   "label": "8th Boys Basketball",
-  "fetchedAt": "2026-10-02T02:16:08.379Z",
+  "fetchedAt": "2026-10-02T08:37:17.753Z",
   "sourceUrl": "https://valleyal.org/schedule/731081/8th-grade",
   "results": [
     {
@@ -97,25 +97,25 @@
     },
     {
       "place": "2",
-      "team": "Hyde Lions",
-      "w": 8,
+      "team": "Miller Mustangs",
+      "w": 9,
       "l": 1,
       "t": 0,
-      "pct": "0.889",
-      "streak": "Won 5"
+      "pct": "0.900",
+      "streak": "Won 9"
     },
     {
       "place": "3",
-      "team": "Miller Mustangs",
+      "team": "Blach Falcons",
       "w": 8,
-      "l": 1,
+      "l": 2,
       "t": 0,
-      "pct": "0.889",
-      "streak": "Won 8"
+      "pct": "0.800",
+      "streak": "Lost 1"
     },
     {
       "place": "4",
-      "team": "Blach Falcons",
+      "team": "Hyde Lions",
       "w": 8,
       "l": 2,
       "t": 0,

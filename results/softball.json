@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-10-02T02:16:09.340Z",
+  "fetchedAt": "2026-10-02T08:37:18.549Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -124,21 +124,21 @@
     },
     {
       "place": "5",
-      "team": "Kennedy Cougars",
-      "w": 5,
-      "l": 4,
-      "t": 1,
-      "pct": "0.550",
-      "streak": "Lost 1"
-    },
-    {
-      "place": "6",
       "team": "Sunnyvale Spartans",
       "w": 5,
       "l": 4,
       "t": 1,
       "pct": "0.550",
       "streak": "Won 3"
+    },
+    {
+      "place": "6",
+      "team": "Kennedy Cougars",
+      "w": 5,
+      "l": 4,
+      "t": 1,
+      "pct": "0.550",
+      "streak": "Lost 1"
     },
     {
       "place": "7",
