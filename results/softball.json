@@ -1,7 +1,7 @@
 {
   "id": "softball",
   "label": "Girls Softball",
-  "fetchedAt": "2026-10-01T05:54:09.479Z",
+  "fetchedAt": "2026-10-02T02:16:09.340Z",
   "sourceUrl": "https://valleyal.org/schedule/722499/6th7th8th-grade",
   "results": [
     {
@@ -75,6 +75,14 @@
       "them": 7,
       "result": null,
       "status": "final"
+    },
+    {
+      "date": "2026-10-01T16:00:00",
+      "opp": "Crittenden Panthers",
+      "us": 3,
+      "them": 14,
+      "result": null,
+      "status": "final"
     }
   ],
   "standings": [
@@ -90,92 +98,92 @@
     {
       "place": "2",
       "team": "Crittenden Panthers",
-      "w": 8,
+      "w": 9,
       "l": 1,
       "t": 0,
-      "pct": "0.889",
-      "streak": "Won 1"
+      "pct": "0.900",
+      "streak": "Won 2"
     },
     {
       "place": "3",
       "team": "Cupertino Bears",
-      "w": 6,
+      "w": 7,
       "l": 2,
       "t": 1,
-      "pct": "0.722",
-      "streak": "Tied 1"
+      "pct": "0.750",
+      "streak": "Won 1"
     },
     {
       "place": "4",
       "team": "Miller Mustangs",
-      "w": 6,
+      "w": 7,
       "l": 3,
       "t": 0,
-      "pct": "0.667",
-      "streak": "Lost 1"
+      "pct": "0.700",
+      "streak": "Won 1"
     },
     {
       "place": "5",
       "team": "Kennedy Cougars",
       "w": 5,
-      "l": 3,
+      "l": 4,
       "t": 1,
-      "pct": "0.611",
-      "streak": "Won 4"
+      "pct": "0.550",
+      "streak": "Lost 1"
     },
     {
       "place": "6",
-      "team": "Columbia Bulldogs",
+      "team": "Sunnyvale Spartans",
       "w": 5,
       "l": 4,
-      "t": 0,
-      "pct": "0.556",
-      "streak": "Lost 3"
+      "t": 1,
+      "pct": "0.550",
+      "streak": "Won 3"
     },
     {
       "place": "7",
-      "team": "Sunnyvale Spartans",
-      "w": 4,
-      "l": 4,
-      "t": 1,
+      "team": "Columbia Bulldogs",
+      "w": 5,
+      "l": 5,
+      "t": 0,
       "pct": "0.500",
-      "streak": "Won 2"
+      "streak": "Lost 4"
     },
     {
       "place": "8",
       "team": "Graham Bears",
       "w": 3,
-      "l": 6,
+      "l": 7,
       "t": 0,
-      "pct": "0.333",
-      "streak": "Won 1"
+      "pct": "0.300",
+      "streak": "Lost 1"
     },
     {
       "place": "9",
-      "team": "Egan Vikings",
-      "w": 1,
+      "team": "Blach Falcons",
+      "w": 2,
       "l": 8,
       "t": 0,
-      "pct": "0.111",
-      "streak": "Lost 2"
+      "pct": "0.200",
+      "streak": "Won 1"
     },
     {
       "place": "10",
-      "team": "Blach Falcons",
+      "team": "Egan Vikings",
       "w": 1,
-      "l": 8,
+      "l": 9,
       "t": 0,
-      "pct": "0.111",
-      "streak": "Lost 5"
+      "pct": "0.100",
+      "streak": "Lost 3"
     },
     {
       "place": "11",
       "team": "Hyde Lions",
       "w": 0,
-      "l": 9,
+      "l": 10,
       "t": 0,
       "pct": "0.000",
-      "streak": "Lost 9"
+      "streak": "Lost 10"
     }
   ]
 }
