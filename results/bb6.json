@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-10-05T18:28:22.615Z",
+  "fetchedAt": "2026-10-06T00:49:28.007Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -65,6 +65,14 @@
       "opp": "Crittenden Panthers",
       "us": 48,
       "them": 28,
+      "result": null,
+      "status": "final"
+    },
+    {
+      "date": "2026-10-05T16:00:00",
+      "opp": "Hyde Lions",
+      "us": 51,
+      "them": 43,
       "result": null,
       "status": "final"
     }
