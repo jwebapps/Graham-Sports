@@ -1,7 +1,7 @@
 {
   "id": "bb6",
   "label": "6th Boys Basketball",
-  "fetchedAt": "2026-10-06T00:49:28.007Z",
+  "fetchedAt": "2026-10-07T14:33:24.229Z",
   "sourceUrl": "https://valleyal.org/schedule/731083/6th-grade",
   "results": [
     {
@@ -73,6 +73,14 @@
       "opp": "Hyde Lions",
       "us": 51,
       "them": 43,
+      "result": null,
+      "status": "final"
+    },
+    {
+      "date": "2026-10-06T16:00:00",
+      "opp": "Sunnyvale Spartans",
+      "us": 22,
+      "them": 55,
       "result": null,
       "status": "final"
     }
